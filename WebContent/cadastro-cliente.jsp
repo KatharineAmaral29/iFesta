@@ -17,6 +17,8 @@
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=OpenSans:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -57,10 +59,62 @@
 					</ul>
                 </div>
             </div><!--/.container-->
-        </nav><!--/nav-->
-        
+        </nav><!--/nav-->     
     </header><!--/header-->
-		
+
+	<section>
+    	 <div class="formulario">  
+            <form action="" method="post" id="validate">                                      
+                <label>Nome Completo*</label>
+                <input name="nomecompleto" type="text" class="g">
+
+                <label>E-mail*</label>
+                <input name="email" type="text" class="g">
+
+                <label>Telefone*</label>
+                <input name="telefone" type="text" class="p" id="telefone">
+
+                <label>Celular</label>
+                <input name="celular" type="text" class="p" id="celular">
+
+                <label>Data de Nascimento*</label>
+                <input name="data" type="text" class="p" id="data">
+
+                <label>Sexo*</label>
+                <select name="sexo" class="m" id="sexo">
+                  <option>Feminino</option>
+                  <option>Masculino</option>
+                </select>
+
+                <label>CEP</label>
+                <input name="cep" type="text" class="p" id="cep">
+
+                <label>Endereço*</label>
+                <input name="endereco" type="text" class="g" id=endereco>
+                
+                <label>Número*</label>
+                <input name="numero" type="text" class="pp" id=numero>
+             
+                <label>Complemento</label>
+                <input name="complemento" type="text" class="m">
+                
+                <label>Cidade*</label>
+                <input name="cidade" type="text" class="p" id="cidade">
+
+                <label>Estado*</label>
+                <select name="estado" class="p" id="estado">
+                    <option value="CE">Ceará</option>
+                </select>
+
+                <label>Pais*</label>
+                <select name="pais" class="p" id="pais">
+                    <option value="Brasil" selected>Brasil</option>
+                </select>
+                <input type="submit" value="Enviar">
+            </form>
+    	</div><!--/formulario-->      
+	</section>
+
     <section id="bottom">
     </section><!--/#bottom-->
 	
@@ -109,5 +163,9 @@
     <script src="js/jquery.isotope.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.zebra-datepicker.js"></script>
 </body>
 </html>

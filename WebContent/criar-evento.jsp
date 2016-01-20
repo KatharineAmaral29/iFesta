@@ -68,10 +68,10 @@
             <form action="" method="post" id="validate">                  
                     
                 <label>Nome do Evento</label>
-                <input name="nome" type="text" class="g">
+                <input name="nomeevento" type="text" class="g">
 
                 <label>Data</label>
-                <input name="" type="text" class="p" id="datepicker1">
+                <input name="dataevento" type="text" class="p" id="datepicker1">
 
                 <input type="submit" value="Enviar">
 

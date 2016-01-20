@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>iFesta.net </title>
+    <title>iFesta.net | Login </title>
 	
 	<!-- core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -17,6 +17,8 @@
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=OpenSans:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -76,9 +78,9 @@
 								<h3>Já sou cadastrado</h3>
 								<a class="navbar-brand" href=""><img src="images/login/facebook.png" align="middle"></a><br/>
 								<h3>ou</h3>
-								E-mail:<br/>
+								<label>E-mail:</label> <br/>
 								<input type="email" name="email" id="email"/><br/><br/>
-								Senha:<br/>
+								<label>Senha:</label><br/>
 								<input type="password" name="password" id="pass"/><br/><br/>
 								<a class="navbar-brand" href="inicial-cliente.jsp"><img src="images/login/login.png" align="middle"></a><br/>
 								<h3>Não sou cadastrado</h3>
@@ -89,9 +91,9 @@
 							<div role="complementary" class="col-sm-6">
 								<h2>Sou fornecedor</h2>
 								<h3>Já sou cadastrado</h3>
-								E-mail:<br/>
+								<label>E-mail:</label><br/>
 								<input type="email" name="email" id="email"/><br/><br/>
-								Senha:<br/>
+								<label>Senha:</label><br/>
 								<input type="password" name="password" id="pass"/><br/><br/>
 								<a class="navbar-brand" href="inicial-empresa.jsp"><img src="images/login/login.png" align="middle"></a><br/>
 								<h3>Não sou cadastrado</h3>
@@ -151,5 +153,9 @@
     <script src="js/jquery.isotope.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.zebra-datepicker.js"></script>
 </body>
 </html>

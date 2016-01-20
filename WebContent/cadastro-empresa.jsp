@@ -17,6 +17,8 @@
     <link href="css/animate.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=OpenSans:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
     
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -123,6 +125,8 @@
             </div><!--/pricing-area-->
         </div><!--/container-->
     </section><!--/pricing-page-->
+    
+    
 
     <section id="bottom">
     </section><!--/#bottom-->	
@@ -175,5 +179,9 @@
     <script src="js/jquery.isotope.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.zebra-datepicker.js"></script>
 </body>
 </html>

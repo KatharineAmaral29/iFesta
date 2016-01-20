@@ -27,11 +27,21 @@ DONE:
 - Passar todos os slides do Flávio para o Kindle
 - Conferir se o José Maria colocou os exemplos e adiou as listas como ele tinha deixado. Se não tiver feito isso mandar e-mail lembrando
 - Adicionar código do calendário a página criar-evento
-	
-TO DO:
-- Testar as referências das páginas
-- Terminar a autenticação de todos os formulários
-- Criar o Banco de Dados
-- Fazer o passo a passo que o José Maria deu para o projeto ter conexão com o BD
 - Testar se todas imagens de categorias vão para criar-evento.jsp
-- Selecionar os "arquivos extra" do projeto - Corel, imagens exportadas, ... e colocar na pasta Extras-iFesta localizada na área de trabalho
+- Checar os titles de todas as páginas
+- Terminar página cadastro cliente
+- Fazer validação de formulário de cadastro cliente
+- Testar as referências das páginas
+- Criar o Banco de Dados
+- Terminar página login
+
+TO DO:
+- Criar página cadastro-serviço
+- Fazer validação de formulário de login
+- Terminar página cadastro empresa
+- Fazer validação de formulário de cadastro empresa
+- Fazer slide no Prezi com infos do iFesta 
+- Terminar a autenticação de todos os formulários
+- Fazer o passo a passo que o José Maria deu para o projeto ter conexão com o BD
+- Selecionar os "arquivos extra" do projeto - Corel, imagens exportadas, ... e colocar na pasta Extras-iFesta
+localizada na área de trabalho
