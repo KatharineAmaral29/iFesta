@@ -7,18 +7,6 @@ DONE:
 - Tirei a pop-up de login de todas as páginas
 - Mudar as referências das imagens das categorias de festas para criar-evento.jsp
 - Fazer lista de material para o projeto de Circuitos
-
-TO DO:
-- Conferir se o José Maria colocou os exemplos e adiou as listas como ele tinha deixado. Se não tiver feito isso mandar e-mail lembrando
-- Testar as referências das páginas
-- Passar todos os slides do Flávio para o Kindle
-- Terminar a autenticação de todos os formulários
-- Terminar o padrão de projeto (Organização do projeto) no modelo MVC como o do projeto do Flávio
-- Criar o Banco de Dados
-- Fazer o passo a passo que o José Maria deu para o projeto ter conexão com o BD
-- Testar se todas imagens de categorias vão para criar-evento.jsp
-- Adicionar código do calendário a página criar-evento
-- Selecionar os "arquivos extra" do projeto - Corel, imagens exportadas, ... e colocar na pasta Extras-iFesta localizada na área de trabalho
 - Pesquisar se o repositorio do GitHub pode ter um atalho para outra pasta
 	{
 		se puder
@@ -35,6 +23,16 @@ TO DO:
 			Altera o path do projeto iFesta no Corel
 		}
 	}
-- Colocar a pasta final do iFesta depois de organizada localizada na área de trabalho no GitHub
-- Configurar o diretório do projeto no GitHub
- 
+- Terminar o padrão de projeto (Organização do projeto) no modelo MVC como o do projeto do Flávio	
+- Passar todos os slides do Flávio para o Kindle
+
+	
+TO DO:
+- Conferir se o José Maria colocou os exemplos e adiou as listas como ele tinha deixado. Se não tiver feito isso mandar e-mail lembrando
+- Testar as referências das páginas
+- Terminar a autenticação de todos os formulários
+- Criar o Banco de Dados
+- Fazer o passo a passo que o José Maria deu para o projeto ter conexão com o BD
+- Testar se todas imagens de categorias vão para criar-evento.jsp
+- Adicionar código do calendário a página criar-evento
+- Selecionar os "arquivos extra" do projeto - Corel, imagens exportadas, ... e colocar na pasta Extras-iFesta localizada na área de trabalho
