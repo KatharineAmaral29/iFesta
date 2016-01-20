@@ -25,14 +25,13 @@ DONE:
 	}
 - Terminar o padrão de projeto (Organização do projeto) no modelo MVC como o do projeto do Flávio	
 - Passar todos os slides do Flávio para o Kindle
-
+- Conferir se o José Maria colocou os exemplos e adiou as listas como ele tinha deixado. Se não tiver feito isso mandar e-mail lembrando
+- Adicionar código do calendário a página criar-evento
 	
 TO DO:
-- Conferir se o José Maria colocou os exemplos e adiou as listas como ele tinha deixado. Se não tiver feito isso mandar e-mail lembrando
 - Testar as referências das páginas
 - Terminar a autenticação de todos os formulários
 - Criar o Banco de Dados
 - Fazer o passo a passo que o José Maria deu para o projeto ter conexão com o BD
 - Testar se todas imagens de categorias vão para criar-evento.jsp
-- Adicionar código do calendário a página criar-evento
 - Selecionar os "arquivos extra" do projeto - Corel, imagens exportadas, ... e colocar na pasta Extras-iFesta localizada na área de trabalho
