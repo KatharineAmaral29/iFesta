@@ -17,6 +17,8 @@
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=OpenSans:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -56,9 +58,28 @@
 					</ul>
                 </div>
             </div><!--/.container-->
-        </nav><!--/nav-->
-        
+        </nav><!--/nav-->    
     </header><!--/header-->
+
+<section>
+        
+    	 <div class="formulario">  
+
+            <form action="" method="post" id="validate">                  
+                    
+                <label>Nome do Evento</label>
+                <input name="nome" type="text" class="g">
+
+                <label>Data</label>
+                <input name="" type="text" class="p" id="datepicker1">
+
+                <input type="submit" value="Enviar">
+
+            </form>
+    	</div><!--/formulario-->
+                
+    </section>
+
 	
     <section id="bottom">
     </section><!--/#bottom-->
@@ -108,5 +129,8 @@
     <script src="js/jquery.isotope.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.zebra-datepicker.js"></script>
 </body>
-</html>
