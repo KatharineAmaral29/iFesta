@@ -4,6 +4,16 @@ public class Fornecedor {
 	private String nome_fantasia = new String();
 	private String razao_social = new String();
 	private String cnpj = new String();
+	/*
+	String rua_fornecedor = new String();
+	String cep_fornecedor = new String();
+	String numero_fornecedor = new String();
+	String cidade_fornecedor = new String();
+	String telefone1_fornecedor = new String();
+	String telefone2_fornecedor = new String();
+	String login_fornecedor = new String();
+	String senha_fornecedor = new String();
+	*/
 	
 	public Evento(int idfornecedor,String nome,String razao, String cnpj){
 		setIdfornecedor(idfornecedor);
