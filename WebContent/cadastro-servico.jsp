@@ -65,61 +65,79 @@
 
 	<section>
     	 <div class="formulario">  
-            <form action="" method="post" id="validate">                                      
-                <label>Nome Completo*</label>
-                <input name="nomecompleto" type="text" class="g">
+            <form action="CadastroServicoServlet" method="post" id="validate">                          
+                <label>Título do Serviço*</label>
+                <input name="nomeservico" type="text" class="g">
 
-                <label>E-mail*</label>
-                <input name="email" type="text" class="g">
+                <label>Descrição*</label>
+                <input name="descricao" type="text" class="g">
 
-                <label>Telefone*</label>
-                <input name="telefone" type="text" class="p" id="telefone">
+                <label>Regras/Observações</label>
+                <input name="regras" type="text" class="g">
 
-                <label>Celular</label>
-                <input name="celular" type="text" class="p" id="celular">
+                <label>Preço*</label>
+                <input name="preco" type="text" class="g">
 
-                <label>Data de Nascimento*</label>
-                <input name="data" type="text" class="p" id="data">
+                <label>Tipo de Serviço*</label><br><br>
+					<input type=radio value="doces">Alimentícios Doces</input><br>                
+					<input type=radio value="salgados">Alimentícios Salgados</input><br>
+					<input type=radio value="animacao">Animação</input><br>
+					<input type=radio value="artesanal">Artesanal</input><br>
+					<input type=radio value="artigosdefesta">Artigos de Festa</input><br>
+					<input type=radio value="bebidas">Bebidas</input><br>
+					<input type=radio value="beleza">Beleza</input><br>
+					<input type=radio value="decoracao">Decoração</input><br>
+					<input type=radio value="espacodeeventos">Espaço de Eventos</input><br>
+					<input type=radio value="estruturas">Estruturas</input><br>
+					<input type=radio value="fotoevideo">Foto e Vídeo</input><br>
+					<input type=radio value="materialgrafico">Material Gráfico</input><br>
+					<input type=radio value="musical">Musical</input><br>
+					<input type=radio value="organizacao">Organização</input><br>
+					<input type=radio value="profissional">Profissional</input><br>
+					<input type=radio value="someiluminacao">Som e Iluminação</input><br>					
+					<input type=radio value="veiculos">Veículos</input><br>
+					<input type=radio value="vestuario">Vestuário</input><br>					
 
-                <label>Sexo*</label>
-                <select name="sexo" class="m" id="sexo">
-                  <option>Feminino</option>
-                  <option>Masculino</option>
-                </select>
+                <label>Tipo de Evento*</label><br><br>
+					<input type=checkbox value="aniversarioadulto">Aniversário Adulto</input><br>
+					<input type=checkbox value="aniversarioinfantil">Aniversário Infantil</input><br>
+					<input type=checkbox value="bodas">Bodas</input><br>
+					<input type=checkbox value="carnaval">Carnaval</input><br>
+					<input type=checkbox value="casamento">Casamento</input><br>
+					<input type=checkbox value="chabar">Chá Bar</input><br>
+					<input type=checkbox value="chadebaby">Chá De Baby</input><br>
+					<input type=checkbox value="chadefralda">Chá De Fralda</input><br>
+					<input type=checkbox value="chalingerie">Chá Lingerie</input><br>
+					<input type=checkbox value="chadepanela">Chá De Panela</input><br>
+					<input type=checkbox value="churrasco">Churrasco</input><br>
+					<input type=checkbox value="coffeebreak">Coffee Break</input><br>
+					<input type=checkbox value="confraternizacao">Confraternização</input><br>
+					<input type=checkbox value="descasamento">Descasamento</input><br>
+					<input type=checkbox value="despedidadesolteiro">Despedida De Solteiro</input><br>
+					<input type=checkbox value="diadascriancas">Dia Das Crianças</input><br>
+					<input type=checkbox value="diadasmaes">Dia Das Mães</input><br>
+					<input type=checkbox value="diadosnamorados">Dia Dos Namorados</input><br>
+					<input type=checkbox value="diadospais">Dia Dos Pais</input><br>
+					<input type=checkbox value="feijjoada">Feijoada</input><br>
+					<input type=checkbox value="festaafantasia">Festa A Fantasia</input><br>
+					<input type=checkbox value="festabeneficente">Festa Beneficente</input><br>
+					<input type=checkbox value="festaempresarial">Festa Empresarial</input><br>
+					<input type=checkbox value="festajunina">Festa Junina</input><br>
+					<input type=checkbox value="festasreligiosas">Festas Religiosas</input><br>
+					<input type=checkbox value="festatematica">Festa Temática</input><br>
+					<input type=checkbox value="formatura">Formatura</input><br>
+					<input type=checkbox value="halloween">Halloween</input><br>
+					<input type=checkbox value="natal">Natal</input><br>
+					<input type=checkbox value="noivado">Noivado</input><br>
+					<input type=checkbox value="pascoa">Páscoa</input><br>
+					<input type=checkbox value="reveillon">Reveillón</input><br>
+					<input type=checkbox value="velorio">Velório</input><br>
 
-                <label>CEP</label>
-                <input name="cep" type="text" class="p" id="cep">
-
-                <label>Endereço*</label>
-                <input name="endereco" type="text" class="g" id=endereco>
-                
-                <label>Número*</label>
-                <input name="numero" type="text" class="pp" id=numero>
-             
-                <label>Complemento</label>
-                <input name="complemento" type="text" class="m">
-                
-                <label>Cidade*</label>
-                <input name="cidade" type="text" class="p" id="cidade">
-
-                <label>Estado*</label>
-                <select name="estado" class="p" id="estado">
-                    <option value="CE">Ceará</option>
-                </select>
-
-                <label>Pais*</label>
-                <select name="pais" class="p" id="pais">
-                    <option value="Brasil" selected>Brasil</option>
-                </select>
                 <input type="submit" value="Enviar">
+                
             </form>
     	</div><!--/formulario-->      
-	</section>
-	
-	nomeservico
-	descricao
-	preco
-	
+	</section>	
 		
     <section id="bottom">
     </section><!--/#bottom-->

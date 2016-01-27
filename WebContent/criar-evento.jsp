@@ -65,7 +65,7 @@
         
     	 <div class="formulario">  
 
-            <form action="" method="post" id="validate">                  
+            <form action="CadastroEventoServlet" method="post" id="validate">                  
                     
                 <label>Nome do Evento</label>
                 <input name="nomeevento" type="text" class="g">

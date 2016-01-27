@@ -75,7 +75,7 @@
 							<div role="main" class="col-sm-6">
 								<div class="login">
 									<div class="col-md-6">
-										<form role="form" class="form-inline" id="formLogin" action="LoginServlet" method="get">
+										<form role="form" class="form-inline" id="formLogin" action="LoginClienteServlet" method="post">
 											<h2>Sou cliente</h2>
 											<h3>Já sou cadastrado</h3>
 											<a class="navbar-brand" href=""><img src="images/login/facebook.png" align="middle"></a><br/>
@@ -101,7 +101,7 @@
 							<div role="main" class="col-sm-6">
 								<div class="login">
 									<div class="col-md-6">
-										<form role="form" class="form-inline" id="formLogin" action="LoginServlet" method="get">
+										<form role="form" class="form-inline" id="formLogin" action="LoginFornecedorServlet" method="post">
 											<h2>Sou fornecedor</h2>
 											<h3>Já sou cadastrado</h3>
 											<div class="form-group">
