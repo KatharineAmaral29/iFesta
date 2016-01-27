@@ -65,39 +65,59 @@
       <!-- Modal content-->
 
 			<div class="modal-header">
-			  <button type="button" class="close" data-dismiss="modal">&times;</button>
+		  <button type="button" class="close" dat-dismiss="modal">&times;</button>
 			  <h4 class="modal-title">Entre ou cadastre-se!</h4>
 			</div>
 			
-			<div class="modal-body">
-			  <form action="#" id="login-form">
-				  <table border="100000">
+			<div>
+				  <table border="1000000000000">
 						<tr>
 							<div role="main" class="col-sm-6">
-								<h2>Sou cliente</h2>
-								<h3>Já sou cadastrado</h3>
-								<a class="navbar-brand" href=""><img src="images/login/facebook.png" align="middle"></a><br/>
-								<h3>ou</h3>
-								<label>E-mail:</label> <br/>
-								<input type="email" name="email" id="email"/><br/><br/>
-								<label>Senha:</label><br/>
-								<input type="password" name="password" id="pass"/><br/><br/>
-								<a class="navbar-brand" href="inicial-cliente.jsp"><img src="images/login/login.png" align="middle"></a><br/>
-								<h3>Não sou cadastrado</h3>
-								<a class="navbar-brand" href="cadastro-cliente.jsp"><img src="images/login/inscrever.png" align="middle"></a><br/>							
+								<div class="login">
+									<div class="col-md-6">
+										<form role="form" class="form-inline" id="formLogin" action="LoginServlet" method="get">
+											<h2>Sou cliente</h2>
+											<h3>Já sou cadastrado</h3>
+											<a class="navbar-brand" href=""><img src="images/login/facebook.png" align="middle"></a><br/>
+											<h3>ou</h3>
+											<div class="form-group">
+												<input class="form-control" type="email" id="email" placeholder="Email" name="email">
+											</div>
+											<div class="form-group">
+												<input class="form-control" type="password" id="senha" placeholder="Senha" name="senha">
+											</div>
+											<div class="form-group">
+												<button type="submit" class="btn btn-default">Entrar</button>
+											</div>
+											<h3>Não sou cadastrado</h3>
+											<a class="navbar-brand" href="cadastro-cliente.jsp"><img src="images/login/inscrever.png" align="middle"></a><br/>							
+										</form>
+									</div>
+								</div> 
 							</div>
+
 						</tr>
 						<tr>
-							<div role="complementary" class="col-sm-6">
-								<h2>Sou fornecedor</h2>
-								<h3>Já sou cadastrado</h3>
-								<label>E-mail:</label><br/>
-								<input type="email" name="email" id="email"/><br/><br/>
-								<label>Senha:</label><br/>
-								<input type="password" name="password" id="pass"/><br/><br/>
-								<a class="navbar-brand" href="inicial-empresa.jsp"><img src="images/login/login.png" align="middle"></a><br/>
-								<h3>Não sou cadastrado</h3>
-								<a class="navbar-brand" href="cadastro-empresa.jsp"><img src="images/login/planos.png" align="middle"></a><br/>
+							<div role="main" class="col-sm-6">
+								<div class="login">
+									<div class="col-md-6">
+										<form role="form" class="form-inline" id="formLogin" action="LoginServlet" method="get">
+											<h2>Sou fornecedor</h2>
+											<h3>Já sou cadastrado</h3>
+											<div class="form-group">
+												<input class="form-control" type="email" id="email" placeholder="Email" name="email">
+											</div>
+											<div class="form-group">
+												<input class="form-control" type="password" id="senha" placeholder="Senha" name="senha">
+											</div>
+											<div class="form-group">
+												<button type="submit" class="btn btn-default">Entrar</button>
+											</div>
+											<h3>Não sou cadastrado</h3>
+											<a class="navbar-brand" href="cadastro-empresa.jsp"><img src="images/login/planos.png" align="middle"></a><br/>
+										</form>
+									</div>
+								</div> 
 							</div>
 						</tr>
 				  </table>
@@ -153,9 +173,6 @@
     <script src="js/jquery.isotope.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/wow.min.js"></script>
-    <script src="js/jquery-1.10.2.min.js"></script>
-    <script src="js/jquery.maskedinput.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/jquery.zebra-datepicker.js"></script>
+
 </body>
 </html>

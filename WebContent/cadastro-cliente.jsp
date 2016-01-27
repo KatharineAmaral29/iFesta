@@ -71,20 +71,26 @@
                 <label>E-mail*</label>
                 <input name="email" type="text" class="g">
 
-                <label>Telefone*</label>
-                <input name="telefone" type="text" class="p" id="telefone">
+                <label>Senha*</label>
+                <input name="password" type="password" class="g">
 
-                <label>Celular</label>
-                <input name="celular" type="text" class="p" id="celular">
-
-                <label>Data de Nascimento*</label>
-                <input name="data" type="text" class="p" id="data">
+                <label>CPF*</label>
+                <input name="cpf" type="text" class="g">
 
                 <label>Sexo*</label>
                 <select name="sexo" class="m" id="sexo">
                   <option>Feminino</option>
                   <option>Masculino</option>
                 </select>
+
+                <label>Data de Nascimento*</label>
+                <input name="data" type="text" class="p" id="data">
+
+                <label>Telefone*</label>
+                <input name="telefone" type="text" class="p" id="telefone">
+
+                <label>Celular</label>
+                <input name="celular" type="text" class="p" id="celular">
 
                 <label>CEP</label>
                 <input name="cep" type="text" class="p" id="cep">
