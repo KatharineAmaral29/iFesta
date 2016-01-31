@@ -13,7 +13,7 @@ public class Fornecedor {
 	private String login_fornecedor = new String();
 	private String senha_fornecedor = new String();
 	
-	public Fornecedor(int idfornecedor,String nome,String razao, String cnpj){
+	public Fornecedor(int idfornecedor,String nome,String razao, String cnpj){ //precisa adicionar o restante dos campos
 		setIdfornecedor(idfornecedor);
 		setNomeFantasia(nome);
 		setRazaoSocial(razao);
@@ -50,84 +50,84 @@ public class Fornecedor {
 		this.cnpj = cnpj;
 	}
 
-	public String getNome_fantasia() {
+	public String getNomeFantasia() {
 		return nome_fantasia;
 	}
 
-	public void setNome_fantasia(String nome_fantasia) {
+	public void setNomeFantasia(String nome_fantasia) {
 		this.nome_fantasia = nome_fantasia;
 	}
 
-	public String getRazao_social() {
+	public String getRazaoSocial() {
 		return razao_social;
 	}
 
-	public void setRazao_social(String razao_social) {
+	public void setRazaoSocial(String razao_social) {
 		this.razao_social = razao_social;
 	}
 
-	public String getRua_fornecedor() {
-		return rua_fornecedor;
+	public String getRua() {
+		return rua;
 	}
 
-	public void setRua_fornecedor(String rua_fornecedor) {
-		this.rua_fornecedor = rua_fornecedor;
+	public void setRua(String rua_fornecedor) {
+		this.rua = rua_fornecedor;
 	}
 
-	public String getCep_fornecedor() {
-		return cep_fornecedor;
+	public String getCep() {
+		return cep;
 	}
 
-	public void setCep_fornecedor(String cep_fornecedor) {
-		this.cep_fornecedor = cep_fornecedor;
+	public void setCep(String cep_fornecedor) {
+		this.cep = cep_fornecedor;
 	}
 
-	public String getNumero_fornecedor() {
-		return numero_fornecedor;
+	public String getNumero() {
+		return numero;
 	}
 
-	public void setNumero_fornecedor(String numero_fornecedor) {
-		this.numero_fornecedor = numero_fornecedor;
+	public void setNumero(String numero_fornecedor) {
+		this.numero = numero_fornecedor;
 	}
 
-	public String getCidade_fornecedor() {
-		return cidade_fornecedor;
+	public String getCidade() {
+		return cidade;
 	}
 
-	public void setCidade_fornecedor(String cidade_fornecedor) {
-		this.cidade_fornecedor = cidade_fornecedor;
+	public void setCidade(String cidade_fornecedor) {
+		this.cidade = cidade_fornecedor;
 	}
 
-	public String getTelefone1_fornecedor() {
-		return telefone1_fornecedor;
+	public String getTelefone1() {
+		return telefone1;
 	}
 
-	public void setTelefone1_fornecedor(String telefone1_fornecedor) {
-		this.telefone1_fornecedor = telefone1_fornecedor;
+	public void setTelefone1(String telefone1_fornecedor) {
+		this.telefone1 = telefone1_fornecedor;
 	}
 
-	public String getTelefone2_fornecedor() {
-		return telefone2_fornecedor;
+	public String getTelefone2() {
+		return telefone2;
 	}
 
-	public void setTelefone2_fornecedor(String telefone2_fornecedor) {
-		this.telefone2_fornecedor = telefone2_fornecedor;
+	public void setTelefone2(String telefone2_fornecedor) {
+		this.telefone2 = telefone2_fornecedor;
 	}
 
-	public String getLogin_fornecedor() {
-		return login_fornecedor;
+	public String getLogin() {
+		return login;
 	}
 
-	public void setLogin_fornecedor(String login_fornecedor) {
-		this.login_fornecedor = login_fornecedor;
+	public void setLogin(String login_fornecedor) {
+		this.login = login_fornecedor;
 	}
 
-	public String getSenha_fornecedor() {
+	public String getSenha() {
 		return senha_fornecedor;
 	}
 
-	public void setSenha_fornecedor(String senha_fornecedor) {
-		this.senha_fornecedor = senha_fornecedor;
+	public void setSenha(String senha_fornecedor) {
+		this.senha = senha_fornecedor;
 	}
 
 }
