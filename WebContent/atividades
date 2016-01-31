@@ -1,4 +1,5 @@
 DONE:
+Adicionar todos os campos de Fornecedor.java com getters e setters
 
 TO DO:
 Terminar ConnectionFactory
@@ -8,10 +9,10 @@ Terminar e trocar metodos para boolean {
 	SiteDAO
 	EventoDAO
 }
-Adicionar todos os campos de Fornecedor.java com getters e setters
+Atualizar Construtor de Fornecedor
 Adicionar todos os campos de Cliente.java com getters e setters
 Testar CadastroClienteServlet
-Terminar CadastroEventoServlet
+Testar CadastroEventoServlet
 Terminar CadastroFornecedorServlet
 Terminar CadastroServicoServlet
 Terminar LoginClienteServlet
