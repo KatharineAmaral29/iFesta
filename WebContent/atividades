@@ -1,47 +1,34 @@
 DONE:
-- Arrumei os rodapé
-- Corrigi erros de codificação
-- criei a página login
-- Editei a página login.jsp com o que ela precisa
-- Mudei as referências a login
-- Tirei a pop-up de login de todas as páginas
-- Mudar as referências das imagens das categorias de festas para criar-evento.jsp
-- Fazer lista de material para o projeto de Circuitos
-- Pesquisar se o repositorio do GitHub pode ter um atalho para outra pasta
-	{
-		se puder
-		{
-			Cria uma pasta para o projeto iFesta na área de trabalho
-			Adiciona os arquivos do Corel e afins relacionados ao projeto na pasta iFesta da área de trabalho
-			Adiciona o atalho para o projeto iFesta localizado na pasta workspace
-		}
-		se não puder
-		{
-			Cria uma pasta para o projeto iFesta na área de trabalho
-			Adiciona os arquivos do Corel e afins relacionados ao projeto na pasta iFesta da área de trabalho
-			Passa o projeto iFesta localizado na pasta workspace para a pasta iFesta da área de trabalho
-			Altera o path do projeto iFesta no Corel
-		}
-	}
-- Terminar o padrão de projeto (Organização do projeto) no modelo MVC como o do projeto do Flávio	
-- Passar todos os slides do Flávio para o Kindle
-- Conferir se o José Maria colocou os exemplos e adiou as listas como ele tinha deixado. Se não tiver feito isso mandar e-mail lembrando
-- Adicionar código do calendário a página criar-evento
-- Testar se todas imagens de categorias vão para criar-evento.jsp
-- Checar os titles de todas as páginas
-- Terminar página cadastro cliente
-- Fazer validação de formulário de cadastro cliente
-- Testar as referências das páginas
-- Criar o Banco de Dados
-- Terminar página login
 
 TO DO:
-- Criar página cadastro-serviço
-- Fazer validação de formulário de login
-- Terminar página cadastro empresa
-- Fazer validação de formulário de cadastro empresa
-- Fazer slide no Prezi com infos do iFesta 
-- Terminar a autenticação de todos os formulários
-- Fazer o passo a passo que o José Maria deu para o projeto ter conexão com o BD
-- Selecionar os "arquivos extra" do projeto - Corel, imagens exportadas, ... e colocar na pasta Extras-iFesta
-localizada na área de trabalho
+Terminar ConnectionFactory
+Terminar e trocar metodos para boolean {	
+	FornecedorDAO
+	SevicoDAO
+	SiteDAO
+	EventoDAO
+}
+Adicionar todos os campos de Fornecedor.java com getters e setters
+Adicionar todos os campos de Cliente.java com getters e setters
+Testar CadastroClienteServlet
+Terminar CadastroEventoServlet
+Terminar CadastroFornecedorServlet
+Terminar CadastroServicoServlet
+Terminar LoginClienteServlet
+Terminar LoginFornecedorServlet
+Testar formul�rio da p�gina cadastro-empresa.jsp
+Fazer parte de sess�o
+Fazer estrutura da p�gina carrinho
+Fazer estrutura da p�gina criar-evento
+Fazer estrutura da p�gina inicial-cliente
+Fazer estrutura da p�gina inicial-empresa
+Fazer estrutura da p�gina pequisa
+Fazer estrutura da p�gina promocoes
+Fazer estrutura da p�gina servico
+Colocar dados do BD na p�gina carrinho
+Colocar dados do BD na p�gina criar-evento
+Colocar dados do BD na p�gina inicial-cliente
+Colocar dados do BD na p�gina inicial-empresa
+Colocar dados do BD na p�gina pesquisa
+Colocar dados do BD na p�gina promocoes
+Colocar dados do BD na p�gina servico
