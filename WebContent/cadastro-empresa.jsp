@@ -126,6 +126,35 @@
         </div><!--/container-->
     </section><!--/pricing-page-->
     
+    <section>
+    	<div>
+    		<form action="" method="post" id="validate">
+    			<label>Nome Fantasia* </label>
+				<input name ="nomefantasia" type="text" class="g">    		
+    			<label>Razão Social* </label>
+				<input name ="razaosocial" type="text" class="g">
+				<label>CNPJ*</label>
+				<input name ="cnpj" type="text" class="g">
+				<label>Endereço*</label>
+				<input name ="endereco" type="text" class="g">
+				<label>Número*</label>
+				<input name ="numero" type="text" class="g">
+				<label>Cidade*</label>
+				<input name ="cidade" type="text" class="g">
+				<label>Telefone 1*</label>
+				<input name ="telefone1" type="text" class="g">
+				<label>Telefone 2</label>
+				<input name ="telefone2" type="text" class="g">
+				<label>E-mail*</label>
+				<input name ="email" type="text" class="g">
+				<label>Senha*</label>
+				<input name ="senha" type="password" class="g">
+				<label>Plano*</label>
+				<input name ="plano" type="text" class="g">
+				
+    			<input type="submit" value="Enviar">
+    		</form>
+    </section>
     
 
     <section id="bottom">

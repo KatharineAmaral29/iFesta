@@ -12,9 +12,9 @@ import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import javax.swing.JScrollBar;
-
-import dao.UsuarioDao;
-import modelo.Usuario;
+import dao.ClienteDao;
+import modelo.Cliente;
+import conexao.ConnectionFactory;
 
 @WebServlet("/CadastroClienteServlet")
 public class CadastroClienteServlet extends HttpServlet {
@@ -37,30 +37,34 @@ public class CadastroClienteServlet extends HttpServlet {
 		String cidade = request.getParameter("cidade");
 		String estado = request.getParameter("estado");
 		String pais = request.getParameter("pais");
-		
-		System.out.println(senha);
+
 		//criando Usuário
 		Cliente cliene = new Cliente();
 		cliente.setNome(nome);
 		cliente.setEmail(email);
 		cliente.setSenha(senha);
-		cliente.set();
-		cliente.set();
-		cliente.set();
-		cliente.set();
-		cliente.set();
-		cliente.set();
-		cliente.set();
-		cliente.set();
+		cliente.setCPF(cpf);
+		cliente.setSexo(sexo);
+		cliente.setData(data);
+		cliente.setTelefone(telefone);
+		cliente.setCelular(celular);
+		cliente.setCep(cep);
+		cliente.setEndereco(endereco);
+		cliente.setNumero(numero);
+		cliente.setComplemento(complemento);
+		cliente.setCidade(cidade);
+		cliente.setEstado(estado);
+		cliente.setPais(pais);
+		
 		// criando sessão
 		HttpSession session = request.getSession(true);
-		session.setAttribute("autorizado", usuario);
+		session.setAttribute("autorizado", cliente);
 
 		ClienteDAO cadastrar;
 		try {
 			cadastrar = new ClienteDao();
 			if(cadastrar.insertCliente(cliente)){
-				response.sendRedirect("home.jsp");
+				response.sendRedirect("inicial-cliente.jsp");
 			}
 			//jsp de erro.
 		} catch (ClassNotFoundException e) {
