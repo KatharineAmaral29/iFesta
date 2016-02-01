@@ -64,7 +64,7 @@
 
 	<section>
     	 <div class="formulario">  
-            <form action="" method="post" id="validate">                                      
+            <form action="CadastroClienteServlet" method="get" id="validate" role="form">                                      
                 <label>Nome Completo*</label>
                 <input name="nomecompleto" type="text" class="g">
 

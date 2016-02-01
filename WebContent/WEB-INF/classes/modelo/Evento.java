@@ -8,38 +8,42 @@ public class Evento {
 	public Evento(int idevento,int idcliente,String nome, String descricao){
 		setIdevento(idevento);
 		setIdcliente(idcliente);
-		setNomeEvento(nome);
+		setNome_evento(nome);
 		setDescricao(descricao);
 	}
-	
-	public int getIdcliente(){
-		return idcliente;
-	}
-	
-	public void setIdcliente(int id){
-		idcliente = id;
-	}
-	
-	public int getIdevento(){
+
+	public int getIdevento() {
 		return idevento;
 	}
-	
-	public void setIdevento(int id){
-		idevento = id;
+
+	public void setIdevento(int idevento) {
+		this.idevento = idevento;
 	}
-	
-	public String getNomeEvento(){
+
+	public int getIdcliente() {
+		return idcliente;
+	}
+
+	public void setIdcliente(int idcliente) {
+		this.idcliente = idcliente;
+	}
+
+	public String getNome_evento() {
 		return nome_evento;
 	}
-	public void setNomeEvento(String nome){
-		nome_evento = nome;
+
+	public void setNome_evento(String nome_evento) {
+		this.nome_evento = nome_evento;
 	}
-	
-	public String getDescricao(){
+
+	public String getDescricao() {
 		return descricao;
 	}
-	public void setDescricao(String descricao){
+
+	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
+	
+	
 
 }

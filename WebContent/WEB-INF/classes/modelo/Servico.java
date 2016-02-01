@@ -5,7 +5,7 @@ public class Servico {
 	private String nome_servico = new String();
 	private String descricao = new String();
 	
-	public Evento(int idservico,int idfornecedor, String nome, String descricao){
+	Servico(int idservico,int idfornecedor, String nome, String descricao){
 		setIdservico(idservico);
 		setIdfornecedor(idfornecedor);
 		setNomeServico(nome);

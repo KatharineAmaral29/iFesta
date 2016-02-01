@@ -31,11 +31,11 @@ public class EventoDAO {
 
 	        try {
 	        	pstmt = con.prepareStatement("INSERT INTO eventos (idcliente, nome_evento, descricao) VALUES (? ? ?)");
-	        	stmt.setString(1, ev.getIdcliente); 
-	        	stmt.setString(2, ev.getNomeEvento); 
-	        	stmt.setString(3, ev.getDescricao);
-	        	stmt.execute();
-	        	stmt.close();
+	        	pstmt.setLong(1, ev.getIdcliente()); 
+	        	pstmt.setString(2, ev.getNome_evento()); 
+	        	pstmt.setString(3, ev.getDescricao());
+	        	pstmt.execute();
+	        	pstmt.close();
 	        	con.close();
 	        } catch (SQLException e1) {
 	            System.out.println(e1.getMessage());

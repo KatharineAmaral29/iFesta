@@ -12,15 +12,16 @@ import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import javax.swing.JScrollBar;
-import dao.ClienteDao;
+
 import modelo.Cliente;
-import conexao.ConnectionFactory;
+
 
 @WebServlet("/CadastroClienteServlet")
 public class CadastroClienteServlet extends HttpServlet {
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException {
 
+		System.out.println("Entrou no Get");
 		//requisitando paramentros do formulario
 		String nome = request.getParameter("nomecompleto");
 		String email = request.getParameter("email");
@@ -39,36 +40,47 @@ public class CadastroClienteServlet extends HttpServlet {
 		String pais = request.getParameter("pais");
 
 		//criando Usuário
-		Cliente cliene = new Cliente();
-		cliente.setNome(nome);
-		cliente.setEmail(email);
-		cliente.setSenha(senha);
-		cliente.setCPF(cpf);
-		cliente.setSexo(sexo);
-		cliente.setData(data);
-		cliente.setTelefone(telefone);
-		cliente.setCelular(celular);
-		cliente.setCep(cep);
-		cliente.setEndereco(endereco);
-		cliente.setNumero(numero);
-		cliente.setComplemento(complemento);
-		cliente.setCidade(cidade);
-		cliente.setEstado(estado);
-		cliente.setPais(pais);
+		Cliente cliente = new Cliente();
+		cliente.setNomeCliente(nome);
+		cliente.setLogin_cliente(email);
+		cliente.setSenha_cliente(senha);
+		cliente.setCpf(cpf);
+		cliente.setSexo_cliente(sexo);
+		//cliente.setData(data);
+		cliente.setTelefone1_cliente(telefone);
+		cliente.setTelefone2_cliente(celular);
+		cliente.setCep_cliente(cep);
+		cliente.setRua_cliente(endereco);
+		cliente.setNumero_cliente(numero);
+		cliente.setComplemento_cliente(complemento);
+		cliente.setCidade_cliente(cidade);
+		cliente.setEstado_cliente(estado);
+		cliente.setPais_cliente(pais);
+		
+		System.out.println("Criou CLiente");
 		
 		// criando sessão
 		HttpSession session = request.getSession(true);
 		session.setAttribute("autorizado", cliente);
+		
+		System.out.println("passou HTTP");
 
 		ClienteDAO cadastrar;
 		try {
 			cadastrar = new ClienteDAO();
+			System.out.println("Entrou no TRY");
 			if(cadastrar.insertCliente(cliente)){
+				System.out.println("Entrou no IF");
 				response.sendRedirect("inicial-cliente.jsp");
 			}
 			//jsp de erro.
-		} catch (ClassNotFoundException e) {
+		} catch (IOException e) {
 			// TODO Auto-generated catch block
+			System.out.println("Entrou no CATCH");
+			e.printStackTrace();
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("Entrou no CATCH");
 			e.printStackTrace();
 		}
 	}
