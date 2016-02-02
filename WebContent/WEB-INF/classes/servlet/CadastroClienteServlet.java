@@ -20,9 +20,12 @@ import servlet.*;
 import modelo.Cliente;
 
 
+
 @WebServlet("/CadastroClienteServlet")
 public class CadastroClienteServlet extends HttpServlet {
-
+	String login = "katharine"; // Login
+	String senha = "12345"; // Senha
+	
 	public void doGet(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException {
 
 		System.out.println("Entrou no Get");
