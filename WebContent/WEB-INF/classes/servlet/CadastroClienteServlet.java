@@ -12,6 +12,10 @@ import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import javax.swing.JScrollBar;
+import dao.*;
+import modelo.*;
+import conexao.*;
+import servlet.*;
 
 import modelo.Cliente;
 

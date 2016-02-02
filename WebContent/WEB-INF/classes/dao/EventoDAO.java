@@ -25,8 +25,7 @@ public class EventoDAO {
 	        }
 
 	    }
-	    
-	    
+	  
 	    public void insertEvento(Evento ev) {
 
 	        try {
