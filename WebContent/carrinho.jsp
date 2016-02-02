@@ -62,24 +62,14 @@
         </nav><!--/nav-->   
     </header><!--/header-->
 	
-	<%
-String palavra = request.getParameter("palavra");
-
-String frase = (String)session.getAttribute("frase");
-
-if(palavra == null || frase == null){
-frase = "";}
-
-frase = frase + " " + palavra;
-session.setAttribute("frase", frase) ;
-%>
 	
-	<TABLE BORDER=4>
+	
+	<table border=4>
 		<TR><TH>Item</TH><TH>Descrição</TH><TH>Quantidade</TH></TR>
 		<% for (int i = 0; i <= session.meuCarrinho().getQuantidadeDeServico(); i++) { %>
-			<TR><TD><input type="text" value="${sessionScope.meuCarrinho().getItem(i).getNome()}"></TD><TD><input type="text" value="${sessionScope.meuCarrinho().getItem(i).getDescricao()}"></TD><TD><input type="text" value="${sessionScope.meuCarrinho().getItem(i).getQuantidade()}"></TD></TR> 
+			<TR><TD><input type="text" value="${u.meuCarrinho().getItem(i).getNome()}"></TD><TD><input type="text" value="${u.meuCarrinho().getItem(i).getDescricao()}"></TD><TD><input type="text" value="${u.meuCarrinho().getItem(i).getQuantidade()}"></TD></TR> 
 		<% } %>
-	</TABLE>
+	</table>
 
     <section id="bottom">
     </section><!--/#bottom-->

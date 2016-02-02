@@ -23,7 +23,6 @@ public class EventoDAO {
 	        } catch (SQLException e1) {
 	            System.out.println(e1.getMessage());
 	        }
-
 	    }
 	    
 	    

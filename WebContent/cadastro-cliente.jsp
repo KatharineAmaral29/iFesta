@@ -64,7 +64,7 @@
 
 	<section>
     	 <div class="formulario">  
-            <form action="CadastroClienteServlet" method="get" id="validate" role="form">                                      
+            <form action="CadastroCliente" method="get" id="validate" role="form">                                      
                 <label>Nome Completo*</label>
                 <input name="nomecompleto" type="text" class="g">
 
@@ -96,10 +96,10 @@
                 <input name="cep" type="text" class="p" id="cep">
 
                 <label>Endereço*</label>
-                <input name="endereco" type="text" class="g" id=endereco>
+                <input name="endereco" type="text" class="g" id="endereco">
                 
                 <label>Número*</label>
-                <input name="numero" type="text" class="pp" id=numero>
+                <input name="numero" type="text" class="pp" id="numero">
              
                 <label>Complemento</label>
                 <input name="complemento" type="text" class="m">

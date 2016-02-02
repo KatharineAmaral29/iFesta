@@ -79,8 +79,8 @@
                 <input name="preco" type="text" class="g">
 
                 <label>Tipo de Serviço*</label><br><br>
-					<input type=radio value="doces">Alimentícios Doces</input><br>                
-					<input type=radio value="salgados">Alimentícios Salgados</input><br>
+					<input type="radio" value="doces">Alimentícios Doces</input><br>                
+					<input type="radio" value="salgados">Alimentícios Salgados</input><br>
 					<input type=radio value="animacao">Animação</input><br>
 					<input type=radio value="artesanal">Artesanal</input><br>
 					<input type=radio value="artigosdefesta">Artigos de Festa</input><br>
