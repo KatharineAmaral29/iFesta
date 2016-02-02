@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<%@page import="org.apache.catalina.ant.SessionsTask"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -61,6 +62,25 @@
         </nav><!--/nav-->   
     </header><!--/header-->
 	
+	<%
+String palavra = request.getParameter("palavra");
+
+String frase = (String)session.getAttribute("frase");
+
+if(palavra == null || frase == null){
+frase = "";}
+
+frase = frase + " " + palavra;
+session.setAttribute("frase", frase) ;
+%>
+	
+	<TABLE BORDER=4>
+		<TR><TH>Item</TH><TH>Descrição</TH><TH>Quantidade</TH></TR>
+		<% for (int i = 0; i <= session.meuCarrinho().getQuantidadeDeServico(); i++) { %>
+			<TR><TD><input type="text" value="${sessionScope.meuCarrinho().getItem(i).getNome()}"></TD><TD><input type="text" value="${sessionScope.meuCarrinho().getItem(i).getDescricao()}"></TD><TD><input type="text" value="${sessionScope.meuCarrinho().getItem(i).getQuantidade()}"></TD></TR> 
+		<% } %>
+	</TABLE>
+
     <section id="bottom">
     </section><!--/#bottom-->
 	
