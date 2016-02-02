@@ -1,5 +1,8 @@
 DONE:
 Adicionar todos os campos de Fornecedor.java com getters e setters
+Fazer estrutura da página promocoes
+Colocar dados do BD na página promocoes
+
 
 TO DO:
 Terminar ConnectionFactory
@@ -24,12 +27,10 @@ Fazer estrutura da página criar-evento
 Fazer estrutura da página inicial-cliente
 Fazer estrutura da página inicial-empresa
 Fazer estrutura da página pequisa
-Fazer estrutura da página promocoes
 Fazer estrutura da página servico
 Colocar dados do BD na página carrinho
 Colocar dados do BD na página criar-evento
 Colocar dados do BD na página inicial-cliente
 Colocar dados do BD na página inicial-empresa
 Colocar dados do BD na página pesquisa
-Colocar dados do BD na página promocoes
 Colocar dados do BD na página servico

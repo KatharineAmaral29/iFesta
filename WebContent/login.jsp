@@ -68,7 +68,7 @@
 		  <button type="button" class="close" dat-dismiss="modal">&times;</button>
 			  <h4 class="modal-title">Entre ou cadastre-se!</h4>
 			</div>
-			
+
 			<div>
 				  <table border="1000000000000">
 						<tr>

@@ -60,6 +60,136 @@
         </nav><!--/nav-->
     </header><!--/header-->
 	
+	
+	    <section id="recent-works">
+        <div class="container">
+            <div class="center wow fadeInDown">
+                <h2>Promoções</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-3">
+                    <div class="recent-work-wrap">
+                        <img class="img-responsive" src="images/portfolio/recent/item1.png" alt="">
+                        <div class="overlay">
+                            <div class="recent-work-inner">
+                                <h3><a href="#">Docinhos</a> </h3>
+                                <p>Docinhos variados</p>
+                                <p>Loja de Doces 1</p>
+								<p>Apartir de 30,00 o cento</p>
+								<a class="preview" href="images/portfolio/full/item1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Mais</a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>   
+
+                <div class="col-xs-12 col-sm-4 col-md-3">
+                    <div class="recent-work-wrap">
+                        <img class="img-responsive" src="images/portfolio/recent/item2.png" alt="">
+                        <div class="overlay">
+                            <div class="recent-work-inner">
+                                <h3><a href="#">Docinhos</a> </h3>
+                                <p>Docinhos variados</p>
+                                <p>Loja de Doces 2</p>
+								<p>Apartir de 40,00 o cento</p>
+                                <a class="preview" href="images/portfolio/full/item2.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Mais</a>
+                            </div> 
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="col-xs-12 col-sm-4 col-md-3">
+                    <div class="recent-work-wrap">
+                        <img class="img-responsive" src="images/portfolio/recent/item3.png" alt="">
+                        <div class="overlay">
+                            <div class="recent-work-inner">
+                                <h3><a href="#">Salgadinhos</a> </h3>
+                                <p>Salgadinhos variados</p>
+                                <p>Loja de Salgados 1</p>
+								<p>Apartir de 40,00 o cento</p>
+                                <a class="preview" href="images/portfolio/full/item3.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Mais</a>
+							</div> 
+                        </div>
+                    </div>
+                </div>   
+
+                <div class="col-xs-12 col-sm-4 col-md-3">
+                    <div class="recent-work-wrap">
+                        <img class="img-responsive" src="images/portfolio/recent/item4.png" alt="">
+                        <div class="overlay">
+                            <div class="recent-work-inner">
+								<h3><a href="#">Salgadinhos</a> </h3>
+                                <p>Salgadinhos variados</p>
+                                <p>Loja de Salgados 2</p>
+								<p>Apartir de 35,00 o cento</p>
+                                <a class="preview" href="images/portfolio/full/item4.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Mais</a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>   
+                
+                <div class="col-xs-12 col-sm-4 col-md-3">
+                    <div class="recent-work-wrap">
+                        <img class="img-responsive" src="images/portfolio/recent/item5.png" alt="">
+                        <div class="overlay">
+                            <div class="recent-work-inner">
+								<h3><a href="#">Espaço de Eventos</a> </h3>
+                                <p>Espaço de Eventos 1</p>
+                                <p>Espaço 1</p>
+								<p>Apartir de 800,00 por 4 horas</p>
+                                <a class="preview" href="images/portfolio/full/item5.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Mais</a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>   
+
+                <div class="col-xs-12 col-sm-4 col-md-3">
+                    <div class="recent-work-wrap">
+                        <img class="img-responsive" src="images/portfolio/recent/item6.png" alt="">
+                        <div class="overlay">
+                            <div class="recent-work-inner">
+								<h3><a href="#">Bolo artístico</a> </h3>
+                                <p>Bolo artístico diversos temas</p>
+                                <p>Doceria 1</p>
+								<p>Apartir de 100,00 para 40 pessoas</p>
+                                <a class="preview" href="images/portfolio/full/item6.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Mais</a>
+							</div> 
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="col-xs-12 col-sm-4 col-md-3">
+                    <div class="recent-work-wrap">
+                        <img class="img-responsive" src="images/portfolio/recent/item7.png" alt="">
+                        <div class="overlay">
+                            <div class="recent-work-inner">
+								<h3><a href="#">Espaço de Eventos</a> </h3>
+                                <p>Espaço de Eventos 2</p>
+                                <p>Espaço 2</p>
+								<p>Apartir de 1000,00 por 4 horas</p>
+                                <a class="preview" href="images/portfolio/full/item7.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Mais</a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>   
+
+                <div class="col-xs-12 col-sm-4 col-md-3">
+                    <div class="recent-work-wrap">
+                        <img class="img-responsive" src="images/portfolio/recent/item8.png" alt="">
+                        <div class="overlay">
+                            <div class="recent-work-inner">
+								<h3><a href="#">Espaço de Eventos</a> </h3>
+                                <p>Espaço de Eventos 3</p>
+                                <p>Espaço 3</p>
+								<p>Apartir de 2800,00 por 4 horas</p>
+                                <a class="preview" href="images/portfolio/full/item8.png" rel="prettyPhoto"><i class="fa fa-eye"></i> Mais</a>                            </div> 
+                        </div>
+                    </div>
+                </div>   
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </section><!--/#recent-works-->
+	
     <section id="bottom">
     </section><!--/#bottom-->
 	
