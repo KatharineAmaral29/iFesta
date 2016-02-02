@@ -24,8 +24,7 @@ public class EventoDAO {
 	            System.out.println(e1.getMessage());
 	        }
 	    }
-	    
-	    
+	  
 	    public void insertEvento(Evento ev) {
 
 	        try {

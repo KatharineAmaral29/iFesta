@@ -4,6 +4,10 @@ public class Servico {
 	private int idfornecedor;
 	private String nome_servico = new String();
 	private String descricao = new String();
+	private String regras = new String();
+	private String preco = new String();
+	private String tipo = new String();
+	private String eventos = new String(); 
 	
 	Servico(int idservico,int idfornecedor, String nome, String descricao){
 		setIdservico(idservico);
@@ -41,5 +45,28 @@ public class Servico {
 	public void setDescricao(String descricao){
 		this.descricao = descricao;
 	}
-
+	public String getRegras(){
+		return regras;
+	}
+	public void setRegras(String regras){
+		this.regras=regras;
+	}
+	public String getPreco(){
+		return preco;
+	}
+	public void setPreco(String preco){
+		this.preco=preco;
+	}
+	public String getTipo(){
+		return tipo;
+	}
+	public void set (String tipo){
+		this.tipo=tipo;
+	}
+	public String getEventos(){
+		return eventos;
+	}
+	public void set (String eventos){
+		this.eventos=eventos;
+	}	
 }
