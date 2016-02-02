@@ -63,7 +63,52 @@
 	
     <section id="bottom">
     </section><!--/#bottom-->
+    
+    <div>
+    <img class="img-responsive" src="images/portfolio/recent/item1.png" alt="">
+    <label><h1>Docinhos variados</h1></label>
+	<h2>Gênero: Alimentício Doce</h2>
+	<h2>Docinhos variados</h2>
+    <h2>Loja de Doces 1</h2>
+	<h2>30,00 o cento</h2> <br>
 	
+	<label><h3>Este tipo de serviço combina com:</h3></label>
+					<input type=checkbox name="evento" value="aniversarioadulto" checked>Aniversário Adulto</input><br>
+					<input type=checkbox name="evento" value="aniversarioinfantil" checked>Aniversário Infantil</input><br>
+					<input type=checkbox name="evento" value="bodas" checked>Bodas</input><br>
+					<input type=checkbox name="evento" value="carnaval" checked>Carnaval</input><br>
+					<input type=checkbox name="evento" value="casamento" checked>Casamento</input><br>
+					<input type=checkbox name="evento" value="chabar" checked>Chá Bar</input><br>
+					<input type=checkbox name="evento" value="chadebaby" checked>Chá De Baby</input><br>
+					<input type=checkbox name="evento" value="chadefralda" checked>Chá De Fralda</input><br>
+					<input type=checkbox name="evento" value="chalingerie" checked>Chá Lingerie</input><br>
+					<input type=checkbox name="evento" value="chadepanela" checked>Chá De Panela</input><br>
+					<input type=checkbox name="evento" value="churrasco">Churrasco</input><br>
+					<input type=checkbox name="evento" value="coffeebreak">Coffee Break</input><br>
+					<input type=checkbox name="evento" value="confraternizacao" checked>Confraternização</input><br>
+					<input type=checkbox name="evento" value="descasamento" checked>Descasamento</input><br>
+					<input type=checkbox name="evento" value="despedidadesolteiro" checked>Despedida De Solteiro</input><br>
+					<input type=checkbox name="evento" value="diadascriancas" checked>Dia Das Crianças</input><br>
+					<input type=checkbox name="evento" value="diadasmaes" checked>Dia Das Mães</input><br>
+					<input type=checkbox name="evento" value="diadosnamorados" checked>Dia Dos Namorados</input><br>
+					<input type=checkbox name="evento" value="diadospais" checked>Dia Dos Pais</input><br>
+					<input type=checkbox name="evento" value="feijjoada">Feijoada</input><br>
+					<input type=checkbox name="evento" value="festaafantasia" checked>Festa A Fantasia</input><br>
+					<input type=checkbox name="evento" value="festabeneficente" checked>Festa Beneficente</input><br>
+					<input type=checkbox name="evento" value="festaempresarial" checked>Festa Empresarial</input><br>
+					<input type=checkbox name="evento" value="festajunina">Festa Junina</input><br>
+					<input type=checkbox name="evento" value="festasreligiosas">Festas Religiosas</input><br>
+					<input type=checkbox name="evento" value="festatematica" checked>Festa Temática</input><br>
+					<input type=checkbox name="evento" value="formatura" checked>Formatura</input><br>
+					<input type=checkbox name="evento" value="halloween" checked>Halloween</input><br>
+					<input type=checkbox name="evento" value="natal" checked>Natal</input><br>
+					<input type=checkbox name="evento" value="noivado" checked>Noivado</input><br>
+					<input type=checkbox name="evento" value="pascoa" checked>Páscoa</input><br>
+					<input type=checkbox name="evento" value="reveillon" checked>Reveillón</input><br>
+					<input type=checkbox name="evento" value="velorio">Velório</input><br>
+	
+
+		
     <footer id="footer" class="midnight-blue">
         <div class="container text-center">
 			<ul>
