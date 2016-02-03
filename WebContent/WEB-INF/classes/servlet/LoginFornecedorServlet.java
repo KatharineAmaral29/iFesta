@@ -11,7 +11,7 @@ import servlet.*;
 
 @WebServlet("/LoginFornecedorServlet")
 public class LoginFornecedorServlet  extends HttpServlet {
-	public String login = "KatharineFornecedor";
+	public String login = "katharine@fornecedor.com";
 	public String senha = "12345";
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException {	
