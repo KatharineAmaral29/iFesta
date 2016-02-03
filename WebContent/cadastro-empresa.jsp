@@ -130,31 +130,31 @@
     	<div>
     		<form action="" method="post" id="validate">
     			<label>Nome Fantasia* </label>
-				<input name ="nomefantasia" type="text" class="g">    		
+				<input name ="nomefantasia" type="text" class="g"><br>    		
     			<label>Razão Social* </label>
-				<input name ="razaosocial" type="text" class="g">
+				<input name ="razaosocial" type="text" class="g"><br>
 				<label>CNPJ*</label>
-				<input name ="cnpj" type="text" class="g">
+				<input name ="cnpj" type="text" class="g"><br>
 				<label>Endereço*</label>
-				<input name ="endereco" type="text" class="g">
+				<input name ="endereco" type="text" class="g"><br>
 				<label>Número*</label>
-				<input name ="numero" type="text" class="g">
+				<input name ="numero" type="text" class="g"><br>
 				<label>Cidade*</label>
-				<input name ="cidade" type="text" class="g">
+				<input name ="cidade" type="text" class="g"><br>
 				<label>Telefone 1*</label>
-				<input name ="telefone1" type="text" class="g">
+				<input name ="telefone1" type="text" class="g"><br>
 				<label>Telefone 2</label>
-				<input name ="telefone2" type="text" class="g">
+				<input name ="telefone2" type="text" class="g"><br>
 				<label>E-mail*</label>
-				<input name ="email" type="text" class="g">
+				<input name ="email" type="text" class="g"><br>
 				<label>Senha*</label>
-				<input name ="senha" type="password" class="g">
+				<input name ="senha" type="password" class="g"><br>
 				<label>Plano*</label>
 				<SELECT name=“plano">
 					<OPTION>Plano 1</OPTION>
 					<OPTION>Plano 2</OPTION>
 					<OPTION>Plano 3</OPTION>
-				</SELECT>
+				</SELECT><br>
 				
     			<input type="submit" value="Enviar">
     		</form>

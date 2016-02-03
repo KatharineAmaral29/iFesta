@@ -61,14 +61,22 @@
     </header><!--/header-->
 
     <div>
+    <table>
+	<tr><td>
     <img src="images/portfolio/recent/item1.png" alt="">
-    <label><h1>Docinhos variados</h1></label>
-	<h2>Gênero: Alimentício Doce</h2>
-	<h2>Docinhos variados</h2>
-    <h2>Loja de Doces 1</h2>
-	<h2>30,00 o cento</h2> <br>
+    </td><td>
+    <h3><b>Docinhos variados</b></h3>
+	<h3>Gênero: Alimentício Doce</h3>
+	<h3>Docinhos variados</h3>
+    <h3>Loja de Doces 1</h3>
+	<h3>30,00 o cento</h3> <br>
+	</td>
+	</table>
+	</div>
 	
-	<label><h3>Este tipo de serviço combina com:</h3></label>
+	<label><h3><b>Este tipo de serviço combina com:</h3></b></label><br>
+		<table>
+		<tr><td>
 					<input type=checkbox name="evento" value="aniversarioadulto" checked>Aniversário Adulto</input><br>
 					<input type=checkbox name="evento" value="aniversarioinfantil" checked>Aniversário Infantil</input><br>
 					<input type=checkbox name="evento" value="bodas" checked>Bodas</input><br>
@@ -80,6 +88,7 @@
 					<input type=checkbox name="evento" value="chalingerie" checked>Chá Lingerie</input><br>
 					<input type=checkbox name="evento" value="chadepanela" checked>Chá De Panela</input><br>
 					<input type=checkbox name="evento" value="churrasco">Churrasco</input><br>
+		</td><td>
 					<input type=checkbox name="evento" value="coffeebreak">Coffee Break</input><br>
 					<input type=checkbox name="evento" value="confraternizacao" checked>Confraternização</input><br>
 					<input type=checkbox name="evento" value="descasamento" checked>Descasamento</input><br>
@@ -91,6 +100,7 @@
 					<input type=checkbox name="evento" value="feijjoada">Feijoada</input><br>
 					<input type=checkbox name="evento" value="festaafantasia" checked>Festa A Fantasia</input><br>
 					<input type=checkbox name="evento" value="festabeneficente" checked>Festa Beneficente</input><br>
+		</td><td>
 					<input type=checkbox name="evento" value="festaempresarial" checked>Festa Empresarial</input><br>
 					<input type=checkbox name="evento" value="festajunina">Festa Junina</input><br>
 					<input type=checkbox name="evento" value="festasreligiosas">Festas Religiosas</input><br>
@@ -102,6 +112,8 @@
 					<input type=checkbox name="evento" value="pascoa" checked>Páscoa</input><br>
 					<input type=checkbox name="evento" value="reveillon" checked>Reveillón</input><br>
 					<input type=checkbox name="evento" value="velorio">Velório</input><br>
+		</td></tr>
+		</table>
 	</div>
 
     <section id="bottom">

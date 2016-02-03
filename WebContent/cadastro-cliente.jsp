@@ -61,66 +61,66 @@
             </div><!--/.container-->
         </nav><!--/nav-->     
     </header><!--/header-->
-
-	<section>
-    	 <div class="formulario">  
-            <form action="CadastroCliente" method="get" id="validate" role="form">                                      
+ 
+            <form action="CadastroCliente" method="get" id="validate" role="form">   
+            	<div class="form-group">                                   
                 <label>Nome Completo*</label>
-                <input name="nomecompleto" type="text" class="g">
+                <input name="nomecompleto" type="text" class="g"><br>
 
                 <label>E-mail*</label>
-                <input name="email" type="text" class="g">
+                <input name="email" type="text" class="g"><br>
 
                 <label>Senha*</label>
-                <input name="password" type="password" class="g">
+                <input name="password" type="password" class="g"><br>
 
                 <label>CPF*</label>
-                <input name="cpf" type="text" class="g">
+                <input name="cpf" type="text" class="g"><br>
 
                 <label>Sexo*</label>
                 <select name="sexo" class="m" id="sexo">
                   <option>Feminino</option>
                   <option>Masculino</option>
-                </select>
+                </select><br>
 
                 <label>Data de Nascimento*</label>
-                <input name="data" type="text" class="p" id="data">
+                <input name="data" type="text" class="p" id="data"><br>
 
+				</div>
+            	<div class="form-group">
                 <label>Telefone*</label>
-                <input name="telefone" type="text" class="p" id="telefone">
+                <input name="telefone" type="text" class="p" id="telefone"><br>
 
                 <label>Celular</label>
-                <input name="celular" type="text" class="p" id="celular">
+                <input name="celular" type="text" class="p" id="celular"><br>
 
                 <label>CEP</label>
-                <input name="cep" type="text" class="p" id="cep">
+                <input name="cep" type="text" class="p" id="cep"><br>
 
                 <label>Endereço*</label>
-                <input name="endereco" type="text" class="g" id="endereco">
+                <input name="endereco" type="text" class="g" id="endereco"><br>
                 
                 <label>Número*</label>
-                <input name="numero" type="text" class="pp" id="numero">
+                <input name="numero" type="text" class="pp" id="numero"><br>
              
                 <label>Complemento</label>
-                <input name="complemento" type="text" class="m">
+                <input name="complemento" type="text" class="m"><br>
                 
                 <label>Cidade*</label>
-                <input name="cidade" type="text" class="p" id="cidade">
+                <input name="cidade" type="text" class="p" id="cidade"><br>
 
                 <label>Estado*</label>
                 <select name="estado" class="p" id="estado">
                     <option value="CE">Ceará</option>
-                </select>
+                </select><br>
 
                 <label>Pais*</label>
                 <select name="pais" class="p" id="pais">
                     <option value="Brasil" selected>Brasil</option>
-                </select>
+                </select><br>
                 <input type="submit" value="Enviar">
+                </div>
             </form>
-    	</div><!--/formulario-->      
-	</section>
-
+	
     <section id="bottom">
     </section><!--/#bottom-->
 	

@@ -52,7 +52,7 @@
                                 </form>
                         </div>
                         <li><a href="promocoes.jsp">Promoções</a></li>
-                        <li><a href="login.jsp">Entrar</a></li>          
+                        <li><a href="criar-evento.jsp">Criar Evento</a></li>          
 						<li><a class="navbar-brand" href="carrinho.jsp"><img src="images/carrinho.png"></a><br/>
 					</ul>
                 </div>
@@ -61,18 +61,23 @@
     </header><!--/header-->
 	
 	<div>
+		<table>
+		<tr><td>
 		<img src="images/portfolio/profile/Kath.jpg" alt="">
-	    <h2><b>Katharine Amaral</b></h2>
-		<h2>E-mail: katharines2@hotmail.com</h2>
-		<h2>CPF: 056.870.823-79</h2>
-		<h2>Rua Padre Pedro de Alencar, 2013</h2>
-		<h2>Messejana, Fortaleza - Ceará</h2>
-		<h2>CEP: 60.840-280</h2>
-		<h2>Telefone: (85) 3276-4224</h2>
-		<h2>Celular: (85) 99942-3173</h2>
-		<h2>Data de Nascimento: 29/07/1994</h2>
+		</td><td>
+	    <h3><b>Katharine Amaral</b></h3>
+		<h3>E-mail: katharines2@hotmail.com</h3>
+		<h3>CPF: 056.870.823-79</h3>
+		<h3>Rua Padre Pedro de Alencar, 2013</h3>
+		<h3>Messejana, Fortaleza - Ceará</h3>
+		<h3>CEP: 60.840-280</h3>
+		<h3>Telefone: (85) 3276-4224</h3>
+		<h3>Celular: (85) 99942-3173</h3>
+		<h3>Data de Nascimento: 29/07/1994</h3>
 		
 		<input type=submit value="Atualizar Dados">
+		</td>
+		</table>
 	</div>
 	
     <section id="bottom">

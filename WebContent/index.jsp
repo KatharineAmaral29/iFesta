@@ -162,10 +162,6 @@
         </a>
     </section><!--/#main-slider-->
 	
-	<div align=center><a href='http://contador.s12.com.br'>
-	<img src='http://contador.s12.com.br/img-DYy1d64C-2.gif' border='0' alt='contador de acesso grátis'></a>
-	<script type='text/javascript' src='http://contador.s12.com.br/ad.js?id=DYy1d64C'></script></div>
-
     <section id="bottom">
     </section><!--/#bottom-->
 	

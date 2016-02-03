@@ -62,24 +62,21 @@
         </nav><!--/nav-->
         
     </header><!--/header-->
-
-	<section>
-    	 <div class="formulario">  
+  
             <form action="CadastroServicoServlet" method="post" id="validate">                          
                 <label>Título do Serviço*</label>
-                <input name="nomeservico" type="text" class="g">
+                <input name="nomeservico" type="text" class="g"><br>
 
                 <label>Descrição*</label>
-                <input name="descricao" type="text" class="g">
+                <input name="descricao" type="text" class="g"><br>
                 
                 <label>Regras/Observações</label>
-                <input name="regras" type="text" class="g">
+                <input name="regras" type="text" class="g"><br>
 
                 <label>Preço*</label>
-                <input name="preco" type="text" class="g">
+                <input name="preco" type="text" class="g"><br>
 
-                <label>Tipo de Serviço*</label><br><br>
-<<<<<<< HEAD
+                <label>Tipo de Serviço*</label><br>
 					<input type="radio" value="doces">Alimentícios Doces</input><br>                
 					<input type="radio" value="salgados">Alimentícios Salgados</input><br>
 					<input type=radio value="animacao">Animação</input><br>
@@ -98,7 +95,6 @@
 					<input type=radio value="someiluminacao">Som e Iluminação</input><br>					
 					<input type=radio value="veiculos">Veículos</input><br>
 					<input type=radio value="vestuario">Vestuário</input><br>					
-=======
 					<input type=radio name="servico" value="doces">Alimentícios Doces</input><br>                
 					<input type=radio name="servico" value="salgados">Alimentícios Salgados</input><br>
 					<input type=radio name="servico" value="animacao">Animação</input><br>
@@ -117,7 +113,6 @@
 					<input type=radio name="servico" value="someiluminacao">Som e Iluminação</input><br>					
 					<input type=radio name="servico" value="veiculos">Veículos</input><br>
 					<input type=radio name="servico" value="vestuario">Vestuário</input><br>					
->>>>>>> origin/master
 
                 <label>Tipo de Evento*</label><br><br>
 					<input type=checkbox name="evento" value="aniversarioadulto">Aniversário Adulto</input><br>
@@ -154,11 +149,8 @@
 					<input type=checkbox name="evento" value="reveillon">Reveillón</input><br>
 					<input type=checkbox name="evento" value="velorio">Velório</input><br>
 
-                <input type="submit" value="Enviar">
-                
+                <input type="submit" value="Enviar">          
             </form>
-    	</div><!--/formulario-->      
-	</section>	
 		
     <section id="bottom">
     </section><!--/#bottom-->
