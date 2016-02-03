@@ -61,11 +61,10 @@
     </header><!--/header-->
 
 	
-    <section id="bottom">
-    </section><!--/#bottom-->
+
     
     <div>
-    <img class="img-responsive" src="images/portfolio/recent/item1.png" alt="">
+    <img src="images/portfolio/recent/item1.png" alt="">
     <label><h1>Docinhos variados</h1></label>
 	<h2>Gênero: Alimentício Doce</h2>
 	<h2>Docinhos variados</h2>
@@ -108,6 +107,8 @@
 					<input type=checkbox name="evento" value="velorio">Velório</input><br>
 	</div>
 
+    <section id="bottom">
+    </section><!--/#bottom-->
 		
     <footer id="footer" class="midnight-blue">
         <div class="container text-center">

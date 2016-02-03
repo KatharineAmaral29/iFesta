@@ -77,7 +77,7 @@
                                 <p>Docinhos variados</p>
                                 <p>Loja de Doces 1</p>
 								<p>Apartir de 30,00 o cento</p>
-								<a class="preview" href="servico.jsp" rel="prettyPhoto"><i class="fa fa-eye"></i> Mais</a>
+								<a href="servico.jsp" ><i class="fa fa-eye"></i> Mais</a>
                             </div> 
                         </div>
                     </div>
