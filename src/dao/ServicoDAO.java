@@ -16,7 +16,7 @@ public class ServicoDAO {
     private ResultSet rs;
 
 
-	    private ServicoDAO() {
+	    public ServicoDAO() {
 	        try {
 	            Class.forName("org.postgresql.Driver");
 	            con = DriverManager.getConnection("jdbc:postgresql://localhost/ifesta", "postgres", "12345");

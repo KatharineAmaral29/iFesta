@@ -15,7 +15,7 @@ public class EventoDAO {
     private ResultSet rs;
 
 
-	    EventoDAO() {
+	    public EventoDAO() {
 	        try {
 	            Class.forName("org.postgresql.Driver");
 	            con = DriverManager.getConnection("jdbc:postgresql://localhost/ifesta", "postgres", "12345");

@@ -1,5 +1,5 @@
 package dao;
-import modelo.*;
+
 
 public class LoginDAO {
 
@@ -7,13 +7,15 @@ public class LoginDAO {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public  Cliente validate(String login, String senha){
+	public  boolean validate(String login, String senha){
 		ClienteDAO cdao = new ClienteDAO();
-		Cliente c = new Cliente();
+		boolean res = false;
 		
-		c = cdao.findCliente(login, senha);		
+		if(cdao.findCliente(login, senha) != null){
+			res = true;
+		}
 		
-		return c;
+		return res;
 	}
 
 }

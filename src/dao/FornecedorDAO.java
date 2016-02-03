@@ -17,7 +17,7 @@ public class FornecedorDAO {
     private ResultSet rs;
 
 
-	    private FornecedorDAO() {
+	    public FornecedorDAO() {
 	        try {
 	            Class.forName("org.postgresql.Driver");
 	            con = DriverManager.getConnection("jdbc:postgresql://localhost/ifesta", "postgres", "12345");
