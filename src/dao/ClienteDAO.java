@@ -1,8 +1,11 @@
 package dao;
 
 import java.sql.*;
+import java.util.ArrayList;
 
+import conexao.ConectionFactory;
 import modelo.Cliente;
+import modelo.Fornecedor;
 
 public class ClienteDAO {
 
@@ -82,50 +85,72 @@ public class ClienteDAO {
 		}
 	}
 	
-	public boolean inserirCliente(Cliente c) {
-		String clausula = "INSERT INTO cliente(cpf,nome_cliente,senha_cliente,email_cliente) "
-				+ "VALUES(?,?,?,?)";
-		
-		try {
-			
-			Connection con = conexao;
-			ps = con.prepareStatement(clausula);
-			ps.setString(1, c.getCpf());
-			ps.setString(2, c.getNomeCliente());
-			ps.setString(3, c.getSenha_cliente());
-			ps.setString(4, c.getLogin_cliente());
-			ps.execute();
-			System.out.println("executou");
-			ps.close();
-			con.close();
-			return true;
-		}catch (SQLException e1) {
-			return false;
-		} catch (Exception e1) {
-			return false;
-		}
-				
-	}
+	public ArrayList<Cliente> findCliente() { //Retornará um Array de todos os clientes
+        ArrayList<Cliente> clientes = new ArrayList<>();
+        Cliente c = new Cliente();
+        
+        String clausula = "select * from cliente";
+        try {
+        	Connection con = conexao;
+        	ps = con.prepareStatement(clausula);
+            rs = ps.executeQuery();
+            if (rs.next()) {
+				c.preencheCliente(Integer.parseInt(rs.getString("idcliente")),
+					    rs.getString("nome_cliente"),
+					    rs.getString("cpf"),
+					    rs.getString("email_cliente"),
+					    rs.getString("senha_cliente"),
+					    rs.getString("rua_cliente"),
+					    rs.getString("numero_cliente"),
+					    rs.getString("complemento_cliente"),
+					    rs.getString("cidade_cliente"),
+					    rs.getString("cep_cliente"),
+					    rs.getString("telefone_cliente_1"),
+					    rs.getString("telefone_cliente_2"),
+					    rs.getString("sexo_cliente"),
+					    rs.getString("estado_cliente"),
+					    rs.getString("pais_cliente"));
+            	
+            	clientes.add(c);	                
+            }
+        } catch (SQLException e1) {
+            System.out.println(e1.getMessage());
+        }
+        return clientes; 
+    }
+	
 	public Cliente findCliente(String cpf) {
 
-		Cliente c = new Cliente();
-		String clausula = "select * from cliente where cpf = '?'";
-		try {
-
-			Connection con = conexao;
-			ps = con.prepareStatement(clausula);
-			ps.setString(1, c.getCpf());
-			rs = ps.executeQuery();
-			if (rs.next()) {
-				c.setNomeCliente(rs.getString("nome_cliente"));
-				c.setIdcliente(Integer.parseInt(rs.getString("idcliente")));
-				c.setLogin_cliente(rs.getString("email_cliente"));;
+        Cliente c = new Cliente();
+        
+        String clausula = "select * from cliente where cpf = ?";
+        try {
+        	Connection con = conexao;
+        	ps = con.prepareStatement(clausula);
+        	ps.setString(1, cpf);
+            rs = ps.executeQuery();
+            if (rs.next()) {
+				c.preencheCliente(Integer.parseInt(rs.getString("idcliente")),
+					    rs.getString("nome_cliente"),
+					    rs.getString("cpf"),
+					    rs.getString("email_cliente"),
+					    rs.getString("senha_cliente"),
+					    rs.getString("rua_cliente"),
+					    rs.getString("numero_cliente"),
+					    rs.getString("complemento_cliente"),
+					    rs.getString("cidade_cliente"),
+					    rs.getString("cep_cliente"),
+					    rs.getString("telefone_cliente_1"),
+					    rs.getString("telefone_cliente_2"),
+					    rs.getString("sexo_cliente"),
+					    rs.getString("estado_cliente"),
+					    rs.getString("pais_cliente"));
 
 			}
 		} catch (SQLException e1) {
 			System.out.println(e1.getMessage());
 		}
-		return c; //Alterar para Array de Clientes, pois irá retornar uma lista de clientes
+		return c;
 	}
 	public Cliente findCliente(String login, String senha){
 		Cliente c = new Cliente();

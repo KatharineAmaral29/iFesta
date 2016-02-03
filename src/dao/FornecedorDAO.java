@@ -71,66 +71,72 @@ public class FornecedorDAO {
 	        	pstmt = con.prepareStatement(clausula);
 	            rs = pstmt.executeQuery();
 	            if (rs.next()) {
-	            	f.preencherFornecedor(idfornecedor, 
-	            			nome_fantasia, 
-	            			razao_social, 
-	            			cnpj, 
-	            			rua_fornecedor, 
-	            			cep_fornecedor, 
-	            			numero_fornecedor, 
-	            			cidade_fornecedor, 
-	            			telefone1_fornecedor, 
-	            			telefone2_fornecedor, 
-	            			email_fornecedor, 
-	            			senha_fornecedor);
-	            	(rs.getInt("id_servico"), 
-	            					rs.getInt("idfornecedor"), 
-	            					rs.getString("nome_servico"), 
-	            					rs.getString("descricao_servico"), 
-	            					rs.getInt("tipo_servico"), 
-	            					rs.getFloat("preco_servico"), 
-	            					rs.getString("regras_servico"));
-	            						
-	            	servicos.add(s);
-	                
+	            	f.preencherFornecedor(rs.getInt("id_fornecedor"), 
+	            			rs.getString("nome_fantasia"), 
+	            			rs.getString("razao_social"), 
+	            			rs.getString("cnpj"), 
+	            			rs.getString("rua_fornecedor"), 
+	            			rs.getString("cep_fornecedor"), 
+	            			rs.getString("numero_fornecedor"), 
+	            			rs.getString("cidade_fornecedor"), 
+	            			rs.getString("telefone1_fornecedor"), 
+	            			rs.getString("telefone2_fornecedor"), 
+	            			rs.getString("email_fornecedor"), 
+	            			rs.getString("senha_fornecedor"),
+	            			rs.getString("bairro_fornecedor"),
+	            			rs.getString("estado_fornecedor"),
+	            			rs.getString("pais_fornecedor"));
+	            	
+	            	fornecedores.add(f);	                
 	            }
 	        } catch (SQLException e1) {
 	            System.out.println(e1.getMessage());
 	        }
-	        return servicos; 
+	        return fornecedores; 
 	    }
-	    public Fornecedor findFornecedor(){
+	    public Fornecedor findFornecedor(int cnpj){ 
 	    	Fornecedor f = new Fornecedor();
+	    	
+	    	String clausula = "select * from fornecedor where cnpj = ?";
+	        try {
+	        	pstmt = con.prepareStatement(clausula);
+	        	pstmt.setInt(1, cnpj);
+	            rs = pstmt.executeQuery();
+	            if (rs.next()) {
+	            	f.preencherFornecedor(rs.getInt("id_fornecedor"), 
+	            			rs.getString("nome_fantasia"), 
+	            			rs.getString("razao_social"), 
+	            			rs.getString("cnpj"), 
+	            			rs.getString("rua_fornecedor"), 
+	            			rs.getString("cep_fornecedor"), 
+	            			rs.getString("numero_fornecedor"), 
+	            			rs.getString("cidade_fornecedor"), 
+	            			rs.getString("telefone1_fornecedor"), 
+	            			rs.getString("telefone2_fornecedor"), 
+	            			rs.getString("email_fornecedor"), 
+	            			rs.getString("senha_fornecedor"),
+	            			rs.getString("bairro_fornecedor"),
+	            			rs.getString("estado_fornecedor"),
+	            			rs.getString("pais_fornecedor"));	                
+	            }
+	        } catch (SQLException e1) {
+	            System.out.println(e1.getMessage());
+	        }
 	    	
 	    	return f;
 	    }
-	    public boolean updateServico(Servico s, int tipo_update) { //tipo 1 é nome, tipo 2 é descrição e tipo 3 é tipo de evento
+	    public boolean updateFornecedor(Fornecedor f) { 
 	        boolean sucesso = false;
-	        String clausula = "update servico set ? = ? where id_servico = ?";
+	        String clausula = "update fornecedor set ? = ? where id_fornecedor = ?";
 
 	        try {
 	            pstmt = con.prepareStatement(clausula);
-	            if(tipo_update == 1){
-	            	pstmt.setString(1, "nome_servico");
-	            	pstmt.setString(2, s.getNomeServico());
-	            	pstmt.setInt(3, s.getIdservico());
-
-	            }
-	            else if(tipo_update == 2){
-	            	pstmt.setString(1, "descricao_servico");
-	            	pstmt.setString(2, s.getDescricao());
-	            	pstmt.setInt(3, s.getIdservico());
-
-	            }
-	            else if(tipo_update == 3){
-	            	pstmt.setString(1, "tipo_servico");
-	            	pstmt.setInt(2, s.getTipo_servico());
-	            	pstmt.setInt(3, s.getIdservico());
-	            	
-	            }
-            	pstmt.close();
-            	con.close();
+	            pstmt.setString(1, "nome_fantasia");
+	            pstmt.setString(2, f.getNome_fantasia());
+	            pstmt.setInt(3, f.getIdfornecedor());
 	            pstmt.executeUpdate(clausula);
+            	pstmt.close();
+            	con.close();	            
 	            sucesso = true;
 	        } catch (SQLException e1) {
 	            System.out.println(e1.getMessage());
@@ -138,14 +144,16 @@ public class FornecedorDAO {
 	        return sucesso;
 	    }
 
-	    public boolean deleteServico(Servico s) {
+	    public boolean deleteFornecedor(Fornecedor f) {
 	        boolean sucesso = false;
 
-	        String clausula = "delete from servico where id_servico = ?";
+	        String clausula = "delete from fornecedor where id_fornecedor = ?";
 	        try {
 	        	pstmt = con.prepareStatement(clausula);
-	        	pstmt.setInt(1, s.getIdservico());
+	        	pstmt.setInt(1, f.getIdfornecedor());
 	            pstmt.executeUpdate(clausula);
+	            pstmt.close();
+	            con.close();
 	        } catch (SQLException e1) {
 	            System.out.println(e1.getMessage());
 	        }

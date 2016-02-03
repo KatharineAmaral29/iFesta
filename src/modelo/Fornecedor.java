@@ -23,7 +23,8 @@ public class Fornecedor {
 	
 	public void preencherFornecedor(int idfornecedor, String nome_fantasia, String razao_social, String cnpj, String rua_fornecedor,
 			String cep_fornecedor, String numero_fornecedor, String cidade_fornecedor, String telefone1_fornecedor,
-			String telefone2_fornecedor, String email_fornecedor, String senha_fornecedor) {
+			String telefone2_fornecedor, String email_fornecedor, String senha_fornecedor, String bairro_fornecedor,
+			String estado_fornecedor, String pais_fornecedor) {
 		
 		this.idfornecedor = idfornecedor;
 		this.nome_fantasia = nome_fantasia;
@@ -37,6 +38,9 @@ public class Fornecedor {
 		this.telefone2_fornecedor = telefone2_fornecedor;
 		this.email_fornecedor = email_fornecedor;
 		this.senha_fornecedor = senha_fornecedor;
+		this.bairro_fornecedor = bairro_fornecedor;
+		this.estado_fornecedor = estado_fornecedor;
+		this.pais_fornecedor = pais_fornecedor;
 	}
 
 	public int getIdfornecedor() {
