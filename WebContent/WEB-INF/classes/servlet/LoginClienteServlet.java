@@ -35,8 +35,8 @@ public class LoginServlet extends HttpServlet {
 	          
 	    out.close();  
 	    }
-=======
-	public String login = "Katharine";
+
+	public String login = "katharines2@hotmail.com";
 	public String senha = "12345";
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException {	
