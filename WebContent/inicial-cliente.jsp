@@ -62,15 +62,15 @@
 	
 	<div>
 		<img src="images/portfolio/profile/Kath.jpg" alt="">
-	    <label><h1>Katharine Amaral</h1></label><br>
-		<h2>e-mail: katharines2@hotmail.com</h2><br>
-		<h2>CPF: 056.870.823-79</h2><br>
-		<h2>Rua Padre Pedro de Alencar, 2013</h2><br>
-		<h2>Messejana, Fortaleza - Ceará</h2><br>
-		<h2>CEP: 60.840-280</h2><br>
-		<h2>Telefone: (85) 3276-4224</h2><br>
-		<h2>Celular: (85) 99942-3173</h2><br>
-		<h2>Data de Nascimento: 29/07/1994</h2><br>	
+	    <h1>Katharine Amaral</h1>
+		<h2>e-mail: katharines2@hotmail.com</h2>
+		<h2>CPF: 056.870.823-79</h2>
+		<h2>Rua Padre Pedro de Alencar, 2013</h2>
+		<h2>Messejana, Fortaleza - Ceará</h2>
+		<h2>CEP: 60.840-280</h2>
+		<h2>Telefone: (85) 3276-4224</h2>
+		<h2>Celular: (85) 99942-3173</h2>
+		<h2>Data de Nascimento: 29/07/1994</h2>
 	</div>
 	
     <section id="bottom">
