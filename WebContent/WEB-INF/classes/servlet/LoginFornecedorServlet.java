@@ -21,7 +21,6 @@ public class LoginFornecedorServlet  extends HttpServlet {
 			out.println("Logado com sucesso."); //Mostra na tela que foi logado com sucesso
 			session.putValue("loginUsuario", login); //Grava a session com o Login
 			session.putValue("senhaUsuario", senha); //Grava a session com a Senha
-			out.println("<script>document.location.href='logado.jsp';</script>"); //Exibe um código javascript para redireionar ao painel
 		}
 		else{ //Se estiverem incorretos...
 			out.println("Login ou senha inválidos. <a href='java script:back()'>Voltar</a>"); //Exibe na tela e pede para voltar
