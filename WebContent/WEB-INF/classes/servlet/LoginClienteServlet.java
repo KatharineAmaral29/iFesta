@@ -13,7 +13,9 @@ import servlet.*;
 
 @WebServlet("/LoginServlet")
 public class LoginServlet extends HttpServlet {
-<<<<<<< HEAD
+	public String login = "katharines2@hotmail.com";
+	public String senha = "12345";
+
 	public void doPost(HttpServletRequest request, HttpServletResponse response)  
 	        throws ServletException, IOException {  
 	  
@@ -36,9 +38,6 @@ public class LoginServlet extends HttpServlet {
 	    out.close();  
 	    }
 
-	public String login = "katharines2@hotmail.com";
-	public String senha = "12345";
-
 	public void doGet(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException {	
 		String login_form = request.getParameter("emailc"); // Pega o Login vindo do formulário
 		String senha_form = request.getParameter("senhac"); //Pega a senha vinda do formulário
@@ -52,6 +51,5 @@ public class LoginServlet extends HttpServlet {
 			out.println("Login ou senha inválidos. <a href='java script:back()'>Voltar</a>"); //Exibe na tela e pede para voltar
 		}
 
->>>>>>> origin/master
 }
 
