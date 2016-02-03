@@ -62,8 +62,8 @@
 	
 	<div>
 		<img src="images/portfolio/profile/Kath.jpg" alt="">
-	    <h1>Katharine Amaral</h1>
-		<h2>e-mail: katharines2@hotmail.com</h2>
+	    <h2><b>Katharine Amaral</b></h2>
+		<h2>E-mail: katharines2@hotmail.com</h2>
 		<h2>CPF: 056.870.823-79</h2>
 		<h2>Rua Padre Pedro de Alencar, 2013</h2>
 		<h2>Messejana, Fortaleza - Ceará</h2>
