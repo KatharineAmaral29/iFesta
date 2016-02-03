@@ -81,16 +81,8 @@
 											<a class="navbar-brand" href=""><img src="images/login/facebook.png" align="middle"></a><br/>
 											<h3>ou</h3>
 											<div class="form-group">
-
-												<input class="form-control" type="email" id="email" placeholder="Email" name="emailc">
-											</div>
-											<div class="form-group">
-												<input class="form-control" type="password" id="senha" placeholder="Senha" name="senhac">
-
-												<input class="form-control" type="email" id="emailc" placeholder="Email" name="email">
-											</div>
-											<div class="form-group">
-												<input class="form-control" type="password" id="senhac" placeholder="Senha" name="senha">
+												<input class="form-control" type="email" id="emailc" placeholder="Email" name="emailc">
+												<input class="form-control" type="password" id="senhac" placeholder="Senha" name="senhac">
 
 											</div>
 											<div class="form-group">
@@ -114,15 +106,7 @@
 											<div class="form-group">
 
 												<input class="form-control" type="email" id="email" placeholder="Email" name="emailf">
-											</div>
-											<div class="form-group">
 												<input class="form-control" type="password" id="senha" placeholder="Senha" name="senhaf">
-
-												<input class="form-control" type="email" id="emailf" placeholder="Email" name="email">
-											</div>
-											<div class="form-group">
-												<input class="form-control" type="password" id="senhaf" placeholder="Senha" name="senha">
-
 											</div>
 											<div class="form-group">
 												<button type="submit" class="btn btn-default">Entrar</button>
