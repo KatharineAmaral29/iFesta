@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<%@page import="org.apache.catalina.ant.SessionsTask"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -8,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>iFesta.net | Promoções </title>
+    <title>iFesta.net </title>
 	
 	<!-- core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -52,23 +53,17 @@
                                 </form>
                         </div>
                         <li><a href="criar-evento.jsp">Criar Evento</a></li>
+						<li><a href="inicial-cliente.jsp">Meu Perfil</a></li>
                         <li><a href="login.jsp">Entrar</a></li>
 						<li><a class="navbar-brand" href="carrinho.jsp"><img src="images/carrinho.png"></a><br/>
 					</ul>
                 </div>
             </div><!--/.container-->
-        </nav><!--/nav-->
+        </nav><!--/nav-->   
     </header><!--/header-->
 	
-	
-	    <section id="recent-works">
-        <div class="container">
-            <div class="center wow fadeInDown">
-                <h2>Promoções</h2>
-            </div>
-
-            <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-3">
+	<section id="bottom"> Alimentícios Doces </section>
+	            <div class="col-xs-12 col-sm-4 col-md-3">
                     <div class="recent-work-wrap">
                         <img class="img-responsive" src="images/portfolio/recent/item1.png" alt="">
                         <div class="overlay">
@@ -82,8 +77,8 @@
                         </div>
                     </div>
                 </div>   
-
-                <div class="col-xs-12 col-sm-4 col-md-3">
+	
+	                <div class="col-xs-12 col-sm-4 col-md-3">
                     <div class="recent-work-wrap">
                         <img class="img-responsive" src="images/portfolio/recent/item2.png" alt="">
                         <div class="overlay">
@@ -97,8 +92,24 @@
                         </div>
                     </div>
                 </div> 
-
-                <div class="col-xs-12 col-sm-4 col-md-3">
+     <div class="col-xs-12 col-sm-4 col-md-3">
+                    <div class="recent-work-wrap">
+                        <img class="img-responsive" src="images/portfolio/recent/item6.png" alt="">
+                        <div class="overlay">
+                            <div class="recent-work-inner">
+								<h3><a href="#">Bolo artístico</a> </h3>
+                                <p>Bolo artístico diversos temas para 40 pessoas</p>
+                                <p>Doceria 1</p>
+								<p>R$ 100,00</p>
+                                <a class="preview" href="images/portfolio/full/item6.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Mais</a>
+							</div> 
+                        </div>
+                    </div>
+                </div> 
+    
+    
+	<section id="bottom"> Alimentícios Salgados </section>
+	                <div class="col-xs-12 col-sm-4 col-md-3">
                     <div class="recent-work-wrap">
                         <img class="img-responsive" src="images/portfolio/recent/item3.png" alt="">
                         <div class="overlay">
@@ -126,9 +137,15 @@
                             </div> 
                         </div>
                     </div>
-                </div>   
-                
-                <div class="col-xs-12 col-sm-4 col-md-3">
+                </div>  
+	<section id="bottom"> Animação </section>
+	<section id="bottom"> Artesanal </section>
+	<section id="bottom"> Artigos de Festa </section> 
+	<section id="bottom"> Bebidas </section>
+	<section id="bottom"> Beleza </section>
+	<section id="bottom"> Decoração </section>
+	<section id="bottom"> Espaço de Eventos </section>
+	                <div class="col-xs-12 col-sm-4 col-md-3">
                     <div class="recent-work-wrap">
                         <img class="img-responsive" src="images/portfolio/recent/item5.png" alt="">
                         <div class="overlay">
@@ -141,24 +158,9 @@
                             </div> 
                         </div>
                     </div>
-                </div>   
-
-                <div class="col-xs-12 col-sm-4 col-md-3">
-                    <div class="recent-work-wrap">
-                        <img class="img-responsive" src="images/portfolio/recent/item6.png" alt="">
-                        <div class="overlay">
-                            <div class="recent-work-inner">
-								<h3><a href="#">Bolo artístico</a> </h3>
-                                <p>Bolo artístico diversos temas para 40 pessoas</p>
-                                <p>Doceria 1</p>
-								<p>R$ 100,00</p>
-                                <a class="preview" href="images/portfolio/full/item6.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Mais</a>
-							</div> 
-                        </div>
-                    </div>
-                </div> 
-
-                <div class="col-xs-12 col-sm-4 col-md-3">
+                </div>
+    
+                    <div class="col-xs-12 col-sm-4 col-md-3">
                     <div class="recent-work-wrap">
                         <img class="img-responsive" src="images/portfolio/recent/item7.png" alt="">
                         <div class="overlay">
@@ -186,10 +188,18 @@
                         </div>
                     </div>
                 </div>   
-            </div><!--/.row-->
-        </div><!--/.container-->
-    </section><!--/#recent-works-->
-	
+    
+	<section id="bottom"> Estruturas </section>
+	<section id="bottom"> Foto e Vídeo </section>
+	<section id="bottom"> Material Gráfico </section>
+	<section id="bottom"> Musical </section>
+	<section id="bottom"> Organização </section>
+	<section id="bottom"> Profissional </section>
+	<section id="bottom"> Som e Iluminação </section>
+	<section id="bottom"> Veículos </section>
+	<section id="bottom"> Vestuário </section>
+
+
     <section id="bottom">
     </section><!--/#bottom-->
 	

@@ -63,7 +63,11 @@
     </header><!--/header-->
 		
 	<TABLE BORDER=1>
+<<<<<<< HEAD
 		<TR><TH>Imagem</TH><TH>Item</TH><TH>Descrição</TH><TH>Fornecedor</TH><TH>Preço Unitário</TH><TH>Quantidade</TH><TH>Preço Total</TH>Remover</TR> 
+=======
+		<TR><TH>Imagem</TH><TH>Item</TH><TH>Descrição</TH><TH>Fornecedor</TH><TH>Preço Unitário</TH><TH>Quantidade</TH><TH>Preço Total</TH><TH>Remover</TH></TR> 
+>>>>>>> origin/master
 		<TR><TD><img src="images/portfolio/carrinho/item1.png" alt=""></TD><TD>Docinhos Variados</TD><TD>Cento de Doces variados</TD><TD>Loja de Doces 1</TD><TD>R$ 30,00</TD><TD>3</TD><TD>R$ 90,00</TD><TD><img src="images/portfolio/carrinho/cancelar.png"></TD></TR> 
 		<TR><TD><img src="images/portfolio/carrinho/item6.png" alt=""></TD><TD>Bolo Artístico</TD><TD>Bolo artístico diversos temas para 40 pessoas</TD><TD>Doceria 1</TD><TD>R$ 100,00</TD><TD>1</TD><TD>R$ 100,00</TD><TD><img src="images/portfolio/carrinho/cancelar.png"></TD></TR> 
 	</TABLE>
