@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>iFesta.net </title>
+    <title>iFesta.net | Carrinho </title>
 	
 	<!-- core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -61,15 +61,14 @@
             </div><!--/.container-->
         </nav><!--/nav-->   
     </header><!--/header-->
+		
+	<TABLE BORDER=0>
+		<TR><TH>Imagem</TH><TH>Item</TH><TH>Descrição</TH><TH>Fornecedor</TH><TH>Preço Unitário</TH><TH>Quantidade</TH><TH>Preço Total</TH></TR> 
+		<TR><TD><img src="images/portfolio/carrinho/item1.png" alt=""></TD><TD>Docinhos Variados</TD><TD>Cento de Doces variados</TD><TD>Loja de Doces 1</TD><TD>R$ 30,00</TD><TD>3</TD><TD>R$ 90,00</TD></TR> 
+		<TR><TD><img src="images/portfolio/carrinho/item6.png" alt=""></TD><TD>Bolo Artístico</TD><TD>Bolo artístico diversos temas para 40 pessoas</TD><TD>Doceria 1</TD><TD>R$ 100,00</TD><TD>1</TD><TD>R$ 100,00</TD></TR> 
+	</TABLE>
 	
-	
-	
-	<table border=4>
-		<TR><TH>Item</TH><TH>Descrição</TH><TH>Quantidade</TH></TR>
-		<% for (int i = 0; i <= session.meuCarrinho().getQuantidadeDeServico(); i++) { %>
-			<TR><TD><input type="text" value="${u.meuCarrinho().getItem(i).getNome()}"></TD><TD><input type="text" value="${u.meuCarrinho().getItem(i).getDescricao()}"></TD><TD><input type="text" value="${u.meuCarrinho().getItem(i).getQuantidade()}"></TD></TR> 
-		<% } %>
-	</table>
+	<input type=submit value="Finalizar Compra">
 
     <section id="bottom">
     </section><!--/#bottom-->
