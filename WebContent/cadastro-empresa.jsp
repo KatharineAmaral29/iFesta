@@ -150,7 +150,11 @@
 				<label>Senha*</label>
 				<input name ="senha" type="password" class="g">
 				<label>Plano*</label>
-				<input name ="plano" type="text" class="g">
+				<SELECT name=“plano">
+					<OPTION>Plano 1</OPTION>
+					<OPTION>Plano 2</OPTION>
+					<OPTION>Plano 3</OPTION>
+				</SELECT>
 				
     			<input type="submit" value="Enviar">
     		</form>
