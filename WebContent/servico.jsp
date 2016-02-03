@@ -60,9 +60,6 @@
         </nav><!--/nav-->
     </header><!--/header-->
 
-	
-
-    
     <div>
     <img src="images/portfolio/recent/item1.png" alt="">
     <label><h1>Docinhos variados</h1></label>

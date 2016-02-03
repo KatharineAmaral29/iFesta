@@ -71,6 +71,8 @@
 		<h2>Telefone: (85) 3276-4224</h2>
 		<h2>Celular: (85) 99942-3173</h2>
 		<h2>Data de Nascimento: 29/07/1994</h2>
+		
+		<input type=submit value="Atualizar Dados">
 	</div>
 	
     <section id="bottom">
