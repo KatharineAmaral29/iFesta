@@ -54,7 +54,7 @@ public class ServicoDAO {
 	        }
 	    }
 	    
-	    public ArrayList<Servico> findEvento(int idfornecedor) { //Retornará um Array de Servico
+	    public ArrayList<Servico> findServico(int idfornecedor) { //Retornará um Array de Servico
 	        ArrayList<Servico> servicos = new ArrayList<>();
 	        Servico s = new Servico();
 	        

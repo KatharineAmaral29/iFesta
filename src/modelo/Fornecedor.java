@@ -13,8 +13,11 @@ public class Fornecedor {
 	private String telefone2_fornecedor = new String();
 	private String email_fornecedor = new String();
 	private String senha_fornecedor = new String();
+	private String bairro_fornecedor = new String();
+	private String estado_fornecedor = new String();
+	private String pais_fornecedor = new String();
 	
-	Fornecedor(){
+	public Fornecedor(){
 		
 	}
 	
@@ -107,6 +110,30 @@ public class Fornecedor {
 	}
 	public void setSenha_fornecedor(String senha_fornecedor) {
 		this.senha_fornecedor = senha_fornecedor;
+	}
+
+	public String getBairro_fornecedor() {
+		return bairro_fornecedor;
+	}
+
+	public void setBairro_fornecedor(String bairro_fornecedor) {
+		this.bairro_fornecedor = bairro_fornecedor;
+	}
+
+	public String getEstado_fornecedor() {
+		return estado_fornecedor;
+	}
+
+	public void setEstado_fornecedor(String estado_fornecedor) {
+		this.estado_fornecedor = estado_fornecedor;
+	}
+
+	public String getPais_fornecedor() {
+		return pais_fornecedor;
+	}
+
+	public void setPais_fornecedor(String pais_fornecedor) {
+		this.pais_fornecedor = pais_fornecedor;
 	}
 	
 
