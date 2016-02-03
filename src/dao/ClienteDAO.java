@@ -186,9 +186,7 @@ public class ClienteDAO {
 		}
 		return null;
 	}
-	
-	//public Cliente findCliente(String cpf);
-	//sobrecarregar a função findCliente para as variadas consultas
+
 
 	public boolean updateCliente(Cliente c) {
 		boolean sucesso = false;
