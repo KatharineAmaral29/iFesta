@@ -106,7 +106,7 @@
 					<input type=checkbox name="evento" value="pascoa" checked>Páscoa</input><br>
 					<input type=checkbox name="evento" value="reveillon" checked>Reveillón</input><br>
 					<input type=checkbox name="evento" value="velorio">Velório</input><br>
-	
+	</div>
 
 		
     <footer id="footer" class="midnight-blue">
