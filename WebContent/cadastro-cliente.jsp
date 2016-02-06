@@ -115,8 +115,9 @@
 
                 <label>Pais*</label>
                 <select name="pais" class="p" id="pais">
-                    <option value="Brasil" selected>Brasil</option>
+                    <option value="Brasil">Brasil</option>
                 </select><br>
+                
                 <input type="submit" value="Enviar">
                 </div>
             </form>
