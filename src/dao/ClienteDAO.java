@@ -61,7 +61,7 @@ public class ClienteDAO {
 		
 		try {
 
-			
+			System.out.println("insertCliente Iniciando Conexao");
 			Connection con = conexao;
 			ps = con.prepareStatement(clausula);
 			ps.setString(1, c.getCpf());
@@ -75,6 +75,9 @@ public class ClienteDAO {
 			ps.setString(9, c.getLogin_cliente());
 			ps.setString(10, c.getTelefone1_cliente());
 			ps.setString(11, c.getTelefone2_cliente());
+			ps.executeQuery();
+			ps.close();
+			con.close();
 
 
 			return true;

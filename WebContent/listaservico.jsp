@@ -62,7 +62,8 @@
         </nav><!--/nav-->   
     </header><!--/header-->
 	
-	<section id="bottom"> Alimentícios Doces </section>
+	<div> 
+	<h3>Alimentícios Doces</h3> 
 	            <div class="col-xs-12 col-sm-4 col-md-3">
                     <div class="recent-work-wrap">
                         <img class="img-responsive" src="images/portfolio/recent/item1.png" alt="">
@@ -72,7 +73,7 @@
                                 <p>Docinhos variados</p>
                                 <p>Loja de Doces 1</p>
 								<p>R$ 30,00 o cento</p>
-								<a href="servico.jsp" ><i class="fa fa-eye"></i> Mais</a>
+								<a class="preview" href="images/portfolio/full/item1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Adicionar ao Carrinho</a>
                             </div> 
                         </div>
                     </div>
@@ -87,7 +88,7 @@
                                 <p>Docinhos variados</p>
                                 <p>Loja de Doces 2</p>
 								<p>R$ 40,00 o cento</p>
-                                <a class="preview" href="images/portfolio/full/item2.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Mais</a>
+                                <a class="preview" href="images/portfolio/full/item2.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Adicionar ao Carrinho</a>
                             </div> 
                         </div>
                     </div>
@@ -101,14 +102,12 @@
                                 <p>Bolo artístico diversos temas para 40 pessoas</p>
                                 <p>Doceria 1</p>
 								<p>R$ 100,00</p>
-                                <a class="preview" href="images/portfolio/full/item6.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Mais</a>
+                                <a class="preview" href="images/portfolio/full/item6.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Adicionar ao Carrinho</a>
 							</div> 
                         </div>
                     </div>
                 </div> 
-    
-    
-	<section id="bottom"> Alimentícios Salgados </section>
+	<br><br><br><br><br><br><br><h3> Alimentícios Salgados </h3>
 	                <div class="col-xs-12 col-sm-4 col-md-3">
                     <div class="recent-work-wrap">
                         <img class="img-responsive" src="images/portfolio/recent/item3.png" alt="">
@@ -118,7 +117,7 @@
                                 <p>Salgadinhos variados</p>
                                 <p>Loja de Salgados 1</p>
 								<p>R$ 40,00 o cento</p>
-                                <a class="preview" href="images/portfolio/full/item3.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Mais</a>
+                                <a class="preview" href="images/portfolio/full/item3.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Adicionar ao Carrinho</a>
 							</div> 
                         </div>
                     </div>
@@ -133,18 +132,18 @@
                                 <p>Salgadinhos variados</p>
                                 <p>Loja de Salgados 2</p>
 								<p>R$ 35,00 o cento</p>
-                                <a class="preview" href="images/portfolio/full/item4.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Mais</a>
+                                <a class="preview" href="images/portfolio/full/item4.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Adicionar ao Carrinho</a>
                             </div> 
                         </div>
                     </div>
                 </div>  
-	<section id="bottom"> Animação </section>
-	<section id="bottom"> Artesanal </section>
-	<section id="bottom"> Artigos de Festa </section> 
-	<section id="bottom"> Bebidas </section>
-	<section id="bottom"> Beleza </section>
-	<section id="bottom"> Decoração </section>
-	<section id="bottom"> Espaço de Eventos </section>
+	<br><h3> Animação </h3>
+	<br><br><br><br><br><br><br><h3> Artesanal </h3>
+	<br><h3> Artigos de Festa </h3> 
+	<br><h3> Bebidas </h3>
+	<br><h3> Beleza </h3>
+	<br><h3> Decoração </h3>
+	<br><h3> Espaço de Eventos </h3>
 	                <div class="col-xs-12 col-sm-4 col-md-3">
                     <div class="recent-work-wrap">
                         <img class="img-responsive" src="images/portfolio/recent/item5.png" alt="">
@@ -154,7 +153,7 @@
                                 <p>Espaço de Eventos 1</p>
                                 <p>Espaço 1</p>
 								<p>R$ 800,00 por 4 horas</p>
-                                <a class="preview" href="images/portfolio/full/item5.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Mais</a>
+                                <a class="preview" href="images/portfolio/full/item5.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Adicionar ao Carrinho</a>
                             </div> 
                         </div>
                     </div>
@@ -169,7 +168,7 @@
                                 <p>Espaço de Eventos 2</p>
                                 <p>Espaço 2</p>
 								<p>R$ 1000,00 por 4 horas</p>
-                                <a class="preview" href="images/portfolio/full/item7.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Mais</a>
+                                <a class="preview" href="images/portfolio/full/item7.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> Adicionar ao Carrinho</a>
                             </div> 
                         </div>
                     </div>
@@ -184,21 +183,21 @@
                                 <p>Espaço de Eventos 3</p>
                                 <p>Espaço 3</p>
 								<p>R$ 2800,00 por 4 horas</p>
-                                <a class="preview" href="images/portfolio/full/item8.png" rel="prettyPhoto"><i class="fa fa-eye"></i> Mais</a>                            </div> 
+                                <a class="preview" href="images/portfolio/full/item8.png" rel="prettyPhoto"><i class="fa fa-eye"></i> Adicionar ao Carrinho</a>                            </div> 
                         </div>
                     </div>
                 </div>   
     
-	<section id="bottom"> Estruturas </section>
-	<section id="bottom"> Foto e Vídeo </section>
-	<section id="bottom"> Material Gráfico </section>
-	<section id="bottom"> Musical </section>
-	<section id="bottom"> Organização </section>
-	<section id="bottom"> Profissional </section>
-	<section id="bottom"> Som e Iluminação </section>
-	<section id="bottom"> Veículos </section>
-	<section id="bottom"> Vestuário </section>
-
+	<br><h3> Estruturas </h3>
+	<br><h3> Foto e Vídeo </h3>
+	<br><h3> Material Gráfico </h3>
+	<br><h3> Musical </h3>
+	<br><h3> Organização </h3>
+	<br><h3> Profissional </h3>
+	<br><h3> Som e Iluminação </h3>
+	<br><h3> Veículos </h3>
+	<br><h3> Vestuário </h3>
+	</div>
 
     <section id="bottom">
     </section><!--/#bottom-->
