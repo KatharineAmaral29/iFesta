@@ -77,9 +77,9 @@
                 <input name="cpf" type="text" class="g"><br>
 
                 <label>Sexo*</label>
-                <select name="sexo" class="m" id="sexo">
-                  <option>Feminino</option>
-                  <option>Masculino</option>
+                <select name="sexo" class="p" id="sexo">
+                  <option value = "F">Feminino</option>
+                  <option value = "M">Masculino</option>
                 </select><br>
 
                 <label>Data de Nascimento*</label>
