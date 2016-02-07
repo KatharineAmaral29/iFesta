@@ -11,37 +11,16 @@ public class ClienteDAO {
 
 	private PreparedStatement ps;
 	private ResultSet rs;
-	Connection conexao;
 
-//	public Connection getConexao(){
-//		Connection conexao = null;
-//		String usuario = "postgres";
-//		String senha = "12345";
-//		String nomeBancoDados = "ifesta";
-//
-//		try {
-//			System.out.println("Entrou TRY Conection");
-//
-//			Class.forName("org.postgresql.Driver");
-//			System.out.println("Passou no CLASS FOR NAME");
-//			conexao = DriverManager.getConnection("jdbc:postgresql://localhost:5432/" + nomeBancoDados,
-//					usuario, senha);
-//			System.out.println("COnexao = DRIVER MANAGER");
-//		} catch (Exception e) {
-//			System.out.println("Entrou CATCH Conection");
-//			e.printStackTrace();
-//		}
-//		return conexao;
-//	}
-	
-	public ClienteDAO() {
-
+	public Connection getConexao(){
+		Connection conexao = null;
 		String usuario = "postgres";
 		String senha = "12345";
 		String nomeBancoDados = "ifesta";
 
 		try {
 			System.out.println("Entrou TRY Conection");
+
 			Class.forName("org.postgresql.Driver");
 			System.out.println("Passou no CLASS FOR NAME");
 			conexao = DriverManager.getConnection("jdbc:postgresql://localhost:5432/" + nomeBancoDados,
@@ -51,6 +30,11 @@ public class ClienteDAO {
 			System.out.println("Entrou CATCH Conection");
 			e.printStackTrace();
 		}
+		return conexao;
+	}
+	
+	public ClienteDAO() {
+
 	}
 
 	public boolean insertCliente(Cliente c) {		
@@ -62,7 +46,7 @@ public class ClienteDAO {
 		try {
 
 			System.out.println("insertCliente Iniciando Conexao");
-			Connection con = conexao;
+			Connection con = getConexao();
 			ps = con.prepareStatement(clausula);
 			ps.setString(1, c.getCpf());
 			ps.setString(2, c.getNomeCliente());
@@ -75,9 +59,10 @@ public class ClienteDAO {
 			ps.setString(9, c.getLogin_cliente());
 			ps.setString(10, c.getTelefone1_cliente());
 			ps.setString(11, c.getTelefone2_cliente());
-			ps.executeQuery();
+			ps.execute();
 			ps.close();
 			con.close();
+			System.out.println("Inseriu");
 
 
 			return true;
@@ -94,7 +79,7 @@ public class ClienteDAO {
         
         String clausula = "select * from cliente";
         try {
-        	Connection con = conexao;
+        	Connection con = getConexao();
         	ps = con.prepareStatement(clausula);
             rs = ps.executeQuery();
             if (rs.next()) {
@@ -128,7 +113,7 @@ public class ClienteDAO {
         
         String clausula = "select * from cliente where cpf = ?";
         try {
-        	Connection con = conexao;
+        	Connection con = getConexao();
         	ps = con.prepareStatement(clausula);
         	ps.setString(1, cpf);
             rs = ps.executeQuery();
@@ -160,7 +145,7 @@ public class ClienteDAO {
 		String clausula = "SELECT * FROM cliente WHERE email_cliente = ? AND senha_cliente = ?";
 		
 		try{
-			Connection con = conexao;
+			Connection con = getConexao();
 			ps = con.prepareStatement(clausula);
 			ps.setString(1, login);
 			ps.setString(2, senha);
@@ -196,7 +181,7 @@ public class ClienteDAO {
 		String clausula = "update cliente set nome_cliente = ? where cpf = ?";
 
 		try {
-			Connection con = conexao;
+			Connection con = getConexao();
 			ps = con.prepareStatement(clausula);
 			ps.setString(1, c.getNomeCliente());
 			ps.setString(2, c.getCpf());
@@ -212,7 +197,7 @@ public class ClienteDAO {
 		boolean sucesso = false;
 		String clausula = "delete from cliente where cpf = '?'";
 		try {
-			Connection con = conexao;
+			Connection con = getConexao();
 			ps = con.prepareStatement(clausula);
 			ps.setString(1, c.getCpf());
 			ps.execute();

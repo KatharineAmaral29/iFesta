@@ -30,7 +30,6 @@ public class CadastroClienteServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("Entrou no Get");
 		//requisitando paramentros do formulario
 		String nome = request.getParameter("nomecompleto");
 		String email = request.getParameter("email");
@@ -66,25 +65,20 @@ public class CadastroClienteServlet extends HttpServlet {
 		cliente.setEstado_cliente(estado);
 		cliente.setPais_cliente(pais);
 		
-		System.out.println("Criou CLiente");
+		System.out.println("Cliente criado");
 		
 		// criando sessão
 		HttpSession session = request.getSession(true);
 		session.setAttribute("autorizado", cliente);
-		
-		System.out.println("passou HTTP");
-		
+				
 		try {
 			ClienteDAO cadastrar = new ClienteDAO();
-			System.out.println("Entrou no TRY");
 			if(cadastrar.insertCliente(cliente)){
-				System.out.println("Entrou no IF");
 				response.sendRedirect("index.jsp");
 			}
 			//jsp de erro.
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
-			System.out.println("Entrou no CATCH");
 			e.printStackTrace();
 		}
 	
