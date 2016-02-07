@@ -1,5 +1,7 @@
 package modelo;
 
+import java.util.ArrayList;
+
 public class Cliente {
 	
 	private int idcliente;
@@ -17,7 +19,10 @@ public class Cliente {
 	private String sexo_cliente = new String();
 	private String estado_cliente = new String();
 	private String pais_cliente = new String();
+	//private ArrayList<Integer> id_meus_eventos = new ArrayList<>();
+	private ArrayList<Evento> meus_eventos = new ArrayList<>();
 	//Date dt_nasc_cliente = new Date();
+	private String url_foto_cliente = new String();
 
 	public Cliente() {
 		
@@ -179,6 +184,18 @@ public class Cliente {
 		this.pais_cliente = pais_cliente;
 	}
 
+	public ArrayList<Evento> getMeus_eventos() {
+		return meus_eventos;
+	}
+
+	public String getUrl_foto_cliente() {
+		return url_foto_cliente;
+	}
+
+	public void setUrl_foto_cliente(String url_foto_cliente) {
+		this.url_foto_cliente = url_foto_cliente;
+	}
+
 	public String toString(){
 		String termo;
 		
@@ -188,11 +205,32 @@ public class Cliente {
 	}
 
 
-	/*public Evento criarEvento(){
-		Evento ev;
+	public boolean adicionarEvento(Evento ev){		
 		
-		return ev;
+		try {
+			meus_eventos.add(ev);
+			return true;			
+		} catch (Exception e) {
+			e.printStackTrace();
+			return false;
+		}	
+			
 	}
+	
+	public boolean excluirEvento(int id){
+		boolean flag = false;
+		
+		for(int i = 0;i<meus_eventos.size();i++){
+			if(id == meus_eventos.get(i).getIdevento()){
+				meus_eventos.remove(i);
+				flag = true;
+			}
+			else
+				flag = false;		
+		}
+		return flag;
+	}
+	/*
 	public void editarEvento(Evento ev){
 		
 	}

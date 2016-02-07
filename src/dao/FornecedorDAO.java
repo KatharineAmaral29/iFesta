@@ -49,7 +49,7 @@ public class FornecedorDAO {
 	        	pstmt.setString(10, f.getCep_fornecedor());
 	        	pstmt.setString(11, f.getBairro_fornecedor());
 	        	pstmt.setString(12, f.getPais_fornecedor());
-	        	pstmt.executeQuery();
+	        	pstmt.execute();
 	        	pstmt.close();
 	        	con.close();
 	        	return true;

@@ -74,7 +74,7 @@ public class CadastroClienteServlet extends HttpServlet {
 		try {
 			ClienteDAO cadastrar = new ClienteDAO();
 			if(cadastrar.insertCliente(cliente)){
-				response.sendRedirect("index.jsp");
+				response.sendRedirect("inicial-cliente.jsp");
 			}
 			//jsp de erro.
 		} catch (IOException e) {

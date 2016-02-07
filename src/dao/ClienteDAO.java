@@ -40,8 +40,9 @@ public class ClienteDAO {
 	public boolean insertCliente(Cliente c) {		
 		
 		String clausula = "INSERT INTO cliente(cpf,nome_cliente,senha_cliente, cidade_cliente, estado_cliente,"
-				+ "cep_cliente,numero_cliente,rua_cliente,email_cliente,telefone_cliente_1, telefone_cliente_2) "
-				+ "VALUES(?,?,?,?,?,?,?,?,?,?,?)";
+				+ "cep_cliente,numero_cliente,rua_cliente,email_cliente,telefone_cliente_1, telefone_cliente_2,"
+				+ "pais_cliente,sexo_cliente)"
+				+ "VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)";
 		
 		try {
 
@@ -59,6 +60,8 @@ public class ClienteDAO {
 			ps.setString(9, c.getLogin_cliente());
 			ps.setString(10, c.getTelefone1_cliente());
 			ps.setString(11, c.getTelefone2_cliente());
+			ps.setString(12, c.getPais_cliente());
+			ps.setString(13, c.getSexo_cliente());
 			ps.execute();
 			ps.close();
 			con.close();
@@ -72,7 +75,6 @@ public class ClienteDAO {
 			return false;
 		}
 	}
-	
 	public ArrayList<Cliente> findCliente() { //Retornará um Array de todos os clientes
         ArrayList<Cliente> clientes = new ArrayList<>();
         Cliente c = new Cliente();
@@ -106,8 +108,7 @@ public class ClienteDAO {
         }
         return clientes; 
     }
-	
-	public Cliente findCliente(String cpf) {
+	public Cliente findCliente(String cpf) { //Procura o cliente por seu CPF
 
         Cliente c = new Cliente();
         
@@ -140,7 +141,7 @@ public class ClienteDAO {
 		}
 		return c;
 	}
-	public Cliente findCliente(String login, String senha){
+	public Cliente findCliente(String login, String senha){ //Procura o cliente por login e senha
 		Cliente c = new Cliente();
 		String clausula = "SELECT * FROM cliente WHERE email_cliente = ? AND senha_cliente = ?";
 		
@@ -174,17 +175,44 @@ public class ClienteDAO {
 		}
 		return null;
 	}
-
-
 	public boolean updateCliente(Cliente c) {
 		boolean sucesso = false;
-		String clausula = "update cliente set nome_cliente = ? where cpf = ?";
+		String clausula = "update cliente set nome_cliente = ?,"
+				+ "set cpf = ?,"
+				+ "set email_cliente = ?,"
+				+ "set senha_cliente  = ?,"
+				+ "set rua_cliente = ?,"
+				+ "set numero_cliente = ?,"
+				+ "set complemento_cliente = ?,"
+				+ "set cidade_cliente = ?,"
+				+ "set cep_cliente = ?,"
+				+ "set telefone_cliente_1 = ?,"
+				+ "set telefone_cliente_2 = ?,"
+				+ "set sexo_cliente = ?,"
+				+ "set estado_cliente = ?,"
+				+ "set pais_cliente = ? "
+				+ "where cpf = ?";
 
 		try {
 			Connection con = getConexao();
 			ps = con.prepareStatement(clausula);
 			ps.setString(1, c.getNomeCliente());
 			ps.setString(2, c.getCpf());
+			ps.setString(3, c.getLogin_cliente());
+			ps.setString(4, c.getSenha_cliente());
+			ps.setString(5, c.getRua_cliente());
+			ps.setString(6, c.getNumero_cliente());
+			ps.setString(7, c.getComplemento_cliente());
+			ps.setString(8, c.getCidade_cliente());
+			ps.setString(9, c.getCep_cliente());
+			ps.setString(10, c.getTelefone1_cliente());
+			ps.setString(11, c.getTelefone2_cliente());
+			ps.setString(12, c.getSexo_cliente());
+			ps.setString(13, c.getEstado_cliente());
+			ps.setString(14, c.getPais_cliente());
+			ps.setString(15, c.getCpf());
+			
+			
 			sucesso = true;
 			System.out.println("Atualizado");	
 		} catch (SQLException e1) {
@@ -192,10 +220,9 @@ public class ClienteDAO {
 		}
 		return sucesso;
 	}
-
 	public boolean deleteCliente(Cliente c) {
 		boolean sucesso = false;
-		String clausula = "delete from cliente where cpf = '?'";
+		String clausula = "delete cascade from cliente where cpf = '?'";
 		try {
 			Connection con = getConexao();
 			ps = con.prepareStatement(clausula);
