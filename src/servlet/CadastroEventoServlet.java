@@ -6,28 +6,41 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import dao.*;
+import modelo.*;
+import conexao.*;
+import servlet.*;
 
-/**
- * Servlet implementation class CadastroEventoServlet
- */
 @WebServlet("/CadastroEventoServlet")
 public class CadastroEventoServlet extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public CadastroEventoServlet() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
+	
+	public void doGet(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException {
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		//requisitando paramentros do formulario
+		String nomeEvento = request.getParameter("nomeevento");
+		String dataEvento = request.getParameter("dataevento");
+		String descricaoEvento = request.getParameter("descricao");
+		String tipoEvento = request.getParameter("tipoevento");
+	
+		//criando Evento
+		Evento evento = new Evento();
+		evento.setNome_evento(nomeEvento);
+		evento.setData(dataEvento);
+		evento.setDescricao(descricaoEvento);
+		evento.setTipo(Integer.valueOf(tipoEvento));
+		evento.setIdcliente(14); // TROCAR PELO ID DO USUÁRIO QUE ESTIVER LOGADO
+
+		EventoDAO cadastrar;
+		try {
+			cadastrar = new EventoDAO();
+			if(cadastrar.insertEvento(evento)){
+				response.sendRedirect("promocoes.jsp");
+			}
+			//jsp de erro.
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 	}
-
 }

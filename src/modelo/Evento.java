@@ -6,6 +6,7 @@ public class Evento {
 	private String nome_evento = new String();
 	private String descricao = new String();
 	private int tipo;
+	private String data = new String();
 	
 	public Evento(){
 		
@@ -66,6 +67,12 @@ public class Evento {
 	
 	public int getTipo(){
 		return tipo;
+	}
+	public String getData() {
+		return data;
+	}
+	public void setData(String data) {
+		this.data = data;
 	}
 
 }

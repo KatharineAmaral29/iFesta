@@ -72,6 +72,12 @@
 
                 <label>Data</label>
                 <input name="dataevento" type="text" class="p" id="datepicker1">
+                
+                <label>Tipo</label>
+                <input name="tipoevento" type="text" class="g">
+                
+                <label>Descricao</label>
+                <input name="descricao" type="text" class="g">
 
                 <input type="submit" value="Enviar">
 

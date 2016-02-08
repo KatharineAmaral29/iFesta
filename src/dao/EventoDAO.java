@@ -30,14 +30,16 @@ public class EventoDAO {
 	    
 	    public boolean insertEvento(Evento ev) {
 
-	    	String clausula = "INSERT INTO evento (idcliente, nome_evento, descricao_evento,tipo_evento) VALUES (?,?,?,?)";
+	    	String clausula = "INSERT INTO evento (idcliente, nome_evento, descricao_evento,tipo_evento,data_evento)"
+	    			+ " VALUES (?,?,?,?,?)";
 	        try {
 	        	pstmt = con.prepareStatement(clausula);
 	        	pstmt.setInt(1, ev.getIdcliente()); 
 	        	pstmt.setString(2, ev.getNome_evento()); 
 	        	pstmt.setString(3, ev.getDescricao());
 	        	pstmt.setInt(4, ev.getTipo());
-	        	pstmt.executeQuery();
+	        	pstmt.setString(5, ev.getData());
+	        	pstmt.execute();
 	        	pstmt.close();
 	        	con.close();
 	        	return true;
