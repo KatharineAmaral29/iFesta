@@ -188,6 +188,10 @@ public class Cliente {
 		return meus_eventos;
 	}
 
+	public void setMeus_eventos(ArrayList<Evento> meus_eventos) {
+		this.meus_eventos = meus_eventos;
+	}
+
 	public String getUrl_foto_cliente() {
 		return url_foto_cliente;
 	}
