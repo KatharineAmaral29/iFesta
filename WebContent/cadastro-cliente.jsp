@@ -63,7 +63,7 @@
     </header><!--/header-->
  
             <form action="CadastroCliente" method="get" id="validate" role="form">   
-            	<div class="form-group">                                   
+                                  
                 <label>Nome Completo*</label>
                 <input name="nomecompleto" type="text" class="g"><br>
 
@@ -85,8 +85,6 @@
                 <label>Data de Nascimento*</label>
                 <input name="data" type="text" class="p" id="data"><br>
 
-				</div>
-            	<div class="form-group">
                 <label>Telefone*</label>
                 <input name="telefone" type="text" class="p" id="telefone"><br>
 
@@ -119,7 +117,7 @@
                 </select><br>
                 
                 <input type="submit" value="Enviar">
-                </div>
+
             </form>
 	
     <section id="bottom">
