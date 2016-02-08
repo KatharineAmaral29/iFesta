@@ -22,6 +22,7 @@ public class CadastroEventoServlet extends HttpServlet {
 		Evento evento = new Evento();
 		evento.setNome(nomeEvento);
 		evento.setData(dataEvento);
+		evento.setIdcliente(1); // TROCAR PELO ID DO USUÁRIO QUE ESTIVER LOGADO
 
 		EventoDAO cadastrar;
 		try {
