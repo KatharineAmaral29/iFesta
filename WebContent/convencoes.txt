@@ -46,14 +46,14 @@ Tipos de Serviço:
 8 - Decoração
 9 - Espaço de Eventos
 10 - Estruturas
-12 - Foto e Vídeo
-13 - Material Gráfico
-14 - Musical
-15 - Organização
-16 - Profissional
-17 - Som e Iluminação
-18 - Veículos
-19 - Vestuário
+11 - Foto e Vídeo
+12 - Material Gráfico
+13 - Musical
+14 - Organização
+15 - Profissional
+16 - Som e Iluminação
+17 - Veículos
+18 - Vestuário
 
 Tipo de Planos
 
