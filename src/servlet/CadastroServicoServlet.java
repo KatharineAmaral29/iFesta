@@ -21,9 +21,10 @@ public class CadastroServicoServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//requisitando paramentros do formulario
-		String nome = request.getParameter("nomeevento");
+		String nome = request.getParameter("nomeservico");
 		String descricao = request.getParameter("descricao");
-		int tiposervico = Integer.parseInt(request.getParameter("tiposervico"));
+		int tiposervico = Integer.parseInt(request.getParameter("servico"));
+		int tipoevento = Integer.parseInt(request.getParameter("evento"));
 		float preco = Float.parseFloat(request.getParameter("preco"));
 		String regras = request.getParameter("regras");
 		
