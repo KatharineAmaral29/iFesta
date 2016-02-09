@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>iFesta.net | Cadastro Empresa </title>
+    <title>iFesta.net | Cadastro Fornecedor </title>
     
     <!-- core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -50,7 +50,7 @@
                     <ul class="nav navbar-nav">
                         <li><div class="search">
                                 <form role="form">
-                                    <input type="text" class="search-form" autocomplete="off" placeholder="Search">
+                                    <input type="text" class="search-form" autocomplete="off" placeholder="Pesquisa">
                                     <i class="fa fa-search"></i>
                                 </form>
                         </div>
