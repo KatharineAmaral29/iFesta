@@ -53,6 +53,8 @@
         
     </header><!--/header-->
 	
+	Hello, <%= session.getAttribute( "emailcliente" ) %>
+		
 	<div class="categoria" align="middle">
 		<TABLE BORDER=0>
 			<TR>
@@ -97,7 +99,6 @@
 			</TR> 
 		</TABLE>			
 	</div>
-	
 	
     <section id="main-slider" class="no-margin">
         <div class="carousel slide">

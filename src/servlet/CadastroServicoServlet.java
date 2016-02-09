@@ -41,6 +41,7 @@ public class CadastroServicoServlet extends HttpServlet {
 		servico.setNomeServico(nome);
 		servico.setDescricao(descricao);
 		servico.setTipo_servico(tiposervico);
+		servico.set
 		servico.setPreco_servico(preco);
 		servico.setRegras_servico(regras);
 		aux = servico.getTipo_eventos();

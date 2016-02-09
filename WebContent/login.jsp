@@ -74,7 +74,10 @@
 											<div class="form-group">
 												<input class="form-control" type="email" id="emailc" placeholder="Email" name="emailc">
 												<input class="form-control" type="password" id="senhac" placeholder="Senha" name="senhac">
-
+														<%
+														   String name = request.getParameter( "emailc" );
+														   session.setAttribute( "emailcliente", name );
+														%>
 											</div>
 											<div class="form-group">
 												<button type="submit" class="btn btn-default">Entrar</button>
