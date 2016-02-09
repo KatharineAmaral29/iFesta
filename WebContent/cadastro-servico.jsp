@@ -60,8 +60,26 @@
                 </div>
             </div><!--/.container-->
         </nav><!--/nav-->
-        
     </header><!--/header-->
+  
+  
+  <script type="text/javascript">
+    function marcarTodos(marcar){
+        var itens = document.getElementsByName('evento');
+
+        if(marcar){
+            document.getElementById('acao').innerHTML = 'Desmarcar Todos';
+        }else{
+            document.getElementById('acao').innerHTML = 'Marcar Todos';
+        }
+
+        var i = 0;
+        for(i=0; i<itens.length;i++){
+            itens[i].checked = marcar;
+        }
+
+    }
+</script>  
   
             <form action="CadastroServicoServlet" method="post" id="validate">                          
                 <label>Título do Serviço*</label>
@@ -96,7 +114,9 @@
 					<input type=radio name="servico" value="17">Veículos</input><br>
 					<input type=radio name="servico" value="18">Vestuário</input><br>								
 
-                <label>Tipo de Evento*</label><br><br>
+                <label>Esse serviço combina com os eventos de tipo:*</label><br><br>
+				    <input type="checkbox" name="evento" onclick="marcarTodos(this.checked);">
+    				<span id="acao">Marcar Todos</span> <br>
 					<input type=checkbox name="evento" value="1">Aniversário Adulto</input><br>
 					<input type=checkbox name="evento" value="2">Aniversário Infantil</input><br>
 					<input type=checkbox name="evento" value="3">Bodas</input><br>
