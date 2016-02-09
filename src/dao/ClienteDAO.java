@@ -19,15 +19,10 @@ public class ClienteDAO {
 		String nomeBancoDados = "ifesta";
 
 		try {
-			System.out.println("Entrou TRY Conection");
-
 			Class.forName("org.postgresql.Driver");
-			System.out.println("Passou no CLASS FOR NAME");
 			conexao = DriverManager.getConnection("jdbc:postgresql://localhost:5432/" + nomeBancoDados,
 					usuario, senha);
-			System.out.println("COnexao = DRIVER MANAGER");
 		} catch (Exception e) {
-			System.out.println("Entrou CATCH Conection");
 			e.printStackTrace();
 		}
 		return conexao;
@@ -45,8 +40,6 @@ public class ClienteDAO {
 				+ "VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)";
 		
 		try {
-
-			System.out.println("insertCliente Iniciando Conexao");
 			Connection con = getConexao();
 			ps = con.prepareStatement(clausula);
 			ps.setString(1, c.getCpf());
@@ -114,6 +107,7 @@ public class ClienteDAO {
         
         String clausula = "select * from cliente where cpf = ?";
         try {
+        	System.out.println("Procurando...");
         	Connection con = getConexao();
         	ps = con.prepareStatement(clausula);
         	ps.setString(1, cpf);
@@ -134,6 +128,7 @@ public class ClienteDAO {
 					    rs.getString("sexo_cliente"),
 					    rs.getString("estado_cliente"),
 					    rs.getString("pais_cliente"));
+				System.out.println("Achou!!");
 
 			}
 		} catch (SQLException e1) {
@@ -222,7 +217,7 @@ public class ClienteDAO {
 	}
 	public boolean deleteCliente(Cliente c) {
 		boolean sucesso = false;
-		String clausula = "delete cascade from cliente where cpf = '?'";
+		String clausula = "delete from cliente where cpf = ?";
 		try {
 			Connection con = getConexao();
 			ps = con.prepareStatement(clausula);
@@ -230,6 +225,7 @@ public class ClienteDAO {
 			ps.execute();
 			ps.close();
 			con.close();
+			sucesso = true;
 		} catch (SQLException e1) {
 			System.out.println(e1.getMessage());
 		}

@@ -3,11 +3,19 @@ package dao;
 import modelo.*;
 
 public class DAO {
-	ClienteDAO cdao = new ClienteDAO();
-	EventoDAO edao = new EventoDAO();
-	FornecedorDAO fdao = new FornecedorDAO();
-	ServicoDAO sdao = new ServicoDAO();
-	LoginDAO ldao = new LoginDAO();
+	ClienteDAO cdao;
+	EventoDAO edao;
+	FornecedorDAO fdao;
+	ServicoDAO sdao;
+	LoginDAO ldao;
+	
+	public DAO() {
+		cdao = new ClienteDAO();
+		edao = new EventoDAO();
+		fdao = new FornecedorDAO();
+		sdao = new ServicoDAO();
+		ldao = new LoginDAO();
+	}
 	
 	
 	public boolean inserir(Cliente c){

@@ -80,6 +80,33 @@ public class ServicoDAO {
 	        }
 	        return servicos; 
 	    }
+	    
+	    public ArrayList<Servico> findServico(String nome) { //Retornará um Array de Servico
+	        ArrayList<Servico> servicos = new ArrayList<>();
+	        Servico s = new Servico();
+	        
+	        String clausula = "select * from evento where nome_servico = ?";
+	        try {
+	        	pstmt = con.prepareStatement(clausula);
+	        	pstmt.setString(1, nome);
+	            rs = pstmt.executeQuery();
+	            if (rs.next()) {
+	            	s.preencherServico(rs.getInt("id_servico"), 
+	            					rs.getInt("idfornecedor"), 
+	            					rs.getString("nome_servico"), 
+	            					rs.getString("descricao_servico"), 
+	            					rs.getInt("tipo_servico"), 
+	            					rs.getFloat("preco_servico"), 
+	            					rs.getString("regras_servico"));
+	            						
+	            	servicos.add(s);
+	                
+	            }
+	        } catch (SQLException e1) {
+	            System.out.println(e1.getMessage());
+	        }
+	        return servicos; 
+	    }
 
 	    public boolean updateServico(Servico s, int tipo_update) { //tipo 1 é nome, tipo 2 é descrição e tipo 3 é tipo de evento
 	        boolean sucesso = false;

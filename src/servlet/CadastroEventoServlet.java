@@ -30,10 +30,10 @@ public class CadastroEventoServlet extends HttpServlet {
 		evento.setTipo(Integer.valueOf(tipoEvento));
 		evento.setIdcliente(14); // TROCAR PELO ID DO USUÁRIO QUE ESTIVER LOGADO
 
-		EventoDAO cadastrar;
+		DAO cadastrar;
 		try {
-			cadastrar = new EventoDAO();
-			if(cadastrar.insertEvento(evento)){
+			cadastrar = new DAO();
+			if(cadastrar.inserir(evento)){
 				response.sendRedirect("promocoes.jsp");
 			}
 			//jsp de erro.
