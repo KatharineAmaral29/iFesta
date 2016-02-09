@@ -18,17 +18,7 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=OpenSans:300,400,700' rel='stylesheet' type='text/css'>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->       
-    <link rel="shortcut icon" href="images/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <link href="css/style.css" rel="stylesheet" type="text/css">    
 </head><!--/head-->
 
 <body>
@@ -128,7 +118,11 @@
     
     <section>
     	<div>
+<<<<<<< HEAD
     		<form action="CadastroFornecedorServlet" method="get" id="validate">
+=======
+    		<form action="CadastroFornecedorServlet" method="post" id="validate">
+>>>>>>> origin/master
     			<label>Nome Fantasia* </label>
 				<input name ="nomefantasia" type="text" class="g"><br>    		
     			<label>Razão Social* </label>
