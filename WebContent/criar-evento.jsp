@@ -72,39 +72,39 @@
                               
                 <label>Tipo de Evento</label>
                 <select name="tipoevento" class="p" id="tipoevento">
-					<option value="aniversarioadulto">Aniversário Adulto</option>
-					<option value="aniversarioinfantil">Aniversário Infantil</option>
-					<option value="bodas">Bodas</option>
-					<option value="carnaval">Carnaval</option>
-					<option value="casamento">Casamento</option>
-					<option value="chabar">Chá Bar</option>
-					<option value="chadebaby">Chá De Baby</option>
-					<option value="chadefralda">Chá De Fralda</option>
-					<option value="chalingerie">Chá Lingerie</option>
-					<option value="chadepanela">Chá De Panela</option>
-					<option value="churrasco">Churrasco</option>
-					<option value="coffeebreak">Coffee Break</option>
-					<option value="confraternizacao">Confraternização</option>
-					<option value="descasamento">Descasamento</option>
-					<option value="despedidadesolteiro">Despedida De Solteiro</option>
-					<option value="diadascriancas">Dia Das Crianças</option>
-					<option value="diadasmaes">Dia Das Mães</option>
-					<option value="diadosnamorados">Dia Dos Namorados</option>
-					<option value="diadospais">Dia Dos Pais</option>
-					<option value="feijjoada">Feijoada</option>
-					<option value="festaafantasia">Festa A Fantasia</option>
-					<option value="festabeneficente">Festa Beneficente</option>
-					<option value="festaempresarial">Festa Empresarial</option>
-					<option value="festajunina">Festa Junina</option>
-					<option value="festasreligiosas">Festas Religiosas</option>
-					<option value="festatematica">Festa Temática</option>
-					<option value="formatura">Formatura</option>
-					<option value="halloween">Halloween</option>
-					<option value="natal">Natal</option>
-					<option value="noivado">Noivado</option>
-					<option value="pascoa">Páscoa</option>
-					<option value="reveillon">Reveillón</option>
-					<option value="velorio">Velório</option>
+					<option value="1">Aniversário Adulto</option>
+					<option value="2">Aniversário Infantil</option>
+					<option value="3">Bodas</option>
+					<option value="4">Carnaval</option>
+					<option value="5">Casamento</option>
+					<option value="6">Chá Bar</option>
+					<option value="7">Chá De Baby</option>
+					<option value="8">Chá De Fralda</option>
+					<option value="9">Chá Lingerie</option>
+					<option value="10">Chá De Panela</option>
+					<option value="11">Churrasco</option>
+					<option value="12">Coffee Break</option>
+					<option value="13">Confraternização</option>
+					<option value="14">Descasamento</option>
+					<option value="15">Despedida De Solteiro</option>
+					<option value="16">Dia Das Crianças</option>
+					<option value="17">Dia Das Mães</option>
+					<option value="18">Dia Dos Namorados</option>
+					<option value="19">Dia Dos Pais</option>
+					<option value="20">Feijoada</option>
+					<option value="21">Festa A Fantasia</option>
+					<option value="22">Festa Beneficente</option>
+					<option value="23">Festa Empresarial</option>
+					<option value="24">Festa Junina</option>
+					<option value="25">Festas Religiosas</option>
+					<option value="26">Festa Temática</option>
+					<option value="27">Formatura</option>
+					<option value="28">Halloween</option>
+					<option value="29">Natal</option>
+					<option value="30">Noivado</option>
+					<option value="31">Páscoa</option>
+					<option value="32">Reveillón</option>
+					<option value="33">Velório</option>
                 </select><br>
           
                 <label>Descricao</label>

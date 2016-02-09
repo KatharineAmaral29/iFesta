@@ -77,77 +77,77 @@
                 <input name="preco" type="text" class="g"><br>
 
                 <label>Tipo de Serviço*</label><br>
-					<input type="radio" value="doces">Alimentícios Doces</input><br>                
-					<input type="radio" value="salgados">Alimentícios Salgados</input><br>
-					<input type=radio value="animacao">Animação</input><br>
-					<input type=radio value="artesanal">Artesanal</input><br>
-					<input type=radio value="artigosdefesta">Artigos de Festa</input><br>
-					<input type=radio value="bebidas">Bebidas</input><br>
-					<input type=radio value="beleza">Beleza</input><br>
-					<input type=radio value="decoracao">Decoração</input><br>
-					<input type=radio value="espacodeeventos">Espaço de Eventos</input><br>
-					<input type=radio value="estruturas">Estruturas</input><br>
-					<input type=radio value="fotoevideo">Foto e Vídeo</input><br>
-					<input type=radio value="materialgrafico">Material Gráfico</input><br>
-					<input type=radio value="musical">Musical</input><br>
-					<input type=radio value="organizacao">Organização</input><br>
-					<input type=radio value="profissional">Profissional</input><br>
-					<input type=radio value="someiluminacao">Som e Iluminação</input><br>					
-					<input type=radio value="veiculos">Veículos</input><br>
-					<input type=radio value="vestuario">Vestuário</input><br>					
-					<input type=radio name="servico" value="doces">Alimentícios Doces</input><br>                
-					<input type=radio name="servico" value="salgados">Alimentícios Salgados</input><br>
-					<input type=radio name="servico" value="animacao">Animação</input><br>
-					<input type=radio name="servico" value="artesanal">Artesanal</input><br>
-					<input type=radio name="servico" value="artigosdefesta">Artigos de Festa</input><br>
-					<input type=radio name="servico" value="bebidas">Bebidas</input><br>
-					<input type=radio name="servico" value="beleza">Beleza</input><br>
-					<input type=radio name="servico" value="decoracao">Decoração</input><br>
-					<input type=radio name="servico" value="espacodeeventos">Espaço de Eventos</input><br>
-					<input type=radio name="servico" value="estruturas">Estruturas</input><br>
-					<input type=radio name="servico" value="fotoevideo">Foto e Vídeo</input><br>
-					<input type=radio name="servico" value="materialgrafico">Material Gráfico</input><br>
-					<input type=radio name="servico" value="musical">Musical</input><br>
-					<input type=radio name="servico" value="organizacao">Organização</input><br>
-					<input type=radio name="servico" value="profissional">Profissional</input><br>
-					<input type=radio name="servico" value="someiluminacao">Som e Iluminação</input><br>					
-					<input type=radio name="servico" value="veiculos">Veículos</input><br>
-					<input type=radio name="servico" value="vestuario">Vestuário</input><br>					
+					<input type=radio name="servico" value="1">Alimentícios Doces</input><br>                
+					<input type=radio name="servico" value="2">Alimentícios Salgados</input><br>
+					<input type=radio name="servico" value="3">Animação</input><br>
+					<input type=radio name="servico" value="4">Artesanal</input><br>
+					<input type=radio name="servico" value="5">Artigos de Festa</input><br>
+					<input type=radio name="servico" value="6">Bebidas</input><br>
+					<input type=radio name="servico" value="7">Beleza</input><br>
+					<input type=radio name="servico" value="8">Decoração</input><br>
+					<input type=radio name="servico" value="9">Espaço de Eventos</input><br>
+					<input type=radio name="servico" value="10">Estruturas</input><br>
+					<input type=radio name="servico" value="11">Foto e Vídeo</input><br>
+					<input type=radio name="servico" value="12">Material Gráfico</input><br>
+					<input type=radio name="servico" value="13">Musical</input><br>
+					<input type=radio name="servico" value="14">Organização</input><br>
+					<input type=radio name="servico" value="15">Profissional</input><br>
+					<input type=radio name="servico" value="16">Som e Iluminação</input><br>					
+					<input type=radio name="servico" value="17">Veículos</input><br>
+					<input type=radio name="servico" value="18">Vestuário</input><br>					
+					<input type=radio name="servico" value="19">Alimentícios Doces</input><br>                
+					<input type=radio name="servico" value="20">Alimentícios Salgados</input><br>
+					<input type=radio name="servico" value="21">Animação</input><br>
+					<input type=radio name="servico" value="22">Artesanal</input><br>
+					<input type=radio name="servico" value="23">Artigos de Festa</input><br>
+					<input type=radio name="servico" value="24">Bebidas</input><br>
+					<input type=radio name="servico" value="25">Beleza</input><br>
+					<input type=radio name="servico" value="26">Decoração</input><br>
+					<input type=radio name="servico" value="27">Espaço de Eventos</input><br>
+					<input type=radio name="servico" value="28">Estruturas</input><br>
+					<input type=radio name="servico" value="29">Foto e Vídeo</input><br>
+					<input type=radio name="servico" value="30">Material Gráfico</input><br>
+					<input type=radio name="servico" value="31">Musical</input><br>
+					<input type=radio name="servico" value="32">Organização</input><br>
+					<input type=radio name="servico" value="33">Profissional</input><br>
+					<input type=radio name="servico" value="34">Som e Iluminação</input><br>					
+					<input type=radio name="servico" value="35">Veículos</input><br>
+					<input type=radio name="servico" value="36">Vestuário</input><br>					
 
                 <label>Tipo de Evento*</label><br><br>
-					<input type=checkbox name="evento" value="aniversarioadulto">Aniversário Adulto</input><br>
-					<input type=checkbox name="evento" value="aniversarioinfantil">Aniversário Infantil</input><br>
-					<input type=checkbox name="evento" value="bodas">Bodas</input><br>
-					<input type=checkbox name="evento" value="carnaval">Carnaval</input><br>
-					<input type=checkbox name="evento" value="casamento">Casamento</input><br>
-					<input type=checkbox name="evento" value="chabar">Chá Bar</input><br>
-					<input type=checkbox name="evento" value="chadebaby">Chá De Baby</input><br>
-					<input type=checkbox name="evento" value="chadefralda">Chá De Fralda</input><br>
-					<input type=checkbox name="evento" value="chalingerie">Chá Lingerie</input><br>
-					<input type=checkbox name="evento" value="chadepanela">Chá De Panela</input><br>
-					<input type=checkbox name="evento" value="churrasco">Churrasco</input><br>
-					<input type=checkbox name="evento" value="coffeebreak">Coffee Break</input><br>
-					<input type=checkbox name="evento" value="confraternizacao">Confraternização</input><br>
-					<input type=checkbox name="evento" value="descasamento">Descasamento</input><br>
-					<input type=checkbox name="evento" value="despedidadesolteiro">Despedida De Solteiro</input><br>
-					<input type=checkbox name="evento" value="diadascriancas">Dia Das Crianças</input><br>
-					<input type=checkbox name="evento" value="diadasmaes">Dia Das Mães</input><br>
-					<input type=checkbox name="evento" value="diadosnamorados">Dia Dos Namorados</input><br>
-					<input type=checkbox name="evento" value="diadospais">Dia Dos Pais</input><br>
-					<input type=checkbox name="evento" value="feijjoada">Feijoada</input><br>
-					<input type=checkbox name="evento" value="festaafantasia">Festa A Fantasia</input><br>
-					<input type=checkbox name="evento" value="festabeneficente">Festa Beneficente</input><br>
-					<input type=checkbox name="evento" value="festaempresarial">Festa Empresarial</input><br>
-					<input type=checkbox name="evento" value="festajunina">Festa Junina</input><br>
-					<input type=checkbox name="evento" value="festasreligiosas">Festas Religiosas</input><br>
-					<input type=checkbox name="evento" value="festatematica">Festa Temática</input><br>
-					<input type=checkbox name="evento" value="formatura">Formatura</input><br>
-					<input type=checkbox name="evento" value="halloween">Halloween</input><br>
-					<input type=checkbox name="evento" value="natal">Natal</input><br>
-					<input type=checkbox name="evento" value="noivado">Noivado</input><br>
-					<input type=checkbox name="evento" value="pascoa">Páscoa</input><br>
-					<input type=checkbox name="evento" value="reveillon">Reveillón</input><br>
-					<input type=checkbox name="evento" value="velorio">Velório</input><br>
+					<input type=checkbox name="evento" value="1">Aniversário Adulto</input><br>
+					<input type=checkbox name="evento" value="2">Aniversário Infantil</input><br>
+					<input type=checkbox name="evento" value="3">Bodas</input><br>
+					<input type=checkbox name="evento" value="4">Carnaval</input><br>
+					<input type=checkbox name="evento" value="5">Casamento</input><br>
+					<input type=checkbox name="evento" value="6">Chá Bar</input><br>
+					<input type=checkbox name="evento" value="7">Chá De Baby</input><br>
+					<input type=checkbox name="evento" value="8">Chá De Fralda</input><br>
+					<input type=checkbox name="evento" value="9">Chá Lingerie</input><br>
+					<input type=checkbox name="evento" value="10">Chá De Panela</input><br>
+					<input type=checkbox name="evento" value="11">Churrasco</input><br>
+					<input type=checkbox name="evento" value="12">Coffee Break</input><br>
+					<input type=checkbox name="evento" value="13">Confraternização</input><br>
+					<input type=checkbox name="evento" value="14">Descasamento</input><br>
+					<input type=checkbox name="evento" value="15">Despedida De Solteiro</input><br>
+					<input type=checkbox name="evento" value="16">Dia Das Crianças</input><br>
+					<input type=checkbox name="evento" value="17">Dia Das Mães</input><br>
+					<input type=checkbox name="evento" value="18">Dia Dos Namorados</input><br>
+					<input type=checkbox name="evento" value="19">Dia Dos Pais</input><br>
+					<input type=checkbox name="evento" value="20">Feijoada</input><br>
+					<input type=checkbox name="evento" value="21">Festa A Fantasia</input><br>
+					<input type=checkbox name="evento" value="22">Festa Beneficente</input><br>
+					<input type=checkbox name="evento" value="23">Festa Empresarial</input><br>
+					<input type=checkbox name="evento" value="24">Festa Junina</input><br>
+					<input type=checkbox name="evento" value="25">Festas Religiosas</input><br>
+					<input type=checkbox name="evento" value="26">Festa Temática</input><br>
+					<input type=checkbox name="evento" value="27">Formatura</input><br>
+					<input type=checkbox name="evento" value="28">Halloween</input><br>
+					<input type=checkbox name="evento" value="29">Natal</input><br>
+					<input type=checkbox name="evento" value="30">Noivado</input><br>
+					<input type=checkbox name="evento" value="31">Páscoa</input><br>
+					<input type=checkbox name="evento" value="32">Reveillón</input><br>
+					<input type=checkbox name="evento" value="33">Velório</input><br>
 
                 <input type="submit" value="Enviar">          
             </form>
