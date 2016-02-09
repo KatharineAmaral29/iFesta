@@ -1,0 +1,62 @@
+Tipos de Eventos:
+
+1 - Aniversário Adulto
+2 - Aniversário Infantil
+3 - Bodas
+4 - Carnaval
+5 - Casamento
+6 - Chá Bar
+7 - Chá De Baby
+8 - Chá De Fralda
+9 - Chá Lingerie
+10 - Chá De Panela
+11 - Churrasco
+12 - Coffee Break
+13 - Confraternização
+14 - Descasamento
+15 - Despedida De Solteiro
+16 - Dia Das Crianças
+17 - Dia Das Mães
+18 - Dia Dos Namorados
+19 - Dia Dos Pais
+20 - Feijoada
+21 - Festa A Fantasia
+22 - Festa Beneficente
+23 - Festa Empresarial
+24 - Festa Junina
+25 - Festas Religiosas
+26 - Festa Temática
+27 - Formatura
+28 - Halloween
+29 - Natal
+30 - Noivado
+31 - Páscoa
+32 - Reveillón
+33 - Velório
+
+Tipos de Serviço:
+
+1 - Alimentícios Doces
+2 - Alimentícios Salgados
+3 - Animação
+4 - Artesanal
+5 - Artigos de Festa
+6 - Bebidas
+7 - Beleza
+8 - Decoração
+9 - Espaço de Eventos
+10 - Estruturas
+12 - Foto e Vídeo
+13 - Material Gráfico
+14 - Musical
+15 - Organização
+16 - Profissional
+17 - Som e Iluminação
+18 - Veículos
+19 - Vestuário
+
+Tipo de Planos
+
+1 - Ouro
+2 - Prata
+3 - Bronze

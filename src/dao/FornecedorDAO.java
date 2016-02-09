@@ -163,6 +163,27 @@ public class FornecedorDAO {
 
 	        return sucesso;
 	    }
+	    
+	    public String conversaoPlanos(int x){
+	    	ArrayList<String> tipos  = new ArrayList<>();
+	    	
+	    	tipos.add("Ouro");tipos.add("Prata");tipos.add("Bronze");
+	    	
+	    	return tipos.get(x);
+	    }
+	    
+	    public int conversaoPlanos(String x){
+	    	int tipo = 0;
+	    	ArrayList<String> tipos  = new ArrayList<>();
+	    	
+	    	tipos.add("Ouro");tipos.add("Prata");tipos.add("Bronze");
+	    	
+	    	for(int i = 0;i < tipos.size();i++)
+	    		if(x == tipos.get(i))
+	    			tipo = i;
+	    	
+	    	return tipo;
+	    }
 
 	
 
