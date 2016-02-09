@@ -1,4 +1,7 @@
 package modelo;
+
+import java.util.ArrayList;
+
 public class Evento {
 	
 	private int idevento;
@@ -74,5 +77,35 @@ public class Evento {
 	public void setData(String data) {
 		this.data = data;
 	}
+	
+    public String conversaoTipo(int x){
+        ArrayList<String> tipos = new ArrayList<>();
+        
+        tipos.add("Aniversário Adulto");tipos.add("Aniversário Infantil");tipos.add("Bodas");tipos.add("Carnaval");tipos.add("Casamento");tipos.add("Chá Bar");tipos.add("Chá De Baby");tipos.add("Chá De Fralda");
+        tipos.add("Chá Lingerie");tipos.add("Chá De Panela");tipos.add("Churrasco");tipos.add("Coffee Break");tipos.add("Confraternização");tipos.add("Descasamento");tipos.add("Despedida De Solteiro");tipos.add("Dia Das Crianças");
+        tipos.add("Dia Das Mães");tipos.add("Dia Dos Namorados");tipos.add("Dia Dos Pais");tipos.add("Feijoada");tipos.add("Festa A Fantasia");tipos.add("Festa Beneficente");tipos.add("Festa Empresarial");tipos.add("Festa Junina");
+        tipos.add("Festas Religiosas");tipos.add("Festa Temática");tipos.add("Formatura");tipos.add("Halloween");tipos.add("Natal");tipos.add("Noivado");tipos.add("Páscoa");tipos.add("Reveillón");
+        tipos.add("Velório");
+        
+    	return tipos.get(x);
+    }
+    
+    public int conversaoTipo(String x){
+    	int tipo = 0;
+        ArrayList<String> tipos = new ArrayList<>();
+        
+        tipos.add("Aniversário Adulto");tipos.add("Aniversário Infantil");tipos.add("Bodas");tipos.add("Carnaval");tipos.add("Casamento");tipos.add("Chá Bar");tipos.add("Chá De Baby");tipos.add("Chá De Fralda");
+        tipos.add("Chá Lingerie");tipos.add("Chá De Panela");tipos.add("Churrasco");tipos.add("Coffee Break");tipos.add("Confraternização");tipos.add("Descasamento");tipos.add("Despedida De Solteiro");tipos.add("Dia Das Crianças");
+        tipos.add("Dia Das Mães");tipos.add("Dia Dos Namorados");tipos.add("Dia Dos Pais");tipos.add("Feijoada");tipos.add("Festa A Fantasia");tipos.add("Festa Beneficente");tipos.add("Festa Empresarial");tipos.add("Festa Junina");
+        tipos.add("Festas Religiosas");tipos.add("Festa Temática");tipos.add("Formatura");tipos.add("Halloween");tipos.add("Natal");tipos.add("Noivado");tipos.add("Páscoa");tipos.add("Reveillón");
+        tipos.add("Velório");
+    	
+    	for(int i = 0;i < tipos.size();i++){
+    		if(x == tipos.get(i))
+    			tipo = i;
+    	}
+    	
+    	return tipo;
+    }
 
 }

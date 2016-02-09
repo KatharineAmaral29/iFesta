@@ -6,25 +6,14 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import conexao.Conexao;
 import modelo.Evento;
 
-public class EventoDAO {
+public class EventoDAO extends Conexao{
 
-    private Connection con;
+    private Connection con = getConexao();
     private PreparedStatement pstmt;
     private ResultSet rs;
-
-	    public EventoDAO() {
-	        try {
-	            Class.forName("org.postgresql.Driver");
-	            con = DriverManager.getConnection("jdbc:postgresql://localhost/ifesta", "postgres", "12345");
-	        } catch (ClassNotFoundException e1) {
-	            System.out.println(e1.getMessage());
-	        } catch (SQLException e1) {
-	            System.out.println(e1.getMessage());
-	        }
-
-	    }
 	    
 	    
 	    public boolean insertEvento(Evento ev) {
@@ -126,34 +115,6 @@ public class EventoDAO {
 	        return sucesso;
 	    }
 	    
-	    public String conversaoTipo(int x){
-	        ArrayList<String> tipos = new ArrayList<>();
-	        
-	        tipos.add("Aniversário Adulto");tipos.add("Aniversário Infantil");tipos.add("Bodas");tipos.add("Carnaval");tipos.add("Casamento");tipos.add("Chá Bar");tipos.add("Chá De Baby");tipos.add("Chá De Fralda");
-	        tipos.add("Chá Lingerie");tipos.add("Chá De Panela");tipos.add("Churrasco");tipos.add("Coffee Break");tipos.add("Confraternização");tipos.add("Descasamento");tipos.add("Despedida De Solteiro");tipos.add("Dia Das Crianças");
-	        tipos.add("Dia Das Mães");tipos.add("Dia Dos Namorados");tipos.add("Dia Dos Pais");tipos.add("Feijoada");tipos.add("Festa A Fantasia");tipos.add("Festa Beneficente");tipos.add("Festa Empresarial");tipos.add("Festa Junina");
-	        tipos.add("Festas Religiosas");tipos.add("Festa Temática");tipos.add("Formatura");tipos.add("Halloween");tipos.add("Natal");tipos.add("Noivado");tipos.add("Páscoa");tipos.add("Reveillón");
-	        tipos.add("Velório");
-	        
-	    	return tipos.get(x);
-	    }
-	    
-	    public int conversaoTipo(String x){
-	    	int tipo = 0;
-	        ArrayList<String> tipos = new ArrayList<>();
-	        
-	        tipos.add("Aniversário Adulto");tipos.add("Aniversário Infantil");tipos.add("Bodas");tipos.add("Carnaval");tipos.add("Casamento");tipos.add("Chá Bar");tipos.add("Chá De Baby");tipos.add("Chá De Fralda");
-	        tipos.add("Chá Lingerie");tipos.add("Chá De Panela");tipos.add("Churrasco");tipos.add("Coffee Break");tipos.add("Confraternização");tipos.add("Descasamento");tipos.add("Despedida De Solteiro");tipos.add("Dia Das Crianças");
-	        tipos.add("Dia Das Mães");tipos.add("Dia Dos Namorados");tipos.add("Dia Dos Pais");tipos.add("Feijoada");tipos.add("Festa A Fantasia");tipos.add("Festa Beneficente");tipos.add("Festa Empresarial");tipos.add("Festa Junina");
-	        tipos.add("Festas Religiosas");tipos.add("Festa Temática");tipos.add("Formatura");tipos.add("Halloween");tipos.add("Natal");tipos.add("Noivado");tipos.add("Páscoa");tipos.add("Reveillón");
-	        tipos.add("Velório");
-	    	
-	    	for(int i = 0;i < tipos.size();i++){
-	    		if(x == tipos.get(i))
-	    			tipo = i;
-	    	}
-	    	
-	    	return tipo;
-	    }
+
 
 }

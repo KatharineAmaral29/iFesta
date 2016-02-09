@@ -7,34 +7,23 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import conexao.Conexao;
 import modelo.Fornecedor;
 import modelo.Servico;
 
-public class FornecedorDAO {
+public class FornecedorDAO extends Conexao{
 	
-	private Connection con;
+	private Connection con = getConexao();
     private PreparedStatement pstmt;
     private ResultSet rs;
-
-
-	    public FornecedorDAO() {
-	        try {
-	            Class.forName("org.postgresql.Driver");
-	            con = DriverManager.getConnection("jdbc:postgresql://localhost/ifesta", "postgres", "12345");
-	        } catch (ClassNotFoundException e1) {
-	            System.out.println(e1.getMessage());
-	        } catch (SQLException e1) {
-	            System.out.println(e1.getMessage());
-	        }
-
-	    }
 	    
 	    
 	    public boolean insertFornecedor(Fornecedor f) {
 
-	    	String clausula = "INSERT INTO servico (razao_social,nome_fantasia,cnpj,email_fornecedor,telefone_fornecedor_1,telefone_fornecedor_2,rua_fornecedor,"
-	    			+ "cidade_fornecedor,estado_fornecedor,cep_fornecedor,bairro_fornecedor, pais_fornecedor,plano_fornecedor)"
-	    								 + "VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)";
+	    	String clausula = "INSERT INTO fornecedor (razao_social,nome_fantasia,cnpj,email_fornecedor,telefone_fornecedor_1,"
+	    			+ "telefone_fornecedor_2,rua_fornecedor,cidade_fornecedor,estado_fornecedor,cep_fornecedor,"
+	    			+ "bairro_fornecedor, pais_fornecedor,plano_fornecedor)"
+	    			+ "VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)";
 	        try {
 	        	pstmt = con.prepareStatement(clausula);
 	        	pstmt.setString(1, f.getRazao_social());
@@ -49,7 +38,7 @@ public class FornecedorDAO {
 	        	pstmt.setString(10, f.getCep_fornecedor());
 	        	pstmt.setString(11, f.getBairro_fornecedor());
 	        	pstmt.setString(12, f.getPais_fornecedor());
-	        	pstmt.setString(13, f.getPlano_fornecedor());
+	        	pstmt.setInt(13, f.getPlano_fornecedor());
 	        	pstmt.execute();
 	        	pstmt.close();
 	        	con.close();
@@ -78,7 +67,6 @@ public class FornecedorDAO {
 	            			rs.getString("cnpj"), 
 	            			rs.getString("rua_fornecedor"), 
 	            			rs.getString("cep_fornecedor"), 
-	            			rs.getString("numero_fornecedor"), 
 	            			rs.getString("cidade_fornecedor"), 
 	            			rs.getString("telefone1_fornecedor"), 
 	            			rs.getString("telefone2_fornecedor"), 
@@ -87,7 +75,7 @@ public class FornecedorDAO {
 	            			rs.getString("bairro_fornecedor"),
 	            			rs.getString("estado_fornecedor"),
 	            			rs.getString("pais_fornecedor"),
-	            			rs.getString("plano_fornecedor"));
+	            			rs.getInt("plano_fornecedor"));
 	            	
 	            	fornecedores.add(f);	                
 	            }
@@ -111,7 +99,6 @@ public class FornecedorDAO {
 	            			rs.getString("cnpj"), 
 	            			rs.getString("rua_fornecedor"), 
 	            			rs.getString("cep_fornecedor"), 
-	            			rs.getString("numero_fornecedor"), 
 	            			rs.getString("cidade_fornecedor"), 
 	            			rs.getString("telefone1_fornecedor"), 
 	            			rs.getString("telefone2_fornecedor"), 
@@ -120,7 +107,7 @@ public class FornecedorDAO {
 	            			rs.getString("bairro_fornecedor"),
 	            			rs.getString("estado_fornecedor"),
 	            			rs.getString("pais_fornecedor"),
-	            			rs.getString("plano_fornecedor"));	                
+	            			rs.getInt("plano_fornecedor"));	                
 	            }
 	        } catch (SQLException e1) {
 	            System.out.println(e1.getMessage());
@@ -164,26 +151,7 @@ public class FornecedorDAO {
 	        return sucesso;
 	    }
 	    
-	    public String conversaoPlanos(int x){
-	    	ArrayList<String> tipos  = new ArrayList<>();
-	    	
-	    	tipos.add("Ouro");tipos.add("Prata");tipos.add("Bronze");
-	    	
-	    	return tipos.get(x);
-	    }
-	    
-	    public int conversaoPlanos(String x){
-	    	int tipo = 0;
-	    	ArrayList<String> tipos  = new ArrayList<>();
-	    	
-	    	tipos.add("Ouro");tipos.add("Prata");tipos.add("Bronze");
-	    	
-	    	for(int i = 0;i < tipos.size();i++)
-	    		if(x == tipos.get(i))
-	    			tipo = i;
-	    	
-	    	return tipo;
-	    }
+
 
 	
 

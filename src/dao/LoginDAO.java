@@ -1,7 +1,8 @@
 package dao;
 
+import conexao.Conexao;
 
-public class LoginDAO {
+public class LoginDAO extends Conexao{
 
 	public LoginDAO() {
 		// TODO Auto-generated constructor stub

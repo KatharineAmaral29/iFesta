@@ -30,18 +30,20 @@ public class CadastroServicoServlet extends HttpServlet {
 		
 		//criando Servico
 		Servico servico = new Servico();
-		servico.setIdfornecedor(1); 		// TROCAR PELO ID DO FORNECEDOR QUE ESTIVER LOGADO
+		servico.setIdfornecedor(2); 		// TROCAR PELO ID DO FORNECEDOR QUE ESTIVER LOGADO
 		servico.setNomeServico(nome);
 		servico.setDescricao(descricao);
 		servico.setTipo_servico(tiposervico);
 		servico.setPreco_servico(preco);
 		servico.setRegras_servico(regras);
+		System.out.println("Tipo de evento");
+		System.out.println(tipoevento);
 
 
-		ServicoDAO cadastrar;
+		DAO cadastrar;
 		try {
-			cadastrar = new ServicoDAO();
-			if(cadastrar.insertServico(servico)){
+			cadastrar = new DAO();
+			if(cadastrar.inserir(servico)){
 				response.sendRedirect("cadastro-servico.jsp");
 			}
 			//jsp de erro.

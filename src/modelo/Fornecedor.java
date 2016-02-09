@@ -1,4 +1,7 @@
 package modelo;
+
+import java.util.ArrayList;
+
 public class Fornecedor {
 	
 	private int idfornecedor;
@@ -7,7 +10,6 @@ public class Fornecedor {
 	private String cnpj = new String();
 	private String rua_fornecedor = new String();
 	private String cep_fornecedor = new String();
-	private String numero_fornecedor = new String();
 	private String cidade_fornecedor = new String();
 	private String telefone1_fornecedor = new String();
 	private String telefone2_fornecedor = new String();
@@ -16,16 +18,16 @@ public class Fornecedor {
 	private String bairro_fornecedor = new String();
 	private String estado_fornecedor = new String();
 	private String pais_fornecedor = new String();
-	private String plano_fornecedor = new String();
+	private int plano_fornecedor;
 	
 	public Fornecedor(){
 		
 	}
 	
 	public void preencherFornecedor(int idfornecedor, String nome_fantasia, String razao_social, String cnpj, String rua_fornecedor,
-			String cep_fornecedor, String numero_fornecedor, String cidade_fornecedor, String telefone1_fornecedor,
+			String cep_fornecedor, String cidade_fornecedor, String telefone1_fornecedor,
 			String telefone2_fornecedor, String email_fornecedor, String senha_fornecedor, String bairro_fornecedor,
-			String estado_fornecedor, String pais_fornecedor, String plano_fornecedor) {
+			String estado_fornecedor, String pais_fornecedor, int plano_fornecedor) {
 		
 		this.idfornecedor = idfornecedor;
 		this.nome_fantasia = nome_fantasia;
@@ -33,7 +35,6 @@ public class Fornecedor {
 		this.cnpj = cnpj;
 		this.rua_fornecedor = rua_fornecedor;
 		this.cep_fornecedor = cep_fornecedor;
-		this.numero_fornecedor = numero_fornecedor;
 		this.cidade_fornecedor = cidade_fornecedor;
 		this.telefone1_fornecedor = telefone1_fornecedor;
 		this.telefone2_fornecedor = telefone2_fornecedor;
@@ -80,12 +81,6 @@ public class Fornecedor {
 	}
 	public void setCep_fornecedor(String cep_fornecedor) {
 		this.cep_fornecedor = cep_fornecedor;
-	}
-	public String getNumero_fornecedor() {
-		return numero_fornecedor;
-	}
-	public void setNumero_fornecedor(String numero_fornecedor) {
-		this.numero_fornecedor = numero_fornecedor;
 	}
 	public String getCidade_fornecedor() {
 		return cidade_fornecedor;
@@ -142,16 +137,33 @@ public class Fornecedor {
 		this.pais_fornecedor = pais_fornecedor;
 	}
 
-	public String getPlano_fornecedor() {
+	public int getPlano_fornecedor() {
 		return plano_fornecedor;
 	}
 
-	public void setPlano_fornecedor(String plano_fornecedor) {
+	public void setPlano_fornecedor(int plano_fornecedor) {
 		this.plano_fornecedor = plano_fornecedor;
 	}
 	
-
-	
-	
+    public String conversaoPlanos(int x){
+    	ArrayList<String> tipos  = new ArrayList<>();
+    	
+    	tipos.add("Ouro");tipos.add("Prata");tipos.add("Bronze");
+    	
+    	return tipos.get(x);
+    }
+    
+    public int conversaoPlanos(String x){
+    	int tipo = 0;
+    	ArrayList<String> tipos  = new ArrayList<>();
+    	
+    	tipos.add("Ouro");tipos.add("Prata");tipos.add("Bronze");
+    	
+    	for(int i = 0;i < tipos.size();i++)
+    		if(x == tipos.get(i))
+    			tipo = i;
+    	
+    	return tipo;
+    }	
 
 }

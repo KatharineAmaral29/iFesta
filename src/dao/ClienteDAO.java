@@ -4,33 +4,16 @@ import java.sql.*;
 import java.util.ArrayList;
 
 import conexao.ConectionFactory;
+import conexao.Conexao;
 import modelo.Cliente;
 import modelo.Fornecedor;
 
-public class ClienteDAO {
-
+public class ClienteDAO extends Conexao{
+	
+	Connection con = getConexao();
 	private PreparedStatement ps;
 	private ResultSet rs;
 
-	public Connection getConexao(){
-		Connection conexao = null;
-		String usuario = "postgres";
-		String senha = "12345";
-		String nomeBancoDados = "ifesta";
-
-		try {
-			Class.forName("org.postgresql.Driver");
-			conexao = DriverManager.getConnection("jdbc:postgresql://localhost:5432/" + nomeBancoDados,
-					usuario, senha);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		return conexao;
-	}
-	
-	public ClienteDAO() {
-
-	}
 
 	public boolean insertCliente(Cliente c) {		
 		
@@ -40,7 +23,7 @@ public class ClienteDAO {
 				+ "VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)";
 		
 		try {
-			Connection con = getConexao();
+
 			ps = con.prepareStatement(clausula);
 			ps.setString(1, c.getCpf());
 			ps.setString(2, c.getNomeCliente());
@@ -74,7 +57,6 @@ public class ClienteDAO {
         
         String clausula = "select * from cliente";
         try {
-        	Connection con = getConexao();
         	ps = con.prepareStatement(clausula);
             rs = ps.executeQuery();
             if (rs.next()) {
@@ -93,9 +75,14 @@ public class ClienteDAO {
 					    rs.getString("sexo_cliente"),
 					    rs.getString("estado_cliente"),
 					    rs.getString("pais_cliente"));
+				
+				
             	
             	clientes.add(c);	                
             }
+            
+            ps.close();
+			con.close();
         } catch (SQLException e1) {
             System.out.println(e1.getMessage());
         }
@@ -108,7 +95,6 @@ public class ClienteDAO {
         String clausula = "select * from cliente where cpf = ?";
         try {
         	System.out.println("Procurando...");
-        	Connection con = getConexao();
         	ps = con.prepareStatement(clausula);
         	ps.setString(1, cpf);
             rs = ps.executeQuery();
@@ -129,8 +115,10 @@ public class ClienteDAO {
 					    rs.getString("estado_cliente"),
 					    rs.getString("pais_cliente"));
 				System.out.println("Achou!!");
-
+				
 			}
+            ps.close();
+			con.close();
 		} catch (SQLException e1) {
 			System.out.println(e1.getMessage());
 		}
@@ -141,7 +129,6 @@ public class ClienteDAO {
 		String clausula = "SELECT * FROM cliente WHERE email_cliente = ? AND senha_cliente = ?";
 		
 		try{
-			Connection con = getConexao();
 			ps = con.prepareStatement(clausula);
 			ps.setString(1, login);
 			ps.setString(2, senha);
@@ -162,9 +149,12 @@ public class ClienteDAO {
 							    rs.getString("sexo_cliente"),
 							    rs.getString("estado_cliente"),
 							    rs.getString("pais_cliente"));
+			
 				return c;
 				
 			}
+			ps.close();
+			con.close();
 		} catch (SQLException e1) {
 			System.out.println(e1.getMessage());
 		}
@@ -189,7 +179,6 @@ public class ClienteDAO {
 				+ "where cpf = ?";
 
 		try {
-			Connection con = getConexao();
 			ps = con.prepareStatement(clausula);
 			ps.setString(1, c.getNomeCliente());
 			ps.setString(2, c.getCpf());
@@ -207,9 +196,11 @@ public class ClienteDAO {
 			ps.setString(14, c.getPais_cliente());
 			ps.setString(15, c.getCpf());
 			
-			
+
 			sucesso = true;
 			System.out.println("Atualizado");	
+			ps.close();
+			con.close();
 		} catch (SQLException e1) {
 			System.out.println(e1.getMessage());
 		}
@@ -219,7 +210,6 @@ public class ClienteDAO {
 		boolean sucesso = false;
 		String clausula = "delete from cliente where cpf = ?";
 		try {
-			Connection con = getConexao();
 			ps = con.prepareStatement(clausula);
 			ps.setString(1, c.getCpf());
 			ps.execute();

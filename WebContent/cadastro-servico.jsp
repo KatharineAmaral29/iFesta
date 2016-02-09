@@ -81,7 +81,7 @@
     }
 </script>  
   
-            <form action="CadastroServicoServlet" method="post" id="validate">                          
+            <form action="CadastroServicoServlet" method="get" id="validate">                          
                 <label>Título do Serviço*</label>
                 <input name="nomeservico" type="text" class="g"><br>
 

@@ -54,7 +54,6 @@ public class CadastroFornecedorServlet extends HttpServlet {
 		fornecedor.setRazao_social(razaosocial);
 		fornecedor.setCnpj(cnpj);
 		fornecedor.setRua_fornecedor(rua);
-		fornecedor.setNumero_fornecedor(numero);
 		fornecedor.setCep_fornecedor(cep);
 		fornecedor.setBairro_fornecedor(bairro);
 		fornecedor.setCidade_fornecedor(cidade);
@@ -64,7 +63,7 @@ public class CadastroFornecedorServlet extends HttpServlet {
 		fornecedor.setTelefone2_fornecedor(telefone2);
 		fornecedor.setEmail_fornecedor(email);
 		fornecedor.setSenha_fornecedor(senha);
-		fornecedor.setPlano_fornecedor(plano);
+		fornecedor.setPlano_fornecedor(fornecedor.conversaoPlanos(plano));
 		
 		System.out.println("Fornecedor criado");
 		
@@ -73,8 +72,8 @@ public class CadastroFornecedorServlet extends HttpServlet {
 		session.setAttribute("autorizado", fornecedor);
 				
 		try {
-			FornecedorDAO cadastrar = new FornecedorDAO();
-			if(cadastrar.insertFornecedor(fornecedor)){
+			DAO cadastrar = new DAO();
+			if(cadastrar.inserir(fornecedor)){
 				response.sendRedirect("inicial-empresa.jsp");
 			}
 			//jsp de erro.

@@ -7,27 +7,14 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import conexao.Conexao;
 import modelo.Servico;
 
-public class ServicoDAO {
+public class ServicoDAO extends Conexao{
 	
-	private Connection con;
+	private Connection con = getConexao();
     private PreparedStatement pstmt;
-    private ResultSet rs;
-
-
-	    public ServicoDAO() {
-	        try {
-	            Class.forName("org.postgresql.Driver");
-	            con = DriverManager.getConnection("jdbc:postgresql://localhost/ifesta", "postgres", "12345");
-	        } catch (ClassNotFoundException e1) {
-	            System.out.println(e1.getMessage());
-	        } catch (SQLException e1) {
-	            System.out.println(e1.getMessage());
-	        }
-
-	    }
-	    
+    private ResultSet rs;	    
 	    
 	    public boolean insertServico(Servico s) {
 
@@ -157,32 +144,6 @@ public class ServicoDAO {
 	        return sucesso;
 	    }
 	    
-	    public String conversaoTipo(int x){
-	    	ArrayList<String> tipos  = new ArrayList<>();
-	    	
-	    	tipos.add("Alimentícios Doces");tipos.add("Alimentícios Salgados");tipos.add("Animação");tipos.add("Artesanal");tipos.add("Artigos de Festa");tipos.add("Bebidas");tipos.add("Beleza");tipos.add("Decoração");
-	    	tipos.add("Espaço de Eventos");tipos.add("Estruturas");tipos.add("Foto e Vídeo");tipos.add("Material Gráfico");tipos.add("Musical");tipos.add("Organização");tipos.add("Profissional");tipos.add("Som e Iluminação");
-	    	tipos.add("Veículos");tipos.add("Vestuário");
-	    	
-	    	
-	    	return tipos.get(x);
-	    }
-	    
-	    public int conversaoTipo(String x){
-	    	int tipo = 0;
-	    	ArrayList<String> tipos  = new ArrayList<>();
-	    	
-	    	tipos.add("Alimentícios Doces");tipos.add("Alimentícios Salgados");tipos.add("Animação");tipos.add("Artesanal");tipos.add("Artigos de Festa");tipos.add("Bebidas");tipos.add("Beleza");tipos.add("Decoração");
-	    	tipos.add("Espaço de Eventos");tipos.add("Estruturas");tipos.add("Foto e Vídeo");tipos.add("Material Gráfico");tipos.add("Musical");tipos.add("Organização");tipos.add("Profissional");tipos.add("Som e Iluminação");
-	    	tipos.add("Veículos");tipos.add("Vestuário");
-	    	
-	    	for(int i = 0;i < tipos.size();i++)
-	    		if(x == tipos.get(i))
-	    			tipo = i;
-	    	
-	    	return tipo;
-	    }
 
-	
 
 }
