@@ -118,11 +118,8 @@
     
     <section>
     	<div>
-<<<<<<< HEAD
-    		<form action="CadastroFornecedorServlet" method="get" id="validate">
-=======
-    		<form action="CadastroFornecedorServlet" method="post" id="validate">
->>>>>>> origin/master
+
+   		<form action="CadastroFornecedorServlet" method="post" id="validate">
     			<label>Nome Fantasia* </label>
 				<input name ="nomefantasia" type="text" class="g"><br>    		
     			<label>Razão Social* </label>
