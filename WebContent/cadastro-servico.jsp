@@ -94,25 +94,7 @@
 					<input type=radio name="servico" value="15">Profissional</input><br>
 					<input type=radio name="servico" value="16">Som e Iluminação</input><br>					
 					<input type=radio name="servico" value="17">Veículos</input><br>
-					<input type=radio name="servico" value="18">Vestuário</input><br>					
-					<input type=radio name="servico" value="19">Alimentícios Doces</input><br>                
-					<input type=radio name="servico" value="20">Alimentícios Salgados</input><br>
-					<input type=radio name="servico" value="21">Animação</input><br>
-					<input type=radio name="servico" value="22">Artesanal</input><br>
-					<input type=radio name="servico" value="23">Artigos de Festa</input><br>
-					<input type=radio name="servico" value="24">Bebidas</input><br>
-					<input type=radio name="servico" value="25">Beleza</input><br>
-					<input type=radio name="servico" value="26">Decoração</input><br>
-					<input type=radio name="servico" value="27">Espaço de Eventos</input><br>
-					<input type=radio name="servico" value="28">Estruturas</input><br>
-					<input type=radio name="servico" value="29">Foto e Vídeo</input><br>
-					<input type=radio name="servico" value="30">Material Gráfico</input><br>
-					<input type=radio name="servico" value="31">Musical</input><br>
-					<input type=radio name="servico" value="32">Organização</input><br>
-					<input type=radio name="servico" value="33">Profissional</input><br>
-					<input type=radio name="servico" value="34">Som e Iluminação</input><br>					
-					<input type=radio name="servico" value="35">Veículos</input><br>
-					<input type=radio name="servico" value="36">Vestuário</input><br>					
+					<input type=radio name="servico" value="18">Vestuário</input><br>								
 
                 <label>Tipo de Evento*</label><br><br>
 					<input type=checkbox name="evento" value="1">Aniversário Adulto</input><br>
