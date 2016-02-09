@@ -18,15 +18,6 @@
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->
-	<script type="text/javascript" src="js/validaFormLogin.js"></script>
-	<script type="text/javascript" src="js/validaFormBusca.js"></script>
-	<script type="text/javascript" src="js/validaFormCadastro.js"></script>	
-    <link rel="shortcut icon" href="images/ico/logo.png"></link>
-
 </head> <!--/head-->
 
 <body class="homepage">
