@@ -129,6 +129,32 @@ public class ServicoDAO {
 
 	        return sucesso;
 	    }
+	    
+	    public String conversaoTipo(int x){
+	    	ArrayList<String> tipos  = new ArrayList<>();
+	    	
+	    	tipos.add("Alimentícios Doces");tipos.add("Alimentícios Salgados");tipos.add("Animação");tipos.add("Artesanal");tipos.add("Artigos de Festa");tipos.add("Bebidas");tipos.add("Beleza");tipos.add("Decoração");
+	    	tipos.add("Espaço de Eventos");tipos.add("Estruturas");tipos.add("Foto e Vídeo");tipos.add("Material Gráfico");tipos.add("Musical");tipos.add("Organização");tipos.add("Profissional");tipos.add("Som e Iluminação");
+	    	tipos.add("Veículos");tipos.add("Vestuário");
+	    	
+	    	
+	    	return tipos.get(x);
+	    }
+	    
+	    public int conversaoTipo(String x){
+	    	int tipo = 0;
+	    	ArrayList<String> tipos  = new ArrayList<>();
+	    	
+	    	tipos.add("Alimentícios Doces");tipos.add("Alimentícios Salgados");tipos.add("Animação");tipos.add("Artesanal");tipos.add("Artigos de Festa");tipos.add("Bebidas");tipos.add("Beleza");tipos.add("Decoração");
+	    	tipos.add("Espaço de Eventos");tipos.add("Estruturas");tipos.add("Foto e Vídeo");tipos.add("Material Gráfico");tipos.add("Musical");tipos.add("Organização");tipos.add("Profissional");tipos.add("Som e Iluminação");
+	    	tipos.add("Veículos");tipos.add("Vestuário");
+	    	
+	    	for(int i = 0;i < tipos.size();i++)
+	    		if(x == tipos.get(i))
+	    			tipo = i;
+	    	
+	    	return tipo;
+	    }
 
 	
 
