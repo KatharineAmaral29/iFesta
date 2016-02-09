@@ -31,6 +31,7 @@ public class CadastroServicoServlet extends HttpServlet {
 		float preco = Float.parseFloat(request.getParameter("preco"));
 		String regras = request.getParameter("regras");
 		ArrayList<Integer> evento = new ArrayList<Integer> (); //arraylist com os id dos eventos selecionados
+		ArrayList<Boolean> aux = new ArrayList<>();
 		for(int i=0;i<tipoevento.length;i++)
 			evento.add(Integer.parseInt(tipoevento[i]));
 		
@@ -42,8 +43,11 @@ public class CadastroServicoServlet extends HttpServlet {
 		servico.setTipo_servico(tiposervico);
 		servico.setPreco_servico(preco);
 		servico.setRegras_servico(regras);
-		System.out.println("Tipo de evento");
-		System.out.println(tipoevento);
+		aux = servico.getTipo_eventos();
+		for(int i = 0;i<evento.size();i++){
+			aux.set((evento.get(i)-1), true);
+		}
+		servico.setTipo_eventos(aux);
 
 
 		DAO cadastrar;

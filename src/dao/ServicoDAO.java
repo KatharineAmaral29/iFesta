@@ -17,9 +17,17 @@ public class ServicoDAO extends Conexao{
     private ResultSet rs;	    
 	    
 	    public boolean insertServico(Servico s) {
-
-	    	String clausula = "INSERT INTO servico (nome_servico,descricao_servico,idfornecedor,tipo_servico,preco_servico,regras_servico) "
-	    								 + "VALUES (?,?,?,?,?,?)";
+	    	
+	    	String clausula = "INSERT INTO servico (nome_servico,descricao_servico,idfornecedor,tipo_servico,preco_servico,regras_servico,"
+	    			+ "aniversarioadulto,aniversarioinfantil,bodas,carnaval,casamento,chabar,chadebaby,chadefralda,chalingerie,chadepanela,"
+	    			+ "churrasco,coffebreak,confraternizacao,descasamento,despedidadesolteiro,diadascriancas,diadasmaes,diadosnamorados,diadospais,"
+	    			+ "feijoada,festaafantasia,festabeneficente,festaempresarial,festajunina,festasreligiosas,festastematicas,formatura,halloween,natal,"
+	    			+ "noivado,pascoa,reveillon,velorio) "
+	    			+ "VALUES (?,?,?,?,?,?"
+	    			+ ",?,?,?,?,?,?,?,?"
+	    			+ ",?,?,?,?,?,?,?,?"
+	    			+ ",?,?,?,?,?,?,?,?"
+	    			+ ",?,?,?,?,?,?,?,?,?)";
 	        try {
 	        	pstmt = con.prepareStatement(clausula);
 	        	pstmt.setString(1, s.getNomeServico()); 
@@ -28,7 +36,12 @@ public class ServicoDAO extends Conexao{
 	        	pstmt.setInt(4, s.getTipo_servico());
 	        	pstmt.setFloat(5, s.getPreco_servico());
 	        	pstmt.setString(6, s.getRegras_servico());
-	        	pstmt.executeQuery();
+	        	int j = 7;
+	        	for(int i = 0;i<s.getTipo_eventos().size();i++){
+	        		pstmt.setBoolean(j, s.getTipo_eventos().get(i));
+	        		j++;
+	        	}
+	        	pstmt.execute();
 	        	pstmt.close();
 	        	con.close();
 	        	return true;

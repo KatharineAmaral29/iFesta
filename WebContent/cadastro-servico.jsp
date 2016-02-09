@@ -106,7 +106,7 @@
 					<input type=radio name="servico" value="18">Vestuário</input><br>								
 
                 <label>Esse serviço combina com os eventos de tipo:*</label><br><br>
-				    <input type="checkbox" name="evento" onclick="marcarTodos(this.checked);">
+				    <input type="checkbox" onclick="marcarTodos(this.checked);">
     				<span id="acao">Marcar Todos</span> <br>
 					<input type=checkbox name="evento" value="1">Aniversário Adulto</input><br>
 					<input type=checkbox name="evento" value="2">Aniversário Infantil</input><br>

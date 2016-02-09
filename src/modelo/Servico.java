@@ -11,7 +11,7 @@ public class Servico {
 	private int tipo_servico;
 	private float preco_servico;
 	private String regras_servico = new String();
-	ArrayList<Boolean> tipo_eventos = new ArrayList<>(33);
+	ArrayList<Boolean> tipo_eventos = new ArrayList<>();
 	//private int tipo_evento; 
 	/* VER COMO VAI SALVAR NO BD.
 	SUGESTÃO uma coluna BOOLEAN para cada tipo de evento.
@@ -21,11 +21,9 @@ public class Servico {
 	*/
 	
 	public Servico(){
-		for(int i = 0;i<tipo_eventos.size();i++){
+		for(int i = 0;i<33;i++){
 			tipo_eventos.add(false);
 		}
-			
-		
 	}
 
 	
@@ -104,7 +102,17 @@ public class Servico {
 		this.regras_servico = regras_servico;
 	}
 	
-    public String conversaoTipo(int x){
+    public ArrayList<Boolean> getTipo_eventos() {
+		return tipo_eventos;
+	}
+
+
+	public void setTipo_eventos(ArrayList<Boolean> tipo_eventos) {
+		this.tipo_eventos = tipo_eventos;
+	}
+
+
+	public String conversaoTipo(int x){
     	ArrayList<String> tipos  = new ArrayList<>();
     	
     	tipos.add("Alimentícios Doces");tipos.add("Alimentícios Salgados");tipos.add("Animação");tipos.add("Artesanal");tipos.add("Artigos de Festa");tipos.add("Bebidas");tipos.add("Beleza");tipos.add("Decoração");
