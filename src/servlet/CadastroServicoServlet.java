@@ -1,6 +1,8 @@
 package servlet;
 
 import java.io.IOException;
+import java.util.ArrayList;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -24,9 +26,13 @@ public class CadastroServicoServlet extends HttpServlet {
 		String nome = request.getParameter("nomeservico");
 		String descricao = request.getParameter("descricao");
 		int tiposervico = Integer.parseInt(request.getParameter("servico"));
-		int tipoevento = Integer.parseInt(request.getParameter("evento"));
+		String[] tipoevento; //vetor para passar as strings com os tipos de evento selecionados
+		tipoevento = request.getParameterValues("evento");
 		float preco = Float.parseFloat(request.getParameter("preco"));
 		String regras = request.getParameter("regras");
+		ArrayList<Integer> evento = new ArrayList<Integer> (); //arraylist com os id dos eventos selecionados
+		for(int i=0;i<tipoevento.length;i++)
+			evento.add(Integer.parseInt(tipoevento[i]));
 		
 		//criando Servico
 		Servico servico = new Servico();
