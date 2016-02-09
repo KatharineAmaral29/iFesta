@@ -7,6 +7,28 @@ public class Servico {
 	private String nome_servico = new String();
 	private String descricao = new String();
 	private int tipo_servico;
+	private int tipo_evento; /* VER COMO VAI SALVAR NO BD.
+	SUGESTÃO uma coluna BOOLEAN para cada tipo de evento.
+	Valor TRUE = pode ser usado em evento da coluna
+	Valor FALSE = não pode ser usado em evento da coluna
+	
+	*/
+	public String getNome_servico() {
+		return nome_servico;
+	}
+
+	public void setNome_servico(String nome_servico) {
+		this.nome_servico = nome_servico;
+	}
+
+	public int getTipo_evento() {
+		return tipo_evento;
+	}
+
+	public void setTipo_evento(int tipo_evento) {
+		this.tipo_evento = tipo_evento;
+	}
+
 	private float preco_servico;
 	private String regras_servico = new String();
 	
