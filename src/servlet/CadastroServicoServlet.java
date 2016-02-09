@@ -7,27 +7,47 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * Servlet implementation class CadastroServicoServlet
- */
+import dao.*;
+import modelo.*;
+
 @WebServlet("/CadastroServicoServlet")
 public class CadastroServicoServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
+
     public CadastroServicoServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		//requisitando paramentros do formulario
+		String nome = request.getParameter("nomeevento");
+		String descricao = request.getParameter("descricao");
+		int tiposervico = Integer.parseInt(request.getParameter("tiposervico"));
+		float preco = Float.parseFloat(request.getParameter("preco"));
+		String regras = request.getParameter("regras");
+		
+		//criando Servico
+		Servico servico = new Servico();
+		servico.setIdfornecedor(1); 		// TROCAR PELO ID DO FORNECEDOR QUE ESTIVER LOGADO
+		servico.setNomeServico(nome);
+		servico.setDescricao(descricao);
+		servico.setTipo_servico(tiposervico);
+		servico.setPreco_servico(preco);
+		servico.setRegras_servico(regras);
+
+
+		ServicoDAO cadastrar;
+		try {
+			cadastrar = new ServicoDAO();
+			if(cadastrar.insertServico(servico)){
+				response.sendRedirect("cadastro-servico.jsp");
+			}
+			//jsp de erro.
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }
