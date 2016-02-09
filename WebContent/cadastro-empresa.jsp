@@ -74,7 +74,7 @@
                     <div class="col-sm-4 plan price-one wow fadeInDown">
                         <ul>
                             <li class="heading-one">
-                                <h1>Plano 1</h1>
+                                <h1>Plano Ouro</h1>
                                 <span>R$ XX/Mês</span>
                             </li>
                             <li>Caracteristica 1</li>
@@ -91,7 +91,7 @@
                     <div class="col-sm-4 plan price-two wow fadeInDown">
                         <ul>
                             <li class="heading-two">
-                                <h1>Plano 2</h1>
+                                <h1>Plano Prata</h1>
                                 <span>R$ XX/Mês</span>
                             </li>
                             <li>Caracteristica 1</li>
@@ -108,7 +108,7 @@
                     <div class="col-sm-4 plan price-three wow fadeInDown">
                         <ul>
                             <li class="heading-three">
-                                <h1>Plano 3</h1>
+                                <h1>Plano Bronze</h1>
                                 <span>R$ XX/Mês</span>
                             </li>
                             <li>Caracteristica 1</li>
@@ -135,12 +135,20 @@
 				<input name ="razaosocial" type="text" class="g"><br>
 				<label>CNPJ*</label>
 				<input name ="cnpj" type="text" class="g"><br>
-				<label>Endereço*</label>
-				<input name ="endereco" type="text" class="g"><br>
+				<label>Rua*</label>
+				<input name ="rua" type="text" class="g"><br>
 				<label>Número*</label>
 				<input name ="numero" type="text" class="g"><br>
+				<label>CEP</label>
+				<input name ="cep" type="text" class="g"><br>
+				<label>Bairro*</label>
+				<input name ="bairro" type="text" class="g"><br>
 				<label>Cidade*</label>
 				<input name ="cidade" type="text" class="g"><br>
+				<label>Estado*</label>
+				<input name ="estado" type="text" class="g"><br>
+				<label>País*</label>
+				<input name ="pais" type="text" class="g"><br>
 				<label>Telefone 1*</label>
 				<input name ="telefone1" type="text" class="g"><br>
 				<label>Telefone 2</label>
@@ -150,11 +158,11 @@
 				<label>Senha*</label>
 				<input name ="senha" type="password" class="g"><br>
 				<label>Plano*</label>
-				<SELECT name=“plano">
-					<OPTION>Plano 1</OPTION>
-					<OPTION>Plano 2</OPTION>
-					<OPTION>Plano 3</OPTION>
-				</SELECT><br>
+				<select name=“plano">
+					<option value="1">Plano Ouro</option>
+					<option value="2">Plano Prata</option>
+					<option value="3">Plano Bronze</option>
+				</select><br>
 				
     			<input type="submit" value="Enviar">
     		</form>
