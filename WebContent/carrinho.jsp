@@ -52,6 +52,8 @@
             </div><!--/.container-->
         </nav><!--/nav-->   
     </header><!--/header-->
+    
+    Hello, <%= session.getAttribute( "loginUsuario" ) %>
 		
 	<TABLE BORDER=1>
 		<TR><TH>Imagem</TH><TH>Item</TH><TH>Descrição</TH><TH>Fornecedor</TH><TH>Preço Unitário</TH><TH>Quantidade</TH><TH>Preço Total</TH><TH>Remover</TH></TR> 

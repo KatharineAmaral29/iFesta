@@ -53,7 +53,7 @@
         
     </header><!--/header-->
 	
-	Hello, <%= session.getAttribute( "emailcliente" ) %>
+	Hello, <%= session.getAttribute( "loginUsuario" ) %>
 		
 	<div class="categoria" align="middle">
 		<TABLE BORDER=0>

@@ -18,8 +18,6 @@ import modelo.Cliente;
  */
 @WebServlet("/LoginClienteServlet")
 public class LoginClienteServlet extends HttpServlet {
-	public String login;
-	public String senha;
 	private static final long serialVersionUID = 1L;
        
     /**
@@ -45,23 +43,20 @@ public class LoginClienteServlet extends HttpServlet {
 		String login_form = request.getParameter("emailc"); // Pega o Login vindo do formulário
 		String senha_form = request.getParameter("senhac"); //Pega a senha vinda do formulário
 		
-		if(ldao.validate(login_form, senha_form))	{
+		if(ldao.validate(login_form, senha_form))	{//Caso login e senha estejam corretos...
 			System.out.println("Usuario Existe");
-			c = cdao.findCliente(login_form, senha_form);
-			login = c.getLogin_cliente();
-			senha = c.getSenha_cliente();
-			if(login_form.equals(login) && senha_form.equals(senha)){ //Caso login e senha estejam corretos...				
-				c.setLogin_cliente(login_form);
-				c.setSenha_cliente(senha_form);
-				session.putValue("loginUsuario", login); //Grava a session com o Login
-				session.putValue("senhaUsuario", senha); //Grava a session com a Senha
-				session.setAttribute("autorizado", c);
-				System.out.println("Logado com sucesso."); //Mostra na tela que foi logado com sucesso
-			}
+			c = cdao.findCliente(login_form, senha_form); 				
+			c.setLogin_cliente(login_form);
+			c.setSenha_cliente(senha_form);
+			session.putValue("loginUsuario", c.getLogin_cliente()); //Grava a session com o Login
+			session.putValue("senhaUsuario", c.getSenha_cliente()); //Grava a session com a Senha
+			session.setAttribute("autorizado", c);
+			System.out.println("Logado com sucesso."); //Mostra na tela que foi logado com sucesso
+		}
 			else{ //Se estiverem incorretos...
 				System.out.println("Login ou senha inválidos."); //Exibe na tela e pede para voltar
 			}
-		}
+		
 
 	}
 
