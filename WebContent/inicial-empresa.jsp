@@ -57,14 +57,12 @@
 		<tr><td>
 		<img src="images/portfolio/profile/KathFornecedor.png" alt="">
 	    </td><td>
-	    <h2><b>Katharine Doces</b></h2>
-		<h2>E-mail: katharines2@hotmail.com</h2>
-		<h2>CNPJ: 515.489.488-54</h2>
-		<h2>Rua Padre Pedro de Alencar, 2013</h2>
-		<h2>Messejana, Fortaleza - Ceará</h2>
-		<h2>CEP: 60.840-280</h2>
-		<h2>Telefone: (85) 3276-4224</h2>
-		<h2>Celular: (85) 99942-3173</h2>
+	    <h2><b><%= session.getAttribute("nomeFantasiaFornecedor") %></b></h2>
+		<h2>E-mail: <%= session.getAttribute("loginFornecedor") %></h2>
+		<h2>CNPJ: <%= session.getAttribute("cnpjFornecedor") %></h2>
+		<h2><%= session.getAttribute("enderecoFornecedor") %></h2>
+		<h2>Telefone: <%= session.getAttribute("tel1Fornecedor") %></h2>
+		<h2>Celular: <%= session.getAttribute("tel2Fornecedor") %></h2>
 		
 		<input type=submit value="Atualizar Dados">
 		</td>

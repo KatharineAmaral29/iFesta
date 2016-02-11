@@ -54,6 +54,7 @@ public class CadastroFornecedorServlet extends HttpServlet {
 		fornecedor.setRazao_social(razaosocial);
 		fornecedor.setCnpj(cnpj);
 		fornecedor.setRua_fornecedor(rua);
+		fornecedor.setNumero_fornecedor(numero);
 		fornecedor.setCep_fornecedor(cep);
 		fornecedor.setBairro_fornecedor(bairro);
 		fornecedor.setCidade_fornecedor(cidade);

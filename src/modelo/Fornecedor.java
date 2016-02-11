@@ -19,6 +19,7 @@ public class Fornecedor {
 	private String estado_fornecedor = new String();
 	private String pais_fornecedor = new String();
 	private int plano_fornecedor;
+	private String numero_fornecedor = new String();
 	
 	public Fornecedor(){
 		
@@ -27,7 +28,7 @@ public class Fornecedor {
 	public void preencherFornecedor(int idfornecedor, String nome_fantasia, String razao_social, String cnpj, String rua_fornecedor,
 			String cep_fornecedor, String cidade_fornecedor, String telefone1_fornecedor,
 			String telefone2_fornecedor, String email_fornecedor, String senha_fornecedor, String bairro_fornecedor,
-			String estado_fornecedor, String pais_fornecedor, int plano_fornecedor) {
+			String estado_fornecedor, String pais_fornecedor, int plano_fornecedor, String numero_fornecedor) {
 		
 		this.idfornecedor = idfornecedor;
 		this.nome_fantasia = nome_fantasia;
@@ -44,6 +45,7 @@ public class Fornecedor {
 		this.estado_fornecedor = estado_fornecedor;
 		this.pais_fornecedor = pais_fornecedor;
 		this.plano_fornecedor = plano_fornecedor;
+		this.numero_fornecedor = numero_fornecedor;
 	}
 
 	public int getIdfornecedor() {
@@ -145,12 +147,29 @@ public class Fornecedor {
 		this.plano_fornecedor = plano_fornecedor;
 	}
 	
-    public String conversaoPlanos(int x){
+    public String getNumero_fornecedor() {
+		return numero_fornecedor;
+	}
+
+	public void setNumero_fornecedor(String numero_fornecedor) {
+		this.numero_fornecedor = numero_fornecedor;
+	}
+
+	public String conversaoPlanos(int x){
     	ArrayList<String> tipos  = new ArrayList<>();
     	
     	tipos.add("Ouro");tipos.add("Prata");tipos.add("Bronze");
     	
     	return tipos.get(x);
+    }
+    
+    public String getEnderecoComp(){
+    	String endereco = new String();
+    	
+    	endereco = getRua_fornecedor() + ", " + getNumero_fornecedor() + " - " + 
+    	getBairro_fornecedor() + ", " + getCidade_fornecedor() + " - " + getEstado_fornecedor();
+    	
+    	return endereco;
     }
     
     public int conversaoPlanos(String x){
