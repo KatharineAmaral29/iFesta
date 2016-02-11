@@ -51,6 +51,7 @@ public class LoginFornecedorServlet extends HttpServlet {
 			session.putValue("cnpjFornecedor", f.getCnpj());
 			session.putValue("tel1Fornecedor", f.getTelefone1_fornecedor());
 			session.putValue("tel2Fornecedor", f.getTelefone2_fornecedor());
+			session.putValue("idFornecedor", f.getIdfornecedor());
 			session.setAttribute("autorizado", f);
 			System.out.println("Logado com sucesso."); //Mostra na tela que foi logado com sucesso
 			response.sendRedirect("inicial-empresa.jsp");

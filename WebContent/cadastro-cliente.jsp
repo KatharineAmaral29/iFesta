@@ -80,7 +80,7 @@
                 <label>Telefone*</label>
                 <input name="telefone" type="text" class="p" id="telefone"><br>
 
-                <label>Celular</label>
+                <label>Celular*</label>
                 <input name="celular" type="text" class="p" id="celular"><br>
 
                 <label>CEP</label>

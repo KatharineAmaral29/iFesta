@@ -8,7 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
+import javax.servlet.*;
 import dao.*;
 import modelo.*;
 
@@ -37,7 +37,7 @@ public class CadastroServicoServlet extends HttpServlet {
 		
 		//criando Servico
 		Servico servico = new Servico();
-		servico.setIdfornecedor(2); 		// TROCAR PELO ID DO FORNECEDOR QUE ESTIVER LOGADO
+		servico.setIdfornecedor((Integer)request.getSession().getAttribute("idFornecedor")); 		// TROCAR PELO ID DO FORNECEDOR QUE ESTIVER LOGADO
 		servico.setNomeServico(nome);
 		servico.setDescricao(descricao);
 		servico.setTipo_servico(tiposervico);

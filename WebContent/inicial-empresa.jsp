@@ -43,6 +43,7 @@
                                 </form>
                         </div>
                         <li><a href="promocoes.jsp">Promoções</a></li>
+                        <li><a href="cadastro-servico.jsp">Cadastrar Seriço</a></li>
                         <li><a href="LogoutServlet">Sair</a></li>           
 						<li><a class="navbar-brand" href="carrinho.jsp"><img src="images/carrinho.png"></a><br/>
 					</ul>

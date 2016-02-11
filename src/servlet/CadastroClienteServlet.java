@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import dao.ClienteDAO;
+import dao.DAO;
 import modelo.Cliente;
 
 /**
@@ -72,8 +73,8 @@ public class CadastroClienteServlet extends HttpServlet {
 		session.setAttribute("autorizado", cliente);
 				
 		try {
-			ClienteDAO cadastrar = new ClienteDAO();
-			if(cadastrar.insertCliente(cliente)){
+			DAO cadastrar = new DAO();
+			if(cadastrar.inserir(cliente)){
 				response.sendRedirect("inicial-cliente.jsp");
 			}
 			//jsp de erro.
