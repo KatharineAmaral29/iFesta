@@ -42,6 +42,7 @@ public class LoginClienteServlet extends HttpServlet {
 			session.putValue("cepUsuario", c.getCep_cliente());
 			session.putValue("tel1Usuario", c.getTelefone1_cliente());
 			session.putValue("tel2Usuario", c.getTelefone2_cliente());
+			session.putValue("idCliente", c.getIdcliente());
 			session.setAttribute("autorizado", c);
 			System.out.println("Logado com sucesso."); //Mostra na tela que foi logado com sucesso
 			response.sendRedirect("inicial-cliente.jsp");

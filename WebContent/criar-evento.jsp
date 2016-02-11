@@ -60,7 +60,7 @@
                 <input name="nomeevento" type="text" class="g"><br>
 
                 <label>Data</label>
-                <input name="dataevento" type="text" class="p" id="datepicker1"><br>
+                <input name="dataevento" type="text" class="p" id="datepicker4"><br>
                               
                 <label>Tipo de Evento</label>
                 <select name="tipoevento" class="p" id="tipoevento">
