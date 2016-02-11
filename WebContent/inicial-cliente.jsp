@@ -56,14 +56,13 @@
 		<tr><td>
 		<img src="images/portfolio/profile/Kath.jpg" alt="">
 		</td><td>
-	    <h3><b>Katharine Amaral</b></h3>
-		<h3>E-mail: katharines2@hotmail.com</h3>
-		<h3>CPF: 056.870.823-79</h3>
-		<h3>Rua Padre Pedro de Alencar, 2013</h3>
-		<h3>Messejana, Fortaleza - Ceará</h3>
-		<h3>CEP: 60.840-280</h3>
-		<h3>Telefone: (85) 3276-4224</h3>
-		<h3>Celular: (85) 99942-3173</h3>
+	    <h3><b><%= session.getAttribute("nomeUsuario") %></b></h3>
+		<h3>E-mail: <%= session.getAttribute("loginUsuario") %></h3>
+		<h3>CPF: <%= session.getAttribute("cpfUsuario") %></h3>
+		<h3><%= session.getAttribute("enderecoUsuario") %></h3>
+		<h3>CEP: <%= session.getAttribute("cepUsuario") %></h3>
+		<h3>Telefone: <%= session.getAttribute("tel1Usuario") %></h3>
+		<h3>Celular: <%= session.getAttribute("tel2Usuario") %></h3>
 		<h3>Data de Nascimento: 29/07/1994</h3>
 		
 		<input type=submit value="Atualizar Dados">

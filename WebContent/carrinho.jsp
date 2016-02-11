@@ -36,7 +36,7 @@
                 </div>
                 
                 <div class="collapse navbar-collapse navbar-right">
-                    <ul class="nav navbar-nav">
+                    <ul class="nav navbar-nav">                    
                         <li><div class="search">
                                 <form role="form">
                                     <input type="text" class="search-form" autocomplete="off" placeholder="Pesquisa">
@@ -53,7 +53,7 @@
         </nav><!--/nav-->   
     </header><!--/header-->
     
-    Hello, <%= session.getAttribute( "loginUsuario" ) %>
+    <li>Hello, <%= session.getAttribute( "loginUsuario" ) %></li>
 		
 	<TABLE BORDER=1>
 		<TR><TH>Imagem</TH><TH>Item</TH><TH>Descrição</TH><TH>Fornecedor</TH><TH>Preço Unitário</TH><TH>Quantidade</TH><TH>Preço Total</TH><TH>Remover</TH></TR> 
