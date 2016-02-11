@@ -1,5 +1,13 @@
 jQuery(function($) {'use strict',
 
+	function ficaOculto(){
+	 	document.getElementById('id').style.display = "none";
+	}
+	
+	function ficaVisivel(){
+		 document.getElementById('id').style.display = "inline";
+	}
+
 	//#main-slider
 	$(function(){
 		$('#main-slider.carousel').carousel({
