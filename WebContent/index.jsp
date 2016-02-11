@@ -47,11 +47,7 @@
                         <li><a href="promocoes.jsp">Promoções</a></li>
                         <li><a href="login.jsp">Entrar</a></li>
 						<li><a class="navbar-brand" href="carrinho.jsp"><img src="images/carrinho.png"></a><br/>
-<<<<<<< HEAD
 						<li><a href="LogoutServlet">Sair</a></li>
-=======
-
->>>>>>> origin/master
 					</ul>
                 </div>
             </div><!--/.container-->
