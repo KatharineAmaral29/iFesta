@@ -36,7 +36,8 @@ public class CadastroEventoServlet extends HttpServlet {
 		try {
 			cadastrar = new DAO();
 			if(cadastrar.inserir(evento)){
-				response.sendRedirect("listaservico.jsp");
+				System.out.println("Salvou evento");
+				response.sendRedirect("http://localhost:11213/iFesta/listaservico.jsp");
 			}
 			//jsp de erro.
 		} catch (IOException e) {
