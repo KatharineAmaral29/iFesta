@@ -52,6 +52,7 @@ public class LoginClienteServlet extends HttpServlet {
 			session.putValue("senhaUsuario", c.getSenha_cliente()); //Grava a session com a Senha
 			session.setAttribute("autorizado", c);
 			System.out.println("Logado com sucesso."); //Mostra na tela que foi logado com sucesso
+			response.sendRedirect("http://localhost:11213/iFesta/index.jsp");
 		}
 			else{ //Se estiverem incorretos...
 				System.out.println("Login ou senha inválidos."); //Exibe na tela e pede para voltar
