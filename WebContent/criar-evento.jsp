@@ -62,9 +62,6 @@
                 <label>Data</label>
                 <input name="dataevento" type="text" class="p" id="data"><br>
                 <!-- Calendario bonito -> id="datepicker1" -->
-
-                <input name="dataevento" type="text" class="p" id="datepicker4"><br>
-
                               
                 <label>Tipo de Evento</label>
                 <select name="tipoevento" class="p" id="tipoevento">
