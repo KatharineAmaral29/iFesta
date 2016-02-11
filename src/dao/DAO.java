@@ -20,9 +20,9 @@ public class DAO {
 	public boolean inserir(Cliente c){
 		boolean resultado = false;
 		
-		if(cdao.insertCliente(c))
+		if(cdao.insertCliente(c)){
 			resultado=true;
-		
+		}
 		return resultado;
 	}
 	
