@@ -71,7 +71,15 @@ public class CadastroFornecedorServlet extends HttpServlet {
 		// criando sessão
 		HttpSession session = request.getSession(true);
 		session.setAttribute("autorizado", fornecedor);
-				
+		session.putValue("loginFornecedor", fornecedor.getEmail_fornecedor()); //Grava a session com o Login
+		session.putValue("senhaFornecedor", fornecedor.getSenha_fornecedor()); //Grava a session com a Senha
+		session.putValue("nomeFantasiaFornecedor", fornecedor.getNome_fantasia());
+		session.putValue("razaoSocialFornecedor", fornecedor.getRazao_social());
+		session.putValue("enderecoFornecedor", fornecedor.getEnderecoComp());
+		session.putValue("cnpjFornecedor", fornecedor.getCnpj());
+		session.putValue("tel1Fornecedor", fornecedor.getTelefone1_fornecedor());
+		session.putValue("tel2Fornecedor", fornecedor.getTelefone2_fornecedor());
+		session.putValue("idFornecedor", fornecedor.getIdfornecedor());		
 		try {
 			DAO cadastrar = new DAO();
 			if(cadastrar.inserir(fornecedor)){

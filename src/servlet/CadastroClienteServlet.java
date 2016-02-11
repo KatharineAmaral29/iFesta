@@ -71,6 +71,15 @@ public class CadastroClienteServlet extends HttpServlet {
 		// criando sessão
 		HttpSession session = request.getSession(true);
 		session.setAttribute("autorizado", cliente);
+		session.putValue("loginUsuario", cliente.getLogin_cliente()); //Grava a session com o Login
+		session.putValue("senhaUsuario", cliente.getSenha_cliente()); //Grava a session com a Senha
+		session.putValue("nomeUsuario", cliente.getNomeCliente());
+		session.putValue("cpfUsuario", cliente.getCpf());
+		session.putValue("enderecoUsuario", cliente.getEnderecoComp());
+		session.putValue("cepUsuario", cliente.getCep_cliente());
+		session.putValue("tel1Usuario", cliente.getTelefone1_cliente());
+		session.putValue("tel2Usuario", cliente.getTelefone2_cliente());
+		session.putValue("idCliente", cliente.getIdcliente());
 		System.out.println("Criou sessão");		
 		try {
 			DAO cadastrar = new DAO();
