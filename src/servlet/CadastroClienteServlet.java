@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import dao.ClienteDAO;
+import dao.DAO;
 import modelo.Cliente;
 
 /**
@@ -70,14 +71,16 @@ public class CadastroClienteServlet extends HttpServlet {
 		// criando sessão
 		HttpSession session = request.getSession(true);
 		session.setAttribute("autorizado", cliente);
-				
+		System.out.println("Criou sessão");		
 		try {
-			ClienteDAO cadastrar = new ClienteDAO();
-			if(cadastrar.insertCliente(cliente)){
+			DAO cadastrar = new DAO();
+			if(cadastrar.inserir(cliente)){
+				System.out.println("Inseriu no BD");
 				response.sendRedirect("inicial-cliente.jsp");
 			}
 			//jsp de erro.
 		} catch (IOException e) {
+			System.out.println("entrou no catch");
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
