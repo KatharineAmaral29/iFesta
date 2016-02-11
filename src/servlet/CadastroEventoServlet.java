@@ -6,10 +6,12 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.websocket.Session;
+import javax.servlet.*;
+
 import dao.*;
 import modelo.*;
 import conexao.*;
-import servlet.*;
 
 @WebServlet("/CadastroEventoServlet")
 public class CadastroEventoServlet extends HttpServlet {
@@ -28,13 +30,13 @@ public class CadastroEventoServlet extends HttpServlet {
 		evento.setData(dataEvento);
 		evento.setDescricao(descricaoEvento);
 		evento.setTipo(Integer.valueOf(tipoEvento));
-		evento.setIdcliente(14); // TROCAR PELO ID DO USUÁRIO QUE ESTIVER LOGADO
+		evento.setIdcliente((Integer)request.getSession().getAttribute("idCliente")); // TROCAR PELO ID DO USUÁRIO QUE ESTIVER LOGADO
 
 		DAO cadastrar;
 		try {
 			cadastrar = new DAO();
 			if(cadastrar.inserir(evento)){
-				response.sendRedirect("promocoes.jsp");
+				response.sendRedirect("listaservico.jsp");
 			}
 			//jsp de erro.
 		} catch (IOException e) {
