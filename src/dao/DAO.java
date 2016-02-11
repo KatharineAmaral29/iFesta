@@ -27,8 +27,6 @@ public class DAO {
 		if(cdao.insertCliente(c)){
 			resultado=true;
 		}
-		
-		
 		return resultado;
 	}
 	

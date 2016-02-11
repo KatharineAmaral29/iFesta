@@ -71,14 +71,16 @@ public class CadastroClienteServlet extends HttpServlet {
 		// criando sessão
 		HttpSession session = request.getSession(true);
 		session.setAttribute("autorizado", cliente);
-				
+		System.out.println("Criou sessão");		
 		try {
 			DAO cadastrar = new DAO();
 			if(cadastrar.inserir(cliente)){
+				System.out.println("Inseriu no BD");
 				response.sendRedirect("inicial-cliente.jsp");
 			}
 			//jsp de erro.
 		} catch (IOException e) {
+			System.out.println("entrou no catch");
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
