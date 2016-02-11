@@ -125,25 +125,29 @@
     			<label>Razão Social* </label>
 				<input name ="razaosocial" type="text" class="g"><br>
 				<label>CNPJ*</label>
-				<input name ="cnpj" type="text" class="g"><br>
+				<input name ="cnpj" type="text" class="g" id="cnpj"><br>
 				<label>Rua*</label>
 				<input name ="rua" type="text" class="g"><br>
 				<label>Número*</label>
 				<input name ="numero" type="text" class="g"><br>
 				<label>CEP</label>
-				<input name ="cep" type="text" class="g"><br>
+				<input name ="cep" type="text" class="g" id="cep"><br>
 				<label>Bairro*</label>
 				<input name ="bairro" type="text" class="g"><br>
-				<label>Cidade*</label>
-				<input name ="cidade" type="text" class="g"><br>
-				<label>Estado*</label>
-				<input name ="estado" type="text" class="g"><br>
-				<label>País*</label>
-				<input name ="pais" type="text" class="g"><br>
+                <label>Cidade*</label>
+                <input name="cidade" type="text" class="p" id="cidade"><br>
+                <label>Estado*</label>
+                <select name="estado" class="p" id="estado">
+                    <option value="CE">Ceará</option>
+                </select><br>
+                <label>Pais*</label>
+                <select name="pais" class="p" id="pais">
+                    <option value="Brasil">Brasil</option>
+                </select><br>
 				<label>Telefone 1*</label>
-				<input name ="telefone1" type="text" class="g"><br>
+				<input name ="telefone1" type="text" class="g" id="telefone"><br>
 				<label>Telefone 2</label>
-				<input name ="telefone2" type="text" class="g"><br>
+				<input name ="telefone2" type="text" class="g" id="celular"><br>
 				<label>E-mail*</label>
 				<input name ="email" type="text" class="g"><br>
 				<label>Senha*</label>

@@ -65,7 +65,7 @@
                 <input name="password" type="password" class="g"><br>
 
                 <label>CPF*</label>
-                <input name="cpf" type="text" class="g"><br>
+                <input name="cpf" type="text" class="g" id="cpf"><br>
 
                 <label>Sexo*</label>
                 <select name="sexo" class="p" id="sexo">
