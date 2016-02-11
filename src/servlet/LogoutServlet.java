@@ -16,6 +16,7 @@ public class LogoutServlet extends HttpServlet {
 		HttpSession session = request.getSession(true);
 		session.invalidate(); //fecha a sessão
 		response.getWriter().append("Served at: ").append(request.getContextPath());
+		System.out.println("Usuario saiu da sessao");
 		response.sendRedirect("http://localhost:11213/iFesta/index.jsp");
 	}
 
