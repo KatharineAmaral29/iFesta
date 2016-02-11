@@ -84,7 +84,7 @@
                 <input name="regras" type="text" class="g"><br>
 
                 <label>Preço*</label>
-                <input name="preco" type="text" class="g"><br>
+                <input name="preco" type="text" class="g" id="preco"><br>
 
                 <label>Tipo de Serviço*</label><br>
 					<input type=radio name="servico" value="1">Alimentícios Doces</input><br>                
@@ -199,5 +199,7 @@
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.zebra-datepicker.js"></script>
+    <script src="js/jquery.maskMoney.js"></script>
+    <script src="js/jquery.min.js"></script>
 </body>
 </html>
