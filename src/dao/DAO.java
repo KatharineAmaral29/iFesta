@@ -16,12 +16,12 @@ public class DAO {
 		sdao = new ServicoDAO();
 		ldao = new LoginDAO();
 	}
-	
-	
+		
 	public boolean inserir(Cliente c){
 		boolean resultado = false;
 		
-		cdao.insertCliente(c);
+		if(cdao.insertCliente(c))
+			resultado=true;
 		
 		return resultado;
 	}
@@ -29,7 +29,9 @@ public class DAO {
 	public boolean inserir(Evento e){
 		boolean resultado = false;
 		
-		edao.insertEvento(e);
+		if(edao.insertEvento(e))
+			resultado=true;
+		
 		//Adicionar o Evento tbm na lista de eventos do Cliente da Secção
 		//cliente.adicionarEvento(e);
 		
@@ -39,7 +41,8 @@ public class DAO {
 	public boolean inserir(Servico s){
 		boolean resultado = false;
 		
-		sdao.insertServico(s);
+		if(sdao.insertServico(s))
+			resultado=true;
 		
 		return resultado;
 	}
@@ -47,7 +50,8 @@ public class DAO {
 	public boolean inserir(Fornecedor f){
 		boolean resultado = false;
 		
-		fdao.insertFornecedor(f);
+		if(fdao.insertFornecedor(f))
+			resultado=true;
 		
 		return resultado;
 	}
