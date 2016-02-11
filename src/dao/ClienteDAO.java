@@ -3,6 +3,8 @@ package dao;
 import java.sql.*;
 import java.util.ArrayList;
 
+import com.sun.javafx.runtime.SystemProperties;
+
 import conexao.ConectionFactory;
 import conexao.Conexao;
 import modelo.Cliente;
@@ -23,8 +25,7 @@ public class ClienteDAO extends Conexao{
 				+ "VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)";
 		
 		try {
-
-			ps = con.prepareStatement(clausula);
+			ps = con.prepareStatement(clausula);			
 			ps.setString(1, c.getCpf());
 			ps.setString(2, c.getNomeCliente());
 			ps.setString(3, c.getSenha_cliente());
@@ -41,7 +42,6 @@ public class ClienteDAO extends Conexao{
 			ps.execute();
 			ps.close();
 			con.close();
-			System.out.println("Inseriu");
 
 
 			return true;
