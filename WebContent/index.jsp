@@ -45,16 +45,16 @@
                                 </form>
                         </div>
                         <li><a href="promocoes.jsp">Promoções</a></li>
-                        <li><a href="login.jsp">Entrar</a></li>
-						<li><a class="navbar-brand" href="carrinho.jsp"><img src="images/carrinho.png"></a><br/>
+                        <li><a id="logado" href="login.jsp">Entrar</a></li>
 						<li><a href="LogoutServlet">Sair</a></li>
+						<li><a class="navbar-brand" href="carrinho.jsp"><img src="images/carrinho.png"></a><br/>
 					</ul>
                 </div>
             </div><!--/.container-->
         </nav><!--/nav-->
         
     </header><!--/header-->
-		
+
 	<div class="categoria" align="middle">
 		<TABLE BORDER=0>
 			<TR>

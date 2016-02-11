@@ -43,7 +43,8 @@
                                 </form>
                         </div>
                         <li><a href="promocoes.jsp">Promoções</a></li>
-                        <li><a href="criar-evento.jsp">Criar Evento</a></li>          
+                        <li><a href="criar-evento.jsp">Criar Evento</a></li>
+                        <li><a href="LogoutServlet">Sair</a></li>          
 						<li><a class="navbar-brand" href="carrinho.jsp"><img src="images/carrinho.png"></a><br/>
 					</ul>
                 </div>
