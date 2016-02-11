@@ -197,6 +197,15 @@ public class Cliente {
 				+ "Email: " + getLogin_cliente()+"\n";
 		return termo; 
 	}
+	
+	public String getEnderecoComp(){
+		String endereco = new String();
+		
+		endereco = getRua_cliente() + ", " + getNumero_cliente() + " - " + getCidade_cliente() +
+				", " + getEstado_cliente() + " - " + getPais_cliente();
+		
+		return endereco;
+	}
 	/*
 	public void editarEvento(Evento ev){
 		

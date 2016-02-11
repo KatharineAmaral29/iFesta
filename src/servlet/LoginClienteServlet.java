@@ -34,10 +34,14 @@ public class LoginClienteServlet extends HttpServlet {
 		if(ldao.validate(login_form, senha_form))	{//Caso login e senha estejam corretos...
 			System.out.println("Usuario Existe");
 			c = cdao.findCliente(login_form, senha_form); 				
-			c.setLogin_cliente(login_form);
-			c.setSenha_cliente(senha_form);
 			session.putValue("loginUsuario", c.getLogin_cliente()); //Grava a session com o Login
 			session.putValue("senhaUsuario", c.getSenha_cliente()); //Grava a session com a Senha
+			session.putValue("nomeUsuario", c.getNomeCliente());
+			session.putValue("cpfUsuario", c.getCpf());
+			session.putValue("enderecoUsuario", c.getEnderecoComp());
+			session.putValue("cepUsuario", c.getCep_cliente());
+			session.putValue("tel1Usuario", c.getTelefone1_cliente());
+			session.putValue("tel2Usuario", c.getTelefone2_cliente());
 			session.setAttribute("autorizado", c);
 			System.out.println("Logado com sucesso."); //Mostra na tela que foi logado com sucesso
 			response.sendRedirect("http://localhost:11213/iFesta/index.jsp");

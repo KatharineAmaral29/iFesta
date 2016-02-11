@@ -33,6 +33,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="index.jsp"><img src="images/logo.png" align="middle" alt="logo"></a>
+                    
                 </div>
                 
                 <div class="collapse navbar-collapse navbar-right">
@@ -46,15 +47,17 @@
                         <li><a href="promocoes.jsp">Promoções</a></li>
                         <li><a href="login.jsp">Entrar</a></li>
 						<li><a class="navbar-brand" href="carrinho.jsp"><img src="images/carrinho.png"></a><br/>
+<<<<<<< HEAD
 						<li><a href="LogoutServlet">Sair</a></li>
+=======
+
+>>>>>>> origin/master
 					</ul>
                 </div>
             </div><!--/.container-->
         </nav><!--/nav-->
         
     </header><!--/header-->
-	
-	Hello, <%= session.getAttribute( "loginUsuario" ) %>
 		
 	<div class="categoria" align="middle">
 		<TABLE BORDER=0>
