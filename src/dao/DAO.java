@@ -1,5 +1,9 @@
 package dao;
 
+import java.util.ArrayList;
+
+import javax.servlet.http.HttpServletRequest;
+
 import modelo.*;
 
 public class DAO {
@@ -60,6 +64,13 @@ public class DAO {
 	
 	public void update (){
 		//Fazer o update no banco, de dados de fornecedor ou cliente
+	}
+	
+	public void meusEventos(int id,HttpServletRequest request){
+		
+		
+		request.getSession().setAttribute("meusEventos", edao.findEvento(id));
+		
 	}
 
 }

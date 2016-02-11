@@ -1,6 +1,7 @@
 package servlet;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,8 +11,11 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import dao.ClienteDAO;
+import dao.DAO;
+import dao.EventoDAO;
 import dao.LoginDAO;
 import modelo.Cliente;
+import modelo.Evento;
 
 @WebServlet("/LoginClienteServlet")
 public class LoginClienteServlet extends HttpServlet {
@@ -26,7 +30,9 @@ public class LoginClienteServlet extends HttpServlet {
 		HttpSession session = request.getSession(true);
 		ClienteDAO cdao = new ClienteDAO();
 		LoginDAO ldao = new LoginDAO();
+		EventoDAO edao = new EventoDAO();
 		Cliente c = new Cliente();
+		Evento e;
 		
 		String login_form = request.getParameter("emailc"); // Pega o Login vindo do formulário
 		String senha_form = request.getParameter("senhac"); //Pega a senha vinda do formulário
@@ -44,6 +50,9 @@ public class LoginClienteServlet extends HttpServlet {
 			session.putValue("tel2Usuario", c.getTelefone2_cliente());
 			session.putValue("idCliente", c.getIdcliente());
 			session.setAttribute("autorizado", c);
+			session.setAttribute("eventos", edao.findEvento(c.getIdcliente()));
+			
+		
 			System.out.println("Logado com sucesso."); //Mostra na tela que foi logado com sucesso
 			response.sendRedirect("inicial-cliente.jsp");
 		}

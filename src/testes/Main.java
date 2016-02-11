@@ -1,5 +1,6 @@
 package testes;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 import dao.*;
 import modelo.*;
@@ -11,13 +12,15 @@ public class Main {
 	static Cliente c = new Cliente();
 	static DAO cadastro = new DAO();
 	static ClienteDAO cdao = new ClienteDAO();
+	static EventoDAO edao = new EventoDAO();
+	static ArrayList<Evento> eventos = new ArrayList<>();
 	static boolean res;
 
 	public static void main(String[] args) {
 		while(flag){
 
 			System.out.println("0 - Cadastro de Cliente\n1 - Procurar por CPF");
-			System.out.println("2 - Altera Cliente\n3 - Deletar Cliente");
+			System.out.println("2 - Altera Cliente\n3 - Deletar Cliente\n4 - Todos os Eventos");
 			System.out.print("Digite a opção: ");
 			
 			switch (op.nextInt()) 
@@ -51,6 +54,14 @@ public class Main {
 					System.out.println("Deletado");
 				else
 					System.out.println("ERRO");
+				break;
+				
+			case 4:
+				System.out.println("Digite o id: ");
+				eventos = edao.findEvento(op.nextInt());
+				for(int i = 0;i<eventos.size();i++){
+					System.out.println(i + " " + eventos.get(i).getNome_evento());
+				}
 				break;
 			case 9:
 				flag = false;

@@ -43,22 +43,28 @@ public class EventoDAO extends Conexao{
 	    
 	    public ArrayList<Evento> findEvento(int idcliente) { //Retornará um Array de Eventos
 	        ArrayList<Evento> evs = new ArrayList<>();
-	        Evento ev = new Evento();
+	        Evento ev;
+	        int i = 0;
 	        
 	        String clausula = "select * from evento where idcliente = ?";
 	        try {
 	        	pstmt = con.prepareStatement(clausula);
-	        	pstmt.setString(1, String.valueOf(idcliente));
+	        	pstmt.setInt(1, idcliente);
 	            rs = pstmt.executeQuery();
-	            if (rs.next()) {
-	            	ev.preencherEvento(Integer.parseInt(rs.getString("id_evento")), 
-	            						Integer.parseInt(rs.getString("idcliente")),
+	            while (rs.next()) {
+	            	ev = new Evento();
+	            	ev.preencherEvento(rs.getInt("id_evento"), 
+	            						rs.getInt("idcliente"),
 				            			rs.getString("nome_evento"),
 				            			rs.getString("descricao_evento"),
-				            			Integer.parseInt(rs.getString("tipo_evento")));
+				            			rs.getInt("tipo_evento"),
+				            			rs.getString("data_evento"));
 	            	evs.add(ev);
+
+	            	
 	                
 	            }
+
 	        } catch (SQLException e1) {
 	            System.out.println(e1.getMessage());
 	        }

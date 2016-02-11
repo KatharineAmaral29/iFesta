@@ -22,13 +22,14 @@ public class Evento {
 		setTipo(tipo);
 	}
 	
-	public void preencherEvento(int idevento,int idcliente,String nome, String descricao, int tipo){
+	public void preencherEvento(int idevento,int idcliente,String nome, String descricao, int tipo, String data){
 				
-		setIdevento(idevento);
-		setIdcliente(idcliente);
-		setNome_evento(nome);
-		setDescricao(descricao);
-		setTipo(tipo);
+		this.idevento = idevento;
+		this.idcliente = idcliente;
+		this.nome_evento = nome;
+		this.descricao = descricao;
+		this.tipo = tipo;
+		this.data = data;
 	
 	}
 
