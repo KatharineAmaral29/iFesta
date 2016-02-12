@@ -75,11 +75,12 @@
 	</div>
 	
 	<div>
-	<c:forEach items=${eventos} var="evento">                     
+	<h2>Meus Eventos</h2> 
+	<c:forEach items="${eventos}" var="evento">                     
     <tr>   
-    <td align="center"><c:out value=${evento.getNome_evento()}/></td>
-    <td align="center"><c:out value=${evento.getData()}/></td>                           
-    <td align="center"><c:out value=${evento.getTipo()}/></td>
+    <td align="center"><c:out value="${evento.getNome_evento()"}/></td>
+    <td align="center"><c:out value="${evento.getData()"}/></td>                           
+    <td align="center"><c:out value="${evento.getTipo()"}/></td>
 
     </tr>
 </c:forEach>
